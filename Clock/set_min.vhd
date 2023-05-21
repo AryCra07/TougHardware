@@ -19,10 +19,10 @@ ARCHITECTURE func OF set_min IS
 BEGIN
     PROCESS (clr, qd, set, alarm)
     BEGIN
-        IF (clr = '1') THEN -- Clear the digits
+        IF (clr = '1') THEN -- clear all
             tmp_low <= "0000";
             tmp_high <= "0000";
-        ELSIF (set = '1') THEN -- Process Carry
+        ELSIF (set = '1') THEN -- in set mode we use sign-qd to set minute
             IF (qd'event AND qd = '0') THEN
                 IF (tmp_low = 9) THEN
                     tmp_low <= "0000";

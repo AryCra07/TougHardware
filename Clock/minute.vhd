@@ -6,7 +6,7 @@ USE ieee.std_logic_arith.ALL;
 
 ENTITY minute IS
     PORT (
-        stop : IN STD_LOGIC;
+        pause : IN STD_LOGIC;
         in_high : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
         in_low : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
         clk : IN STD_LOGIC;
@@ -24,16 +24,16 @@ ARCHITECTURE func OF minute IS
     SIGNAL tmp_low, tmp_high : STD_LOGIC_VECTOR(3 DOWNTO 0);
     SIGNAL count : STD_LOGIC;
 BEGIN
-    PROCESS (stop, clr, set, alarm, clk)
+    PROCESS (pause, clr, set, alarm, clk)
     BEGIN
-        IF (clr = '1') THEN
+        IF (clr = '1') THEN -- clear all
             tmp_low <= "0000";
             tmp_high <= "0000";
-        ELSIF (set = '1' AND alarm = '0' AND alarm = '0') THEN
+        ELSIF (set = '1' AND clr = '0' AND alarm = '0') THEN
             tmp_low <= in_low;
             tmp_high <= in_high;
         ELSIF (clk'event AND clk = '1') THEN
-            IF ((set = '0' AND clr = '0' AND stop = '0') OR (set = '1' AND clr = '0' AND alarm = '1' AND stop = '0')) THEN
+            IF ((set = '0' AND clr = '0' AND pause = '0') OR (set = '1' AND clr = '0' AND alarm = '1' AND pause = '0')) THEN
                 IF (tmp_low = 9) THEN
                     tmp_low <= "0000";
                     IF (tmp_high = 5) THEN

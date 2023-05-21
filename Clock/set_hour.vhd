@@ -19,10 +19,10 @@ ARCHITECTURE func OF set_hour IS
 BEGIN
     PROCESS (qd, clr, set, alarm)
     BEGIN
-        IF (clr = '1') THEN
+        IF (clr = '1') THEN -- clear all
             tmp_low <= "0000";
             tmp_high <= "0000";
-        ELSIF (set = '1') THEN
+        ELSIF (set = '1') THEN -- in set mode we can use sign-qd to set hour
             IF (qd'event AND qd = '0') THEN
                 IF (tmp_low = 3 AND tmp_high = 2) THEN
                     tmp_low <= "0000";

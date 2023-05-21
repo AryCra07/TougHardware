@@ -22,15 +22,15 @@ BEGIN
             ELSE
                 temp <= temp + 1;
             END IF;
-            IF (mode = "001" AND temp > 2) THEN
+            IF (mode = "001" AND temp > 2) THEN -- hourly chime rings 2s 
                 qout <= '0';
             ELSIF (mode = "001") THEN
                 qout <= '1';
-            ELSIF (mode = "110" AND temp > 4) THEN
+            ELSIF (mode = "110" AND temp > 4) THEN -- alarm we set rings 4s
                 qout <= '0';
             ELSIF (mode = "110") THEN
                 qout <= '1';
-            ELSIF (mode = "111" AND temp > 4) THEN
+            ELSIF (mode = "111" AND temp > 6) THEN -- both occur, then ring 6s
                 qout <= '0';
             ELSIF (mode = "111") THEN
                 qout <= '1';
