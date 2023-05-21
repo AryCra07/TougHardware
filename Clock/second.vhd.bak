@@ -1,0 +1,42 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_arith.ALL;
+USE ieee.std_logic_unsigned.ALL;
+
+ENTITY second IS
+    PORT (
+        clk, clr, pause, set_hour, set_min, alarm : IN STD_LOGIC;
+        digit0, digit1 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+        cout : OUT STD_LOGIC);
+END second;
+
+ARCHITECTURE func OF second IS
+    SIGNAL tempDigit0, tempDigit1 : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL tempCout : STD_LOGIC;
+BEGIN
+    PROCESS (clk, clr, pause, set_hour, alarm, set_min)
+    BEGIN
+        IF (clr = '1') THEN
+            tempDigit0 <= "0000";
+            tempDigit1 <= "0000";
+        ELSIF (clk'event AND clk = '0') THEN
+            IF (clr = '0' AND pause = '0' AND set_hour = '0' AND alarm = '0' AND set_min = '0') THEN
+                IF (tempDigit0 = "1001" AND tempDigit1 = "0101") THEN
+                    tempDigit0 <= "0000";
+                    tempDigit1 <= "0000";
+                    tempCout <= '1';
+                ELSIF (tempDigit0 = "1001") THEN
+                    tempDigit0 <= "0000";
+                    tempDigit1 <= tempDigit1 + 1;
+                    tempCout <= '0';
+                ELSE
+                    tempDigit0 <= tempDigit0 + 1;
+                    tempCout <= '0';
+                END IF;
+            END IF;
+        END IF;
+        digit0 <= tempDigit0;
+        digit1 <= tempDigit1;
+        cout <= tempCout;
+    END PROCESS;
+END func;

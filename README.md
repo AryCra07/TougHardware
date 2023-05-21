@@ -1,1 +1,2 @@
-# BUPT_DigitalLogic
+# BUPT数字逻辑与数字系统课程设计项目
+

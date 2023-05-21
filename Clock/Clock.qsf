@@ -1,0 +1,95 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Full Version
+# Date created = 17:37:55  May 21, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Clock_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY MAX7000S
+set_global_assignment -name DEVICE "EPM7128SLC84-15"
+set_global_assignment -name TOP_LEVEL_ENTITY Clock
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:37:55  MAY 21, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VHDL_FILE set_min.vhd
+set_global_assignment -name VHDL_FILE set_hour.vhd
+set_global_assignment -name VHDL_FILE hour.vhd
+set_global_assignment -name VHDL_FILE minute.vhd
+set_global_assignment -name BDF_FILE Clock.bdf
+set_location_assignment PIN_79 -to set_min
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_60 -to qd
+set_global_assignment -name MISC_FILE "C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.dpf"
+set_location_assignment PIN_58 -to clk_1
+set_location_assignment PIN_54 -to clr
+set_global_assignment -name VHDL_FILE second.vhd
+set_global_assignment -name VHDL_FILE ring.vhd
+set_global_assignment -name VHDL_FILE shine.vhd
+set_global_assignment -name VHDL_FILE light.vhd
+set_location_assignment PIN_80 -to alarm
+set_location_assignment PIN_77 -to set_hour
+set_location_assignment PIN_41 -to digit1[0]
+set_location_assignment PIN_40 -to digit1[1]
+set_location_assignment PIN_39 -to digit1[2]
+set_location_assignment PIN_37 -to digit1[3]
+set_location_assignment PIN_52 -to qout
+set_location_assignment PIN_51 -to light[0]
+set_location_assignment PIN_50 -to light[1]
+set_location_assignment PIN_49 -to light[2]
+set_location_assignment PIN_48 -to light[3]
+set_location_assignment PIN_46 -to light[4]
+set_location_assignment PIN_45 -to light[5]
+set_location_assignment PIN_44 -to light[6]
+set_location_assignment PIN_24 -to out_high_hour[0]
+set_location_assignment PIN_22 -to out_high_hour[1]
+set_location_assignment PIN_21 -to out_high_hour[2]
+set_location_assignment PIN_20 -to out_high_hour[3]
+set_location_assignment PIN_29 -to out_low_hour[0]
+set_location_assignment PIN_28 -to out_low_hour[1]
+set_location_assignment PIN_27 -to out_low_hour[2]
+set_location_assignment PIN_25 -to out_low_hour[3]
+set_location_assignment PIN_34 -to out_high_min[0]
+set_location_assignment PIN_33 -to out_high_min[1]
+set_location_assignment PIN_31 -to out_high_min[2]
+set_location_assignment PIN_30 -to out_high_min[3]
+set_location_assignment PIN_18 -to out_low_min[0]
+set_location_assignment PIN_17 -to out_low_min[1]
+set_location_assignment PIN_36 -to out_low_min[2]
+set_location_assignment PIN_35 -to out_low_min[3]
+set_global_assignment -name VECTOR_WAVEFORM_FILE Clock.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Clock.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
