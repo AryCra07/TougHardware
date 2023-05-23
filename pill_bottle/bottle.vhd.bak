@@ -71,9 +71,9 @@ BEGIN
                         -- work state
                     ELSIF (signal_state = '1') THEN
                         -- clk:+1 with output
-                        IF (temp_l = "1001") THEN -- carry of 9->0
+                        IF (temp_l = "1001") THEN
                             temp_l <= "0000";
-                            temp_h <= temp_h + 1;
+                            temp_h <= temp_h + 1; -- carry of 9->0
                         ELSE
                             temp_l <= temp_l + 1;
                         END IF;
@@ -82,14 +82,14 @@ BEGIN
                         light_green <= '1';
 
                         -- FULL! switch state with light switched(the signal isn't +1)
-                        IF (t_l = "0000") THEN -- for example when the input is 20
-                            IF (t_h = temp_h + 1 AND temp_l = "1001") THEN -- then 19 is full
+                        IF (t_l = "0000") THEN -- low digit is 0
+                            IF (t_h = temp_h + 1 AND temp_l = "1001") THEN
                                 signal_state <= '0'; -- switch state
                                 cout <= '1';
                                 light_red <= '1';
                             END IF;
-                        ELSE -- low digit is not 0, such as the input is 19
-                            IF (t_h = temp_h AND t_l = temp_l + 1) THEN -- then 18 is full
+                        ELSE -- low digit is not 0
+                            IF (t_h = temp_h AND t_l = temp_l + 1) THEN
                                 signal_state <= '0'; -- switch state
                                 cout <= '1';
                                 light_red <= '1';

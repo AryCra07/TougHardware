@@ -46,3 +46,9 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name VHDL_FILE led_7.vhd
+set_global_assignment -name VHDL_FILE bottle_control.vhd
+set_global_assignment -name VHDL_FILE bottle.vhd
+set_global_assignment -name VHDL_FILE pill_counter.vhd
+set_global_assignment -name VHDL_FILE bottle_counter.vhd
+set_global_assignment -name VHDL_FILE switch.vhd
+set_global_assignment -name VHDL_FILE multi_fre.vhd
