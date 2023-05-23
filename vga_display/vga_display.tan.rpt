@@ -1,0 +1,219 @@
+Classic Timing Analyzer report for vga_display
+Tue May 23 23:49:59 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clk'
+  7. tco
+  8. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                ;
++------------------------------+-------+---------------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From                              ; To                                ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 17.000 ns                        ; lpm_counter:counter_rtl_0|dffs[7] ; vga_green                         ; clk        ; --       ; 0            ;
+; Clock Setup: 'clk'           ; N/A   ; None          ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[7] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                                   ;                                   ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM7128SLC84-15    ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-16 processors        ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk'                                                                                                                                                                                                           ;
++-------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)             ; From                              ; To                                ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[1] ; lpm_counter:counter_rtl_0|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[1] ; lpm_counter:counter_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[2] ; lpm_counter:counter_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[1] ; lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[2] ; lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[3] ; lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[1] ; lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[2] ; lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[3] ; lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[4] ; lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[5] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[1] ; lpm_counter:counter_rtl_0|dffs[5] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[2] ; lpm_counter:counter_rtl_0|dffs[5] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[3] ; lpm_counter:counter_rtl_0|dffs[5] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[4] ; lpm_counter:counter_rtl_0|dffs[5] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[5] ; lpm_counter:counter_rtl_0|dffs[5] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[6] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[1] ; lpm_counter:counter_rtl_0|dffs[6] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[2] ; lpm_counter:counter_rtl_0|dffs[6] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[3] ; lpm_counter:counter_rtl_0|dffs[6] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[4] ; lpm_counter:counter_rtl_0|dffs[6] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[5] ; lpm_counter:counter_rtl_0|dffs[6] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[6] ; lpm_counter:counter_rtl_0|dffs[6] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[0] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[1] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[2] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[3] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[4] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[5] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[6] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; lpm_counter:counter_rtl_0|dffs[7] ; lpm_counter:counter_rtl_0|dffs[7] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
++-------+----------------------------------+-----------------------------------+-----------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; tco                                                                                            ;
++-------+--------------+------------+-----------------------------------+-----------+------------+
+; Slack ; Required tco ; Actual tco ; From                              ; To        ; From Clock ;
++-------+--------------+------------+-----------------------------------+-----------+------------+
+; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[4] ; vga_blue  ; clk        ;
+; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[5] ; vga_blue  ; clk        ;
+; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[6] ; vga_blue  ; clk        ;
+; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[7] ; vga_blue  ; clk        ;
+; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[5] ; vga_green ; clk        ;
+; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[6] ; vga_green ; clk        ;
+; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[7] ; vga_green ; clk        ;
+; N/A   ; None         ; 8.000 ns   ; vga_vsync~reg0                    ; vga_vsync ; clk        ;
+; N/A   ; None         ; 8.000 ns   ; vga_hsync~reg0                    ; vga_hsync ; clk        ;
++-------+--------------+------------+-----------------------------------+-----------+------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Tue May 23 23:49:59 2023
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off vga_display -c vga_display
+Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing Analysis does not support the analysis of latches as synchronous elements for the currently selected device family
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Info: Clock "clk" has Internal fmax of 76.92 MHz between source register "lpm_counter:counter_rtl_0|dffs[0]" and destination register "lpm_counter:counter_rtl_0|dffs[0]" (period= 13.0 ns)
+    Info: + Longest register to register delay is 8.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC1; Fanout = 8; REG Node = 'lpm_counter:counter_rtl_0|dffs[0]'
+        Info: 2: + IC(0.000 ns) + CELL(8.000 ns) = 8.000 ns; Loc. = LC1; Fanout = 8; REG Node = 'lpm_counter:counter_rtl_0|dffs[0]'
+        Info: Total cell delay = 8.000 ns ( 100.00 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "clk" to destination register is 3.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 10; CLK Node = 'clk'
+            Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC1; Fanout = 8; REG Node = 'lpm_counter:counter_rtl_0|dffs[0]'
+            Info: Total cell delay = 3.000 ns ( 100.00 % )
+        Info: - Longest clock path from clock "clk" to source register is 3.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 10; CLK Node = 'clk'
+            Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC1; Fanout = 8; REG Node = 'lpm_counter:counter_rtl_0|dffs[0]'
+            Info: Total cell delay = 3.000 ns ( 100.00 % )
+    Info: + Micro clock to output delay of source is 1.000 ns
+    Info: + Micro setup delay of destination is 4.000 ns
+Info: tco from clock "clk" to destination pin "vga_blue" through register "lpm_counter:counter_rtl_0|dffs[4]" is 17.000 ns
+    Info: + Longest clock path from clock "clk" to source register is 3.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 10; CLK Node = 'clk'
+        Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC9; Fanout = 6; REG Node = 'lpm_counter:counter_rtl_0|dffs[4]'
+        Info: Total cell delay = 3.000 ns ( 100.00 % )
+    Info: + Micro clock to output delay of source is 1.000 ns
+    Info: + Longest register to pin delay is 13.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC9; Fanout = 6; REG Node = 'lpm_counter:counter_rtl_0|dffs[4]'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 9.000 ns; Loc. = LC8; Fanout = 1; COMB Node = 'vga_blue~6'
+        Info: 3: + IC(0.000 ns) + CELL(4.000 ns) = 13.000 ns; Loc. = PIN_9; Fanout = 0; PIN Node = 'vga_blue'
+        Info: Total cell delay = 11.000 ns ( 84.62 % )
+        Info: Total interconnect delay = 2.000 ns ( 15.38 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 182 megabytes
+    Info: Processing ended: Tue May 23 23:50:00 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

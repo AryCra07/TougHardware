@@ -1,5 +1,5 @@
 Assembler report for Clock
-Sun May 21 23:59:48 2023
+Tue May 23 16:05:23 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.pof
+  5. Assembler Device Options: C:/Users/Administrator/Desktop/FuckDataLogic/clock/Clock.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun May 21 23:59:48 2023 ;
+; Assembler Status      ; Successful - Tue May 23 16:05:23 2023 ;
 ; Revision Name         ; Clock                                 ;
 ; Top-level Entity Name ; Clock                                 ;
 ; Family                ; MAX7000S                              ;
@@ -73,24 +73,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------------+
-; Assembler Generated Files                             ;
-+-------------------------------------------------------+
-; File Name                                             ;
-+-------------------------------------------------------+
-; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.pof ;
-+-------------------------------------------------------+
++--------------------------------------------------------------+
+; Assembler Generated Files                                    ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; C:/Users/Administrator/Desktop/FuckDataLogic/clock/Clock.pof ;
++--------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.pof ;
-+----------------+----------------------------------------------------------------+
-; Option         ; Setting                                                        ;
-+----------------+----------------------------------------------------------------+
-; Device         ; EPM7128SLC84-15                                                ;
-; JTAG usercode  ; 0x00000000                                                     ;
-; Checksum       ; 0x001A7B6D                                                     ;
-+----------------+----------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Administrator/Desktop/FuckDataLogic/clock/Clock.pof ;
++----------------+-----------------------------------------------------------------------+
+; Option         ; Setting                                                               ;
++----------------+-----------------------------------------------------------------------+
+; Device         ; EPM7128SLC84-15                                                       ;
+; JTAG usercode  ; 0x00000000                                                            ;
+; Checksum       ; 0x001A83AF                                                            ;
++----------------+-----------------------------------------------------------------------+
 
 
 +--------------------+
@@ -99,12 +99,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Sun May 21 23:59:48 2023
+    Info: Processing started: Tue May 23 16:05:23 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Clock -c Clock
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 198 megabytes
-    Info: Processing ended: Sun May 21 23:59:48 2023
+    Info: Peak virtual memory: 183 megabytes
+    Info: Processing ended: Tue May 23 16:05:23 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

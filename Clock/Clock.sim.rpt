@@ -1,5 +1,5 @@
 Simulator report for Clock
-Mon May 22 00:08:28 2023
+Tue May 23 20:21:51 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 1224 nodes   ;
+; Simulation Netlist Size     ; 1230 nodes   ;
 ; Simulation Coverage         ;       0.00 % ;
 ; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
@@ -95,12 +95,12 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 1224         ;
-; Total output ports checked                          ; 1224         ;
+; Total nodes checked                                 ; 1230         ;
+; Total output ports checked                          ; 1230         ;
 ; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 1224         ;
-; Total output ports with no 1-value coverage         ; 1224         ;
-; Total output ports with no 0-value coverage         ; 1224         ;
+; Total output ports with no 1/0-value coverage       ; 1230         ;
+; Total output ports with no 1-value coverage         ; 1230         ;
+; Total output ports with no 0-value coverage         ; 1230         ;
 +-----------------------------------------------------+--------------+
 
 
@@ -195,12 +195,11 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Clock|set_hour:inst3|tmp_low[3]~3                                                        ; |Clock|set_hour:inst3|tmp_low[3]~3                                                        ; out              ;
 ; |Clock|set_hour:inst3|high_num[0]                                                         ; |Clock|set_hour:inst3|high_num[0]                                                         ; out              ;
 ; |Clock|hour:inst1|process_0~1                                                             ; |Clock|hour:inst1|process_0~1                                                             ; out0             ;
-; |Clock|hour:inst1|process_0~2                                                             ; |Clock|hour:inst1|process_0~2                                                             ; out0             ;
-; |Clock|hour:inst1|process_0~4                                                             ; |Clock|hour:inst1|process_0~4                                                             ; out0             ;
+; |Clock|hour:inst1|process_0~3                                                             ; |Clock|hour:inst1|process_0~3                                                             ; out0             ;
+; |Clock|hour:inst1|process_0~6                                                             ; |Clock|hour:inst1|process_0~6                                                             ; out0             ;
 ; |Clock|hour:inst1|process_0~7                                                             ; |Clock|hour:inst1|process_0~7                                                             ; out0             ;
-; |Clock|hour:inst1|process_0~8                                                             ; |Clock|hour:inst1|process_0~8                                                             ; out0             ;
+; |Clock|hour:inst1|process_0~9                                                             ; |Clock|hour:inst1|process_0~9                                                             ; out0             ;
 ; |Clock|hour:inst1|process_0~10                                                            ; |Clock|hour:inst1|process_0~10                                                            ; out0             ;
-; |Clock|hour:inst1|process_0~11                                                            ; |Clock|hour:inst1|process_0~11                                                            ; out0             ;
 ; |Clock|hour:inst1|tmp_high~0                                                              ; |Clock|hour:inst1|tmp_high~0                                                              ; out              ;
 ; |Clock|hour:inst1|tmp_high~1                                                              ; |Clock|hour:inst1|tmp_high~1                                                              ; out              ;
 ; |Clock|hour:inst1|tmp_high~2                                                              ; |Clock|hour:inst1|tmp_high~2                                                              ; out              ;
@@ -217,11 +216,11 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Clock|hour:inst1|tmp_low~6                                                               ; |Clock|hour:inst1|tmp_low~6                                                               ; out              ;
 ; |Clock|hour:inst1|tmp_low~7                                                               ; |Clock|hour:inst1|tmp_low~7                                                               ; out              ;
 ; |Clock|hour:inst1|tmp_low~8                                                               ; |Clock|hour:inst1|tmp_low~8                                                               ; out              ;
-; |Clock|hour:inst1|process_0~13                                                            ; |Clock|hour:inst1|process_0~13                                                            ; out0             ;
+; |Clock|hour:inst1|process_0~12                                                            ; |Clock|hour:inst1|process_0~12                                                            ; out0             ;
 ; |Clock|hour:inst1|hour_ring~0                                                             ; |Clock|hour:inst1|hour_ring~0                                                             ; out              ;
 ; |Clock|hour:inst1|hour_ring~1                                                             ; |Clock|hour:inst1|hour_ring~1                                                             ; out              ;
 ; |Clock|hour:inst1|hour_ring                                                               ; |Clock|hour:inst1|hour_ring                                                               ; regout           ;
-; |Clock|hour:inst1|process_0~14                                                            ; |Clock|hour:inst1|process_0~14                                                            ; out0             ;
+; |Clock|hour:inst1|process_0~13                                                            ; |Clock|hour:inst1|process_0~13                                                            ; out0             ;
 ; |Clock|hour:inst1|hour_ring~3                                                             ; |Clock|hour:inst1|hour_ring~3                                                             ; out              ;
 ; |Clock|hour:inst1|tmp_high~8                                                              ; |Clock|hour:inst1|tmp_high~8                                                              ; out              ;
 ; |Clock|hour:inst1|tmp_high~9                                                              ; |Clock|hour:inst1|tmp_high~9                                                              ; out              ;
@@ -240,7 +239,7 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Clock|hour:inst1|tmp_high[2]                                                             ; |Clock|hour:inst1|tmp_high[2]                                                             ; regout           ;
 ; |Clock|hour:inst1|tmp_high[1]                                                             ; |Clock|hour:inst1|tmp_high[1]                                                             ; regout           ;
 ; |Clock|hour:inst1|tmp_high[0]                                                             ; |Clock|hour:inst1|tmp_high[0]                                                             ; regout           ;
-; |Clock|hour:inst1|process_0~15                                                            ; |Clock|hour:inst1|process_0~15                                                            ; out0             ;
+; |Clock|hour:inst1|process_0~14                                                            ; |Clock|hour:inst1|process_0~14                                                            ; out0             ;
 ; |Clock|hour:inst1|out_low[3]                                                              ; |Clock|hour:inst1|out_low[3]                                                              ; out              ;
 ; |Clock|hour:inst1|out_low[2]                                                              ; |Clock|hour:inst1|out_low[2]                                                              ; out              ;
 ; |Clock|hour:inst1|out_low[1]                                                              ; |Clock|hour:inst1|out_low[1]                                                              ; out              ;
@@ -293,45 +292,44 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Clock|second:inst5|temp_cout~0                                                           ; |Clock|second:inst5|temp_cout~0                                                           ; out              ;
 ; |Clock|second:inst5|temp_cout                                                             ; |Clock|second:inst5|temp_cout                                                             ; regout           ;
 ; |Clock|second:inst5|process_0~10                                                          ; |Clock|second:inst5|process_0~10                                                          ; out0             ;
-; |Clock|second:inst5|temp_digit0~4                                                         ; |Clock|second:inst5|temp_digit0~4                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~5                                                         ; |Clock|second:inst5|temp_digit0~5                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~6                                                         ; |Clock|second:inst5|temp_digit0~6                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~7                                                         ; |Clock|second:inst5|temp_digit0~7                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~8                                                         ; |Clock|second:inst5|temp_digit0~8                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~9                                                         ; |Clock|second:inst5|temp_digit0~9                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~10                                                        ; |Clock|second:inst5|temp_digit0~10                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~11                                                        ; |Clock|second:inst5|temp_digit0~11                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~4                                                         ; |Clock|second:inst5|temp_digit1~4                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~5                                                         ; |Clock|second:inst5|temp_digit1~5                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~6                                                         ; |Clock|second:inst5|temp_digit1~6                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~7                                                         ; |Clock|second:inst5|temp_digit1~7                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~8                                                         ; |Clock|second:inst5|temp_digit1~8                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~9                                                         ; |Clock|second:inst5|temp_digit1~9                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~10                                                        ; |Clock|second:inst5|temp_digit1~10                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~11                                                        ; |Clock|second:inst5|temp_digit1~11                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~12                                                        ; |Clock|second:inst5|temp_digit0~12                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~13                                                        ; |Clock|second:inst5|temp_digit0~13                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~14                                                        ; |Clock|second:inst5|temp_digit0~14                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~15                                                        ; |Clock|second:inst5|temp_digit0~15                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~12                                                        ; |Clock|second:inst5|temp_digit1~12                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~13                                                        ; |Clock|second:inst5|temp_digit1~13                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~14                                                        ; |Clock|second:inst5|temp_digit1~14                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~15                                                        ; |Clock|second:inst5|temp_digit1~15                                                        ; out              ;
+; |Clock|second:inst5|tmp_digit0~4                                                          ; |Clock|second:inst5|tmp_digit0~4                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~5                                                          ; |Clock|second:inst5|tmp_digit0~5                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~6                                                          ; |Clock|second:inst5|tmp_digit0~6                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~7                                                          ; |Clock|second:inst5|tmp_digit0~7                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~8                                                          ; |Clock|second:inst5|tmp_digit0~8                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~9                                                          ; |Clock|second:inst5|tmp_digit0~9                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~10                                                         ; |Clock|second:inst5|tmp_digit0~10                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~11                                                         ; |Clock|second:inst5|tmp_digit0~11                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~4                                                          ; |Clock|second:inst5|tmp_digit1~4                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~5                                                          ; |Clock|second:inst5|tmp_digit1~5                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~6                                                          ; |Clock|second:inst5|tmp_digit1~6                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~7                                                          ; |Clock|second:inst5|tmp_digit1~7                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~8                                                          ; |Clock|second:inst5|tmp_digit1~8                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~9                                                          ; |Clock|second:inst5|tmp_digit1~9                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~10                                                         ; |Clock|second:inst5|tmp_digit1~10                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~11                                                         ; |Clock|second:inst5|tmp_digit1~11                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~12                                                         ; |Clock|second:inst5|tmp_digit0~12                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~13                                                         ; |Clock|second:inst5|tmp_digit0~13                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~14                                                         ; |Clock|second:inst5|tmp_digit0~14                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~15                                                         ; |Clock|second:inst5|tmp_digit0~15                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~12                                                         ; |Clock|second:inst5|tmp_digit1~12                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~13                                                         ; |Clock|second:inst5|tmp_digit1~13                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~14                                                         ; |Clock|second:inst5|tmp_digit1~14                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~15                                                         ; |Clock|second:inst5|tmp_digit1~15                                                         ; out              ;
 ; |Clock|second:inst5|temp_cout~2                                                           ; |Clock|second:inst5|temp_cout~2                                                           ; out              ;
-; |Clock|second:inst5|temp_digit0[3]                                                        ; |Clock|second:inst5|temp_digit0[3]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit0[2]                                                        ; |Clock|second:inst5|temp_digit0[2]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit0[1]                                                        ; |Clock|second:inst5|temp_digit0[1]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit0[0]                                                        ; |Clock|second:inst5|temp_digit0[0]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[3]                                                        ; |Clock|second:inst5|temp_digit1[3]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[2]                                                        ; |Clock|second:inst5|temp_digit1[2]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[1]                                                        ; |Clock|second:inst5|temp_digit1[1]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[0]                                                        ; |Clock|second:inst5|temp_digit1[0]                                                        ; regout           ;
+; |Clock|second:inst5|tmp_digit0[3]                                                         ; |Clock|second:inst5|tmp_digit0[3]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit0[2]                                                         ; |Clock|second:inst5|tmp_digit0[2]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit0[1]                                                         ; |Clock|second:inst5|tmp_digit0[1]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit0[0]                                                         ; |Clock|second:inst5|tmp_digit0[0]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[3]                                                         ; |Clock|second:inst5|tmp_digit1[3]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[2]                                                         ; |Clock|second:inst5|tmp_digit1[2]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[1]                                                         ; |Clock|second:inst5|tmp_digit1[1]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[0]                                                         ; |Clock|second:inst5|tmp_digit1[0]                                                         ; regout           ;
 ; |Clock|minute:inst|process_0~1                                                            ; |Clock|minute:inst|process_0~1                                                            ; out0             ;
-; |Clock|minute:inst|process_0~2                                                            ; |Clock|minute:inst|process_0~2                                                            ; out0             ;
-; |Clock|minute:inst|process_0~4                                                            ; |Clock|minute:inst|process_0~4                                                            ; out0             ;
+; |Clock|minute:inst|process_0~3                                                            ; |Clock|minute:inst|process_0~3                                                            ; out0             ;
+; |Clock|minute:inst|process_0~6                                                            ; |Clock|minute:inst|process_0~6                                                            ; out0             ;
 ; |Clock|minute:inst|process_0~7                                                            ; |Clock|minute:inst|process_0~7                                                            ; out0             ;
-; |Clock|minute:inst|process_0~8                                                            ; |Clock|minute:inst|process_0~8                                                            ; out0             ;
-; |Clock|minute:inst|process_0~10                                                           ; |Clock|minute:inst|process_0~10                                                           ; out0             ;
+; |Clock|minute:inst|process_0~9                                                            ; |Clock|minute:inst|process_0~9                                                            ; out0             ;
 ; |Clock|minute:inst|tmp_high~0                                                             ; |Clock|minute:inst|tmp_high~0                                                             ; out              ;
 ; |Clock|minute:inst|tmp_high~1                                                             ; |Clock|minute:inst|tmp_high~1                                                             ; out              ;
 ; |Clock|minute:inst|tmp_high~2                                                             ; |Clock|minute:inst|tmp_high~2                                                             ; out              ;
@@ -345,11 +343,11 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Clock|minute:inst|tmp_high~6                                                             ; |Clock|minute:inst|tmp_high~6                                                             ; out              ;
 ; |Clock|minute:inst|tmp_high~7                                                             ; |Clock|minute:inst|tmp_high~7                                                             ; out              ;
 ; |Clock|minute:inst|count~0                                                                ; |Clock|minute:inst|count~0                                                                ; out              ;
-; |Clock|minute:inst|process_0~12                                                           ; |Clock|minute:inst|process_0~12                                                           ; out0             ;
+; |Clock|minute:inst|process_0~11                                                           ; |Clock|minute:inst|process_0~11                                                           ; out0             ;
 ; |Clock|minute:inst|min_ring~0                                                             ; |Clock|minute:inst|min_ring~0                                                             ; out              ;
 ; |Clock|minute:inst|min_ring~1                                                             ; |Clock|minute:inst|min_ring~1                                                             ; out              ;
 ; |Clock|minute:inst|min_ring                                                               ; |Clock|minute:inst|min_ring                                                               ; regout           ;
-; |Clock|minute:inst|process_0~13                                                           ; |Clock|minute:inst|process_0~13                                                           ; out0             ;
+; |Clock|minute:inst|process_0~12                                                           ; |Clock|minute:inst|process_0~12                                                           ; out0             ;
 ; |Clock|minute:inst|min_ring~3                                                             ; |Clock|minute:inst|min_ring~3                                                             ; out              ;
 ; |Clock|minute:inst|tmp_low~5                                                              ; |Clock|minute:inst|tmp_low~5                                                              ; out              ;
 ; |Clock|minute:inst|tmp_low~6                                                              ; |Clock|minute:inst|tmp_low~6                                                              ; out              ;
@@ -370,7 +368,7 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Clock|minute:inst|tmp_high[1]                                                            ; |Clock|minute:inst|tmp_high[1]                                                            ; regout           ;
 ; |Clock|minute:inst|tmp_high[0]                                                            ; |Clock|minute:inst|tmp_high[0]                                                            ; regout           ;
 ; |Clock|minute:inst|count                                                                  ; |Clock|minute:inst|count                                                                  ; regout           ;
-; |Clock|minute:inst|process_0~14                                                           ; |Clock|minute:inst|process_0~14                                                           ; out0             ;
+; |Clock|minute:inst|process_0~13                                                           ; |Clock|minute:inst|process_0~13                                                           ; out0             ;
 ; |Clock|minute:inst|out_low[3]                                                             ; |Clock|minute:inst|out_low[3]                                                             ; out              ;
 ; |Clock|minute:inst|out_low[2]                                                             ; |Clock|minute:inst|out_low[2]                                                             ; out              ;
 ; |Clock|minute:inst|out_low[1]                                                             ; |Clock|minute:inst|out_low[1]                                                             ; out              ;
@@ -421,6 +419,14 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Clock|ring:inst7|LessThan1~6                                                             ; |Clock|ring:inst7|LessThan1~6                                                             ; out0             ;
 ; |Clock|ring:inst7|LessThan1~7                                                             ; |Clock|ring:inst7|LessThan1~7                                                             ; out0             ;
 ; |Clock|ring:inst7|LessThan1~8                                                             ; |Clock|ring:inst7|LessThan1~8                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~0                                                             ; |Clock|ring:inst7|LessThan2~0                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~1                                                             ; |Clock|ring:inst7|LessThan2~1                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~2                                                             ; |Clock|ring:inst7|LessThan2~2                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~3                                                             ; |Clock|ring:inst7|LessThan2~3                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~4                                                             ; |Clock|ring:inst7|LessThan2~4                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~5                                                             ; |Clock|ring:inst7|LessThan2~5                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~6                                                             ; |Clock|ring:inst7|LessThan2~6                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~7                                                             ; |Clock|ring:inst7|LessThan2~7                                                             ; out0             ;
 ; |Clock|set_hour:inst3|Equal0~0                                                            ; |Clock|set_hour:inst3|Equal0~0                                                            ; out0             ;
 ; |Clock|set_hour:inst3|Equal1~0                                                            ; |Clock|set_hour:inst3|Equal1~0                                                            ; out0             ;
 ; |Clock|set_hour:inst3|Equal2~0                                                            ; |Clock|set_hour:inst3|Equal2~0                                                            ; out0             ;
@@ -1428,12 +1434,11 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Clock|set_hour:inst3|tmp_low[3]~3                                                        ; |Clock|set_hour:inst3|tmp_low[3]~3                                                        ; out              ;
 ; |Clock|set_hour:inst3|high_num[0]                                                         ; |Clock|set_hour:inst3|high_num[0]                                                         ; out              ;
 ; |Clock|hour:inst1|process_0~1                                                             ; |Clock|hour:inst1|process_0~1                                                             ; out0             ;
-; |Clock|hour:inst1|process_0~2                                                             ; |Clock|hour:inst1|process_0~2                                                             ; out0             ;
-; |Clock|hour:inst1|process_0~4                                                             ; |Clock|hour:inst1|process_0~4                                                             ; out0             ;
+; |Clock|hour:inst1|process_0~3                                                             ; |Clock|hour:inst1|process_0~3                                                             ; out0             ;
+; |Clock|hour:inst1|process_0~6                                                             ; |Clock|hour:inst1|process_0~6                                                             ; out0             ;
 ; |Clock|hour:inst1|process_0~7                                                             ; |Clock|hour:inst1|process_0~7                                                             ; out0             ;
-; |Clock|hour:inst1|process_0~8                                                             ; |Clock|hour:inst1|process_0~8                                                             ; out0             ;
+; |Clock|hour:inst1|process_0~9                                                             ; |Clock|hour:inst1|process_0~9                                                             ; out0             ;
 ; |Clock|hour:inst1|process_0~10                                                            ; |Clock|hour:inst1|process_0~10                                                            ; out0             ;
-; |Clock|hour:inst1|process_0~11                                                            ; |Clock|hour:inst1|process_0~11                                                            ; out0             ;
 ; |Clock|hour:inst1|tmp_high~0                                                              ; |Clock|hour:inst1|tmp_high~0                                                              ; out              ;
 ; |Clock|hour:inst1|tmp_high~1                                                              ; |Clock|hour:inst1|tmp_high~1                                                              ; out              ;
 ; |Clock|hour:inst1|tmp_high~2                                                              ; |Clock|hour:inst1|tmp_high~2                                                              ; out              ;
@@ -1450,11 +1455,11 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Clock|hour:inst1|tmp_low~6                                                               ; |Clock|hour:inst1|tmp_low~6                                                               ; out              ;
 ; |Clock|hour:inst1|tmp_low~7                                                               ; |Clock|hour:inst1|tmp_low~7                                                               ; out              ;
 ; |Clock|hour:inst1|tmp_low~8                                                               ; |Clock|hour:inst1|tmp_low~8                                                               ; out              ;
-; |Clock|hour:inst1|process_0~13                                                            ; |Clock|hour:inst1|process_0~13                                                            ; out0             ;
+; |Clock|hour:inst1|process_0~12                                                            ; |Clock|hour:inst1|process_0~12                                                            ; out0             ;
 ; |Clock|hour:inst1|hour_ring~0                                                             ; |Clock|hour:inst1|hour_ring~0                                                             ; out              ;
 ; |Clock|hour:inst1|hour_ring~1                                                             ; |Clock|hour:inst1|hour_ring~1                                                             ; out              ;
 ; |Clock|hour:inst1|hour_ring                                                               ; |Clock|hour:inst1|hour_ring                                                               ; regout           ;
-; |Clock|hour:inst1|process_0~14                                                            ; |Clock|hour:inst1|process_0~14                                                            ; out0             ;
+; |Clock|hour:inst1|process_0~13                                                            ; |Clock|hour:inst1|process_0~13                                                            ; out0             ;
 ; |Clock|hour:inst1|hour_ring~3                                                             ; |Clock|hour:inst1|hour_ring~3                                                             ; out              ;
 ; |Clock|hour:inst1|tmp_high~8                                                              ; |Clock|hour:inst1|tmp_high~8                                                              ; out              ;
 ; |Clock|hour:inst1|tmp_high~9                                                              ; |Clock|hour:inst1|tmp_high~9                                                              ; out              ;
@@ -1473,7 +1478,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Clock|hour:inst1|tmp_high[2]                                                             ; |Clock|hour:inst1|tmp_high[2]                                                             ; regout           ;
 ; |Clock|hour:inst1|tmp_high[1]                                                             ; |Clock|hour:inst1|tmp_high[1]                                                             ; regout           ;
 ; |Clock|hour:inst1|tmp_high[0]                                                             ; |Clock|hour:inst1|tmp_high[0]                                                             ; regout           ;
-; |Clock|hour:inst1|process_0~15                                                            ; |Clock|hour:inst1|process_0~15                                                            ; out0             ;
+; |Clock|hour:inst1|process_0~14                                                            ; |Clock|hour:inst1|process_0~14                                                            ; out0             ;
 ; |Clock|hour:inst1|out_low[3]                                                              ; |Clock|hour:inst1|out_low[3]                                                              ; out              ;
 ; |Clock|hour:inst1|out_low[2]                                                              ; |Clock|hour:inst1|out_low[2]                                                              ; out              ;
 ; |Clock|hour:inst1|out_low[1]                                                              ; |Clock|hour:inst1|out_low[1]                                                              ; out              ;
@@ -1526,45 +1531,44 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Clock|second:inst5|temp_cout~0                                                           ; |Clock|second:inst5|temp_cout~0                                                           ; out              ;
 ; |Clock|second:inst5|temp_cout                                                             ; |Clock|second:inst5|temp_cout                                                             ; regout           ;
 ; |Clock|second:inst5|process_0~10                                                          ; |Clock|second:inst5|process_0~10                                                          ; out0             ;
-; |Clock|second:inst5|temp_digit0~4                                                         ; |Clock|second:inst5|temp_digit0~4                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~5                                                         ; |Clock|second:inst5|temp_digit0~5                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~6                                                         ; |Clock|second:inst5|temp_digit0~6                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~7                                                         ; |Clock|second:inst5|temp_digit0~7                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~8                                                         ; |Clock|second:inst5|temp_digit0~8                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~9                                                         ; |Clock|second:inst5|temp_digit0~9                                                         ; out              ;
-; |Clock|second:inst5|temp_digit0~10                                                        ; |Clock|second:inst5|temp_digit0~10                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~11                                                        ; |Clock|second:inst5|temp_digit0~11                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~4                                                         ; |Clock|second:inst5|temp_digit1~4                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~5                                                         ; |Clock|second:inst5|temp_digit1~5                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~6                                                         ; |Clock|second:inst5|temp_digit1~6                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~7                                                         ; |Clock|second:inst5|temp_digit1~7                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~8                                                         ; |Clock|second:inst5|temp_digit1~8                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~9                                                         ; |Clock|second:inst5|temp_digit1~9                                                         ; out              ;
-; |Clock|second:inst5|temp_digit1~10                                                        ; |Clock|second:inst5|temp_digit1~10                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~11                                                        ; |Clock|second:inst5|temp_digit1~11                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~12                                                        ; |Clock|second:inst5|temp_digit0~12                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~13                                                        ; |Clock|second:inst5|temp_digit0~13                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~14                                                        ; |Clock|second:inst5|temp_digit0~14                                                        ; out              ;
-; |Clock|second:inst5|temp_digit0~15                                                        ; |Clock|second:inst5|temp_digit0~15                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~12                                                        ; |Clock|second:inst5|temp_digit1~12                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~13                                                        ; |Clock|second:inst5|temp_digit1~13                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~14                                                        ; |Clock|second:inst5|temp_digit1~14                                                        ; out              ;
-; |Clock|second:inst5|temp_digit1~15                                                        ; |Clock|second:inst5|temp_digit1~15                                                        ; out              ;
+; |Clock|second:inst5|tmp_digit0~4                                                          ; |Clock|second:inst5|tmp_digit0~4                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~5                                                          ; |Clock|second:inst5|tmp_digit0~5                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~6                                                          ; |Clock|second:inst5|tmp_digit0~6                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~7                                                          ; |Clock|second:inst5|tmp_digit0~7                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~8                                                          ; |Clock|second:inst5|tmp_digit0~8                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~9                                                          ; |Clock|second:inst5|tmp_digit0~9                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit0~10                                                         ; |Clock|second:inst5|tmp_digit0~10                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~11                                                         ; |Clock|second:inst5|tmp_digit0~11                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~4                                                          ; |Clock|second:inst5|tmp_digit1~4                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~5                                                          ; |Clock|second:inst5|tmp_digit1~5                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~6                                                          ; |Clock|second:inst5|tmp_digit1~6                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~7                                                          ; |Clock|second:inst5|tmp_digit1~7                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~8                                                          ; |Clock|second:inst5|tmp_digit1~8                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~9                                                          ; |Clock|second:inst5|tmp_digit1~9                                                          ; out              ;
+; |Clock|second:inst5|tmp_digit1~10                                                         ; |Clock|second:inst5|tmp_digit1~10                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~11                                                         ; |Clock|second:inst5|tmp_digit1~11                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~12                                                         ; |Clock|second:inst5|tmp_digit0~12                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~13                                                         ; |Clock|second:inst5|tmp_digit0~13                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~14                                                         ; |Clock|second:inst5|tmp_digit0~14                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit0~15                                                         ; |Clock|second:inst5|tmp_digit0~15                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~12                                                         ; |Clock|second:inst5|tmp_digit1~12                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~13                                                         ; |Clock|second:inst5|tmp_digit1~13                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~14                                                         ; |Clock|second:inst5|tmp_digit1~14                                                         ; out              ;
+; |Clock|second:inst5|tmp_digit1~15                                                         ; |Clock|second:inst5|tmp_digit1~15                                                         ; out              ;
 ; |Clock|second:inst5|temp_cout~2                                                           ; |Clock|second:inst5|temp_cout~2                                                           ; out              ;
-; |Clock|second:inst5|temp_digit0[3]                                                        ; |Clock|second:inst5|temp_digit0[3]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit0[2]                                                        ; |Clock|second:inst5|temp_digit0[2]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit0[1]                                                        ; |Clock|second:inst5|temp_digit0[1]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit0[0]                                                        ; |Clock|second:inst5|temp_digit0[0]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[3]                                                        ; |Clock|second:inst5|temp_digit1[3]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[2]                                                        ; |Clock|second:inst5|temp_digit1[2]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[1]                                                        ; |Clock|second:inst5|temp_digit1[1]                                                        ; regout           ;
-; |Clock|second:inst5|temp_digit1[0]                                                        ; |Clock|second:inst5|temp_digit1[0]                                                        ; regout           ;
+; |Clock|second:inst5|tmp_digit0[3]                                                         ; |Clock|second:inst5|tmp_digit0[3]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit0[2]                                                         ; |Clock|second:inst5|tmp_digit0[2]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit0[1]                                                         ; |Clock|second:inst5|tmp_digit0[1]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit0[0]                                                         ; |Clock|second:inst5|tmp_digit0[0]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[3]                                                         ; |Clock|second:inst5|tmp_digit1[3]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[2]                                                         ; |Clock|second:inst5|tmp_digit1[2]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[1]                                                         ; |Clock|second:inst5|tmp_digit1[1]                                                         ; regout           ;
+; |Clock|second:inst5|tmp_digit1[0]                                                         ; |Clock|second:inst5|tmp_digit1[0]                                                         ; regout           ;
 ; |Clock|minute:inst|process_0~1                                                            ; |Clock|minute:inst|process_0~1                                                            ; out0             ;
-; |Clock|minute:inst|process_0~2                                                            ; |Clock|minute:inst|process_0~2                                                            ; out0             ;
-; |Clock|minute:inst|process_0~4                                                            ; |Clock|minute:inst|process_0~4                                                            ; out0             ;
+; |Clock|minute:inst|process_0~3                                                            ; |Clock|minute:inst|process_0~3                                                            ; out0             ;
+; |Clock|minute:inst|process_0~6                                                            ; |Clock|minute:inst|process_0~6                                                            ; out0             ;
 ; |Clock|minute:inst|process_0~7                                                            ; |Clock|minute:inst|process_0~7                                                            ; out0             ;
-; |Clock|minute:inst|process_0~8                                                            ; |Clock|minute:inst|process_0~8                                                            ; out0             ;
-; |Clock|minute:inst|process_0~10                                                           ; |Clock|minute:inst|process_0~10                                                           ; out0             ;
+; |Clock|minute:inst|process_0~9                                                            ; |Clock|minute:inst|process_0~9                                                            ; out0             ;
 ; |Clock|minute:inst|tmp_high~0                                                             ; |Clock|minute:inst|tmp_high~0                                                             ; out              ;
 ; |Clock|minute:inst|tmp_high~1                                                             ; |Clock|minute:inst|tmp_high~1                                                             ; out              ;
 ; |Clock|minute:inst|tmp_high~2                                                             ; |Clock|minute:inst|tmp_high~2                                                             ; out              ;
@@ -1578,11 +1582,11 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Clock|minute:inst|tmp_high~6                                                             ; |Clock|minute:inst|tmp_high~6                                                             ; out              ;
 ; |Clock|minute:inst|tmp_high~7                                                             ; |Clock|minute:inst|tmp_high~7                                                             ; out              ;
 ; |Clock|minute:inst|count~0                                                                ; |Clock|minute:inst|count~0                                                                ; out              ;
-; |Clock|minute:inst|process_0~12                                                           ; |Clock|minute:inst|process_0~12                                                           ; out0             ;
+; |Clock|minute:inst|process_0~11                                                           ; |Clock|minute:inst|process_0~11                                                           ; out0             ;
 ; |Clock|minute:inst|min_ring~0                                                             ; |Clock|minute:inst|min_ring~0                                                             ; out              ;
 ; |Clock|minute:inst|min_ring~1                                                             ; |Clock|minute:inst|min_ring~1                                                             ; out              ;
 ; |Clock|minute:inst|min_ring                                                               ; |Clock|minute:inst|min_ring                                                               ; regout           ;
-; |Clock|minute:inst|process_0~13                                                           ; |Clock|minute:inst|process_0~13                                                           ; out0             ;
+; |Clock|minute:inst|process_0~12                                                           ; |Clock|minute:inst|process_0~12                                                           ; out0             ;
 ; |Clock|minute:inst|min_ring~3                                                             ; |Clock|minute:inst|min_ring~3                                                             ; out              ;
 ; |Clock|minute:inst|tmp_low~5                                                              ; |Clock|minute:inst|tmp_low~5                                                              ; out              ;
 ; |Clock|minute:inst|tmp_low~6                                                              ; |Clock|minute:inst|tmp_low~6                                                              ; out              ;
@@ -1603,7 +1607,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Clock|minute:inst|tmp_high[1]                                                            ; |Clock|minute:inst|tmp_high[1]                                                            ; regout           ;
 ; |Clock|minute:inst|tmp_high[0]                                                            ; |Clock|minute:inst|tmp_high[0]                                                            ; regout           ;
 ; |Clock|minute:inst|count                                                                  ; |Clock|minute:inst|count                                                                  ; regout           ;
-; |Clock|minute:inst|process_0~14                                                           ; |Clock|minute:inst|process_0~14                                                           ; out0             ;
+; |Clock|minute:inst|process_0~13                                                           ; |Clock|minute:inst|process_0~13                                                           ; out0             ;
 ; |Clock|minute:inst|out_low[3]                                                             ; |Clock|minute:inst|out_low[3]                                                             ; out              ;
 ; |Clock|minute:inst|out_low[2]                                                             ; |Clock|minute:inst|out_low[2]                                                             ; out              ;
 ; |Clock|minute:inst|out_low[1]                                                             ; |Clock|minute:inst|out_low[1]                                                             ; out              ;
@@ -1654,6 +1658,14 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Clock|ring:inst7|LessThan1~6                                                             ; |Clock|ring:inst7|LessThan1~6                                                             ; out0             ;
 ; |Clock|ring:inst7|LessThan1~7                                                             ; |Clock|ring:inst7|LessThan1~7                                                             ; out0             ;
 ; |Clock|ring:inst7|LessThan1~8                                                             ; |Clock|ring:inst7|LessThan1~8                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~0                                                             ; |Clock|ring:inst7|LessThan2~0                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~1                                                             ; |Clock|ring:inst7|LessThan2~1                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~2                                                             ; |Clock|ring:inst7|LessThan2~2                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~3                                                             ; |Clock|ring:inst7|LessThan2~3                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~4                                                             ; |Clock|ring:inst7|LessThan2~4                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~5                                                             ; |Clock|ring:inst7|LessThan2~5                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~6                                                             ; |Clock|ring:inst7|LessThan2~6                                                             ; out0             ;
+; |Clock|ring:inst7|LessThan2~7                                                             ; |Clock|ring:inst7|LessThan2~7                                                             ; out0             ;
 ; |Clock|set_hour:inst3|Equal0~0                                                            ; |Clock|set_hour:inst3|Equal0~0                                                            ; out0             ;
 ; |Clock|set_hour:inst3|Equal1~0                                                            ; |Clock|set_hour:inst3|Equal1~0                                                            ; out0             ;
 ; |Clock|set_hour:inst3|Equal2~0                                                            ; |Clock|set_hour:inst3|Equal2~0                                                            ; out0             ;
@@ -2591,9 +2603,9 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Mon May 22 00:08:28 2023
+    Info: Processing started: Tue May 23 20:21:51 2023
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Clock -c Clock
-Info: Using vector source file "C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.vwf"
+Info: Using vector source file "C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/clock/Clock.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
@@ -2601,7 +2613,7 @@ Info: Simulation coverage is       0.00 %
 Info: Number of transitions in simulation is 0
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 157 megabytes
-    Info: Processing ended: Mon May 22 00:08:28 2023
+    Info: Processing ended: Tue May 23 20:21:51 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

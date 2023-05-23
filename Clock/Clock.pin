@@ -81,48 +81,48 @@ VCCIO                        : 13        : power  :                   : 5.0V    
 TDI                          : 14        : input  : TTL               :         :           : N              
 RESERVED                     : 15        :        :                   :         :           :                
 RESERVED                     : 16        :        :                   :         :           :                
-out_low_min[1]               : 17        : output : TTL               :         :           : Y              
-out_low_min[0]               : 18        : output : TTL               :         :           : Y              
+out_low_min[2]               : 17        : output : TTL               :         :           : Y              
+out_low_min[3]               : 18        : output : TTL               :         :           : Y              
 GND                          : 19        : gnd    :                   :         :           :                
-out_high_hour[3]             : 20        : output : TTL               :         :           : Y              
-out_high_hour[2]             : 21        : output : TTL               :         :           : Y              
-out_high_hour[1]             : 22        : output : TTL               :         :           : Y              
+out_high_hour[0]             : 20        : output : TTL               :         :           : Y              
+out_high_hour[1]             : 21        : output : TTL               :         :           : Y              
+out_high_hour[2]             : 22        : output : TTL               :         :           : Y              
 TMS                          : 23        : input  : TTL               :         :           : N              
-out_high_hour[0]             : 24        : output : TTL               :         :           : Y              
-out_low_hour[3]              : 25        : output : TTL               :         :           : Y              
+out_high_hour[3]             : 24        : output : TTL               :         :           : Y              
+out_low_hour[0]              : 25        : output : TTL               :         :           : Y              
 VCCIO                        : 26        : power  :                   : 5.0V    :           :                
-out_low_hour[2]              : 27        : output : TTL               :         :           : Y              
-out_low_hour[1]              : 28        : output : TTL               :         :           : Y              
-out_low_hour[0]              : 29        : output : TTL               :         :           : Y              
-out_high_min[3]              : 30        : output : TTL               :         :           : Y              
-out_high_min[2]              : 31        : output : TTL               :         :           : Y              
+out_low_hour[1]              : 27        : output : TTL               :         :           : Y              
+out_low_hour[2]              : 28        : output : TTL               :         :           : Y              
+out_low_hour[3]              : 29        : output : TTL               :         :           : Y              
+out_high_min[0]              : 30        : output : TTL               :         :           : Y              
+out_high_min[1]              : 31        : output : TTL               :         :           : Y              
 GND                          : 32        : gnd    :                   :         :           :                
-out_high_min[1]              : 33        : output : TTL               :         :           : Y              
-out_high_min[0]              : 34        : output : TTL               :         :           : Y              
-out_low_min[3]               : 35        : output : TTL               :         :           : Y              
-out_low_min[2]               : 36        : output : TTL               :         :           : Y              
-digit1[3]                    : 37        : output : TTL               :         :           : Y              
+out_high_min[2]              : 33        : output : TTL               :         :           : Y              
+out_high_min[3]              : 34        : output : TTL               :         :           : Y              
+out_low_min[0]               : 35        : output : TTL               :         :           : Y              
+out_low_min[1]               : 36        : output : TTL               :         :           : Y              
+digit1[0]                    : 37        : output : TTL               :         :           : Y              
 VCCIO                        : 38        : power  :                   : 5.0V    :           :                
-digit1[2]                    : 39        : output : TTL               :         :           : Y              
-digit1[1]                    : 40        : output : TTL               :         :           : Y              
-digit1[0]                    : 41        : output : TTL               :         :           : Y              
+digit1[1]                    : 39        : output : TTL               :         :           : Y              
+digit1[2]                    : 40        : output : TTL               :         :           : Y              
+digit1[3]                    : 41        : output : TTL               :         :           : Y              
 GND                          : 42        : gnd    :                   :         :           :                
 VCCINT                       : 43        : power  :                   : 5.0V    :           :                
-light[6]                     : 44        : output : TTL               :         :           : Y              
-light[5]                     : 45        : output : TTL               :         :           : Y              
-light[4]                     : 46        : output : TTL               :         :           : Y              
+light[0]                     : 44        : output : TTL               :         :           : Y              
+light[1]                     : 45        : output : TTL               :         :           : Y              
+light[2]                     : 46        : output : TTL               :         :           : Y              
 GND                          : 47        : gnd    :                   :         :           :                
 light[3]                     : 48        : output : TTL               :         :           : Y              
-light[2]                     : 49        : output : TTL               :         :           : Y              
-light[1]                     : 50        : output : TTL               :         :           : Y              
-light[0]                     : 51        : output : TTL               :         :           : Y              
+light[4]                     : 49        : output : TTL               :         :           : Y              
+light[5]                     : 50        : output : TTL               :         :           : Y              
+light[6]                     : 51        : output : TTL               :         :           : Y              
 qout                         : 52        : output : TTL               :         :           : Y              
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
 clr                          : 54        : input  : TTL               :         :           : Y              
 RESERVED                     : 55        :        :                   :         :           :                
 RESERVED                     : 56        :        :                   :         :           :                
-RESERVED                     : 57        :        :                   :         :           :                
-clk_1                        : 58        : input  : TTL               :         :           : Y              
+clk_1                        : 57        : input  : TTL               :         :           : Y              
+RESERVED                     : 58        :        :                   :         :           :                
 GND                          : 59        : gnd    :                   :         :           :                
 qd                           : 60        : input  : TTL               :         :           : Y              
 RESERVED                     : 61        :        :                   :         :           :                

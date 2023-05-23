@@ -45,7 +45,7 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk_1'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 32.26 MHz ( period = 31.000 ns )
+Actual Time    : 31.25 MHz ( period = 32.000 ns )
 From           : hour:inst1|hour_ring
 To             : ring:inst7|qout
 From Clock     : clk_1

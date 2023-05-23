@@ -1,0 +1,31 @@
+|vga_display
+clk => vga_vsync~reg0.CLK
+clk => vga_hsync~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+rst => vga_vsync~reg0.ACLR
+rst => vga_hsync~reg0.ACLR
+rst => counter[0].ACLR
+rst => counter[1].ACLR
+rst => counter[2].ACLR
+rst => counter[3].ACLR
+rst => counter[4].ACLR
+rst => counter[5].ACLR
+rst => counter[6].ACLR
+rst => counter[7].ACLR
+rst => mode_state[0].ACLR
+rst => mode_state[1].ACLR
+qd => ~NO_FANOUT~
+vga_hsync <= vga_hsync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_vsync <= vga_vsync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_red <= <GND>
+vga_green <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+vga_blue <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+

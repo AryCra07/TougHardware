@@ -20,92 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-set_min
-# storage
-db|Clock.(2).cnf
-db|Clock.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-set_min.vhd
-d475bec35d3a510ef8239c18061c10
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-set_min:inst2
-}
-# lmf
-d:|quarii|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-set_hour
-# storage
-db|Clock.(4).cnf
-db|Clock.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-set_hour.vhd
-e49d14712f63642625ba2a531151aabb
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-set_hour:inst3
-}
-# lmf
-d:|quarii|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-Clock
-# storage
-db|Clock.(0).cnf
-db|Clock.(0).cnf
-# case_insensitive
-# source_file
-clock.bdf
-b5f8571160da877d9c58237b6681a027
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 ring
 # storage
 db|Clock.(1).cnf
@@ -117,7 +31,7 @@ ON
 # case_insensitive
 # source_file
 ring.vhd
-b41dc8f5af18ece6b27d8b1dbbc0
+b22aa65bf541b45b666f41ddbcb88142
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -133,7 +47,7 @@ ON
 ring:inst7
 }
 # lmf
-d:|quarii|quartus|lmf|maxplus2.lmf
+|altera|91|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -141,8 +55,8 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 minute
 # storage
-db|Clock.(3).cnf
-db|Clock.(3).cnf
+db|Clock.(2).cnf
+db|Clock.(2).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -150,7 +64,7 @@ ON
 # case_insensitive
 # source_file
 minute.vhd
-6de4fc6bb7589e915aafb71208ef79e
+2f6721b1b6882840ee33109396ed8e58
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -166,7 +80,7 @@ ON
 minute:inst
 }
 # lmf
-d:|quarii|quartus|lmf|maxplus2.lmf
+|altera|91|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -174,8 +88,8 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 second
 # storage
-db|Clock.(5).cnf
-db|Clock.(5).cnf
+db|Clock.(3).cnf
+db|Clock.(3).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -183,7 +97,7 @@ ON
 # case_insensitive
 # source_file
 second.vhd
-d8d8d828b44d7f373bebc4f281aa886
+e1fa5b5370d1f1bcdd86e3b62f5a4aad
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -199,7 +113,40 @@ ON
 second:inst5
 }
 # lmf
-d:|quarii|quartus|lmf|maxplus2.lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+set_min
+# storage
+db|Clock.(4).cnf
+db|Clock.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+set_min.vhd
+9586ce81df72a2d82dabb289e52d2a7c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+set_min:inst2
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -207,8 +154,8 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 hour
 # storage
-db|Clock.(6).cnf
-db|Clock.(6).cnf
+db|Clock.(5).cnf
+db|Clock.(5).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -216,7 +163,7 @@ ON
 # case_insensitive
 # source_file
 hour.vhd
-2918e294f50af557a7227eb6ea6ce9d
+1b964f5835d7c8609a6e30f4843739a1
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -232,7 +179,40 @@ ON
 hour:inst1
 }
 # lmf
-d:|quarii|quartus|lmf|maxplus2.lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+set_hour
+# storage
+db|Clock.(6).cnf
+db|Clock.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+set_hour.vhd
+621a717516448fa01aab33948e78c3c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+set_hour:inst3
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -265,7 +245,7 @@ ON
 light:inst4
 }
 # lmf
-d:|quarii|quartus|lmf|maxplus2.lmf
+|altera|91|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -277,7 +257,7 @@ db|Clock.(8).cnf
 db|Clock.(8).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|lpm_counter.tdf
+|altera|91|quartus|libraries|megafunctions|lpm_counter.tdf
 ea80917e5f6a67b6043b433538e1f4b
 7
 # user_parameter {
@@ -405,7 +385,7 @@ db|Clock.(9).cnf
 db|Clock.(9).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|lpm_add_sub.tdf
+|altera|91|quartus|libraries|megafunctions|lpm_add_sub.tdf
 48629daa7d9afedc175e3e79ef6f21
 7
 # user_parameter {
@@ -537,7 +517,7 @@ db|Clock.(10).cnf
 db|Clock.(10).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|addcore.tdf
+|altera|91|quartus|libraries|megafunctions|addcore.tdf
 585b16685138690776fc2f6c87d22c1
 7
 # user_parameter {
@@ -637,7 +617,7 @@ db|Clock.(11).cnf
 db|Clock.(11).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|a_csnbuffer.tdf
+|altera|91|quartus|libraries|megafunctions|a_csnbuffer.tdf
 c1301d85d34da53a3447546d6da856ca
 7
 # user_parameter {
@@ -672,7 +652,7 @@ db|Clock.(12).cnf
 db|Clock.(12).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|a_csnbuffer.tdf
+|altera|91|quartus|libraries|megafunctions|a_csnbuffer.tdf
 c1301d85d34da53a3447546d6da856ca
 7
 # user_parameter {
@@ -725,7 +705,7 @@ db|Clock.(13).cnf
 db|Clock.(13).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|addcore.tdf
+|altera|91|quartus|libraries|megafunctions|addcore.tdf
 585b16685138690776fc2f6c87d22c1
 7
 # user_parameter {
@@ -837,7 +817,7 @@ db|Clock.(14).cnf
 db|Clock.(14).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|a_csnbuffer.tdf
+|altera|91|quartus|libraries|megafunctions|a_csnbuffer.tdf
 c1301d85d34da53a3447546d6da856ca
 7
 # user_parameter {
@@ -872,7 +852,7 @@ db|Clock.(15).cnf
 db|Clock.(15).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|a_csnbuffer.tdf
+|altera|91|quartus|libraries|megafunctions|a_csnbuffer.tdf
 c1301d85d34da53a3447546d6da856ca
 7
 # user_parameter {
@@ -949,7 +929,7 @@ db|Clock.(16).cnf
 db|Clock.(16).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|altshift.tdf
+|altera|91|quartus|libraries|megafunctions|altshift.tdf
 db48b1cbcf4dd9551486f5b8c7a8d9
 7
 # user_parameter {
@@ -998,7 +978,7 @@ db|Clock.(17).cnf
 db|Clock.(17).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|altshift.tdf
+|altera|91|quartus|libraries|megafunctions|altshift.tdf
 db48b1cbcf4dd9551486f5b8c7a8d9
 7
 # user_parameter {
@@ -1029,7 +1009,7 @@ db|Clock.(18).cnf
 db|Clock.(18).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|lpm_constant.tdf
+|altera|91|quartus|libraries|megafunctions|lpm_constant.tdf
 eb6dfbf4944a55f9ca719d52154e40e2
 7
 # user_parameter {
@@ -1060,7 +1040,7 @@ db|Clock.(19).cnf
 db|Clock.(19).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|lpm_counter.tdf
+|altera|91|quartus|libraries|megafunctions|lpm_counter.tdf
 ea80917e5f6a67b6043b433538e1f4b
 7
 # user_parameter {
@@ -1173,7 +1153,7 @@ db|Clock.(20).cnf
 db|Clock.(20).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|lpm_add_sub.tdf
+|altera|91|quartus|libraries|megafunctions|lpm_add_sub.tdf
 48629daa7d9afedc175e3e79ef6f21
 7
 # user_parameter {
@@ -1305,7 +1285,7 @@ db|Clock.(21).cnf
 db|Clock.(21).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|addcore.tdf
+|altera|91|quartus|libraries|megafunctions|addcore.tdf
 585b16685138690776fc2f6c87d22c1
 7
 # user_parameter {
@@ -1405,7 +1385,7 @@ db|Clock.(22).cnf
 db|Clock.(22).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|addcore.tdf
+|altera|91|quartus|libraries|megafunctions|addcore.tdf
 585b16685138690776fc2f6c87d22c1
 7
 # user_parameter {
@@ -1520,7 +1500,7 @@ db|Clock.(23).cnf
 db|Clock.(23).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|lpm_add_sub.tdf
+|altera|91|quartus|libraries|megafunctions|lpm_add_sub.tdf
 48629daa7d9afedc175e3e79ef6f21
 7
 # user_parameter {
@@ -1670,7 +1650,7 @@ db|Clock.(24).cnf
 db|Clock.(24).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|addcore.tdf
+|altera|91|quartus|libraries|megafunctions|addcore.tdf
 585b16685138690776fc2f6c87d22c1
 7
 # user_parameter {
@@ -1788,7 +1768,7 @@ db|Clock.(25).cnf
 db|Clock.(25).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|a_csnbuffer.tdf
+|altera|91|quartus|libraries|megafunctions|a_csnbuffer.tdf
 c1301d85d34da53a3447546d6da856ca
 7
 # user_parameter {
@@ -1823,7 +1803,7 @@ db|Clock.(26).cnf
 db|Clock.(26).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|a_csnbuffer.tdf
+|altera|91|quartus|libraries|megafunctions|a_csnbuffer.tdf
 c1301d85d34da53a3447546d6da856ca
 7
 # user_parameter {
@@ -1888,7 +1868,7 @@ db|Clock.(27).cnf
 db|Clock.(27).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|addcore.tdf
+|altera|91|quartus|libraries|megafunctions|addcore.tdf
 585b16685138690776fc2f6c87d22c1
 7
 # user_parameter {
@@ -2027,7 +2007,7 @@ db|Clock.(28).cnf
 db|Clock.(28).cnf
 # case_insensitive
 # source_file
-d:|quarii|quartus|libraries|megafunctions|altshift.tdf
+|altera|91|quartus|libraries|megafunctions|altshift.tdf
 db48b1cbcf4dd9551486f5b8c7a8d9
 7
 # user_parameter {
@@ -2077,6 +2057,26 @@ data1
 data0
 -1
 3
+}
+# macro_sequence
+
+# end
+# entity
+Clock
+# storage
+db|Clock.(0).cnf
+db|Clock.(0).cnf
+# case_insensitive
+# source_file
+clock.bdf
+40f82c822dbcbf3b55fc18245c3f8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

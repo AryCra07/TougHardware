@@ -1,5 +1,5 @@
 Flow report for Clock
-Sun May 21 23:59:49 2023
+Tue May 23 16:05:24 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------+
 ; Flow Summary                                                       ;
 +-------------------------+------------------------------------------+
-; Flow Status             ; Successful - Sun May 21 23:59:49 2023    ;
+; Flow Status             ; Successful - Tue May 23 16:05:24 2023    ;
 ; Quartus II Version      ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name           ; Clock                                    ;
 ; Top-level Entity Name   ; Clock                                    ;
@@ -46,7 +46,7 @@ applicable agreement for further details.
 ; Device                  ; EPM7128SLC84-15                          ;
 ; Timing Models           ; Final                                    ;
 ; Met timing requirements ; Yes                                      ;
-; Total macrocells        ; 102 / 128 ( 80 % )                       ;
+; Total macrocells        ; 103 / 128 ( 80 % )                       ;
 ; Total pins              ; 38 / 68 ( 56 % )                         ;
 +-------------------------+------------------------------------------+
 
@@ -56,23 +56,24 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/21/2023 23:59:44 ;
+; Start date & time ; 05/23/2023 16:05:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Clock               ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                          ;
-+------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                                                 ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 273270821169370.168468478407504                       ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                                                     ; --            ; --          ; --             ;
-; MISC_FILE                          ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.dpf ; --            ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                   ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                 ;
++------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                                                        ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 2200299517014.168482912002884                                ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                                           ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.dpf        ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/Administrator/Desktop/FuckDataLogic/clock/Clock.dpf ; --            ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                          ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -80,11 +81,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 246 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:00     ; 1.0                     ; 210 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 198 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 169 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 230 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 181 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 182 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 155 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -93,10 +94,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; LAPTOP-8CBVQ5F7  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; LAPTOP-8CBVQ5F7  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; LAPTOP-8CBVQ5F7  ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; LAPTOP-8CBVQ5F7  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; 722-39           ; Windows Vista ; 6.1        ; x86_64         ;
+; Fitter                  ; 722-39           ; Windows Vista ; 6.1        ; x86_64         ;
+; Assembler               ; 722-39           ; Windows Vista ; 6.1        ; x86_64         ;
+; Classic Timing Analyzer ; 722-39           ; Windows Vista ; 6.1        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
