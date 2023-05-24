@@ -1,5 +1,5 @@
 Fitter report for Clock
-Tue May 23 16:05:22 2023
+Wed May 24 20:56:30 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -52,10 +52,10 @@ applicable agreement for further details.
 +------------------------------------------------------------------+
 ; Fitter Summary                                                   ;
 +-----------------------+------------------------------------------+
-; Fitter Status         ; Successful - Tue May 23 16:05:22 2023    ;
+; Fitter Status         ; Successful - Wed May 24 20:56:30 2023    ;
 ; Quartus II Version    ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name         ; Clock                                    ;
-; Top-level Entity Name ; Clock                                    ;
+; Top-level Entity Name ; clock                                    ;
 ; Family                ; MAX7000S                                 ;
 ; Device                ; EPM7128SLC84-15                          ;
 ; Timing Models         ; Final                                    ;
@@ -91,22 +91,22 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;   0.0%      ;
+;     2-16 processors        ;   0.0%      ;
 +----------------------------+-------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Administrator/Desktop/FuckDataLogic/clock/Clock.pin.
+The pin-out file can be found in C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/clock/Clock.pin.
 
 
 +--------------------------------------------------------+
@@ -294,16 +294,16 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------------+------------+------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node        ; Macrocells ; Pins ; Full Hierarchy Name                             ; Library Name ;
 +-----------------------------------+------------+------+-------------------------------------------------+--------------+
-; |Clock                            ; 103        ; 38   ; |Clock                                          ; work         ;
-;    |hour:inst1|                   ; 22         ; 0    ; |Clock|hour:inst1                               ; work         ;
-;       |lpm_counter:tmp_low_rtl_0| ; 7          ; 0    ; |Clock|hour:inst1|lpm_counter:tmp_low_rtl_0     ; work         ;
-;    |light:inst4|                  ; 7          ; 0    ; |Clock|light:inst4                              ; work         ;
-;    |minute:inst|                  ; 23         ; 0    ; |Clock|minute:inst                              ; work         ;
-;    |ring:inst7|                   ; 8          ; 0    ; |Clock|ring:inst7                               ; work         ;
-;    |second:inst5|                 ; 10         ; 0    ; |Clock|second:inst5                             ; work         ;
-;    |set_hour:inst3|               ; 17         ; 0    ; |Clock|set_hour:inst3                           ; work         ;
-;       |lpm_counter:tmp_low_rtl_1| ; 5          ; 0    ; |Clock|set_hour:inst3|lpm_counter:tmp_low_rtl_1 ; work         ;
-;    |set_min:inst2|                ; 16         ; 0    ; |Clock|set_min:inst2                            ; work         ;
+; |clock                            ; 103        ; 38   ; |clock                                          ; work         ;
+;    |hour:inst1|                   ; 22         ; 0    ; |clock|hour:inst1                               ; work         ;
+;       |lpm_counter:tmp_low_rtl_0| ; 7          ; 0    ; |clock|hour:inst1|lpm_counter:tmp_low_rtl_0     ; work         ;
+;    |light:inst4|                  ; 7          ; 0    ; |clock|light:inst4                              ; work         ;
+;    |minute:inst|                  ; 23         ; 0    ; |clock|minute:inst                              ; work         ;
+;    |ring:inst7|                   ; 8          ; 0    ; |clock|ring:inst7                               ; work         ;
+;    |second:inst5|                 ; 10         ; 0    ; |clock|second:inst5                             ; work         ;
+;    |set_hour:inst3|               ; 17         ; 0    ; |clock|set_hour:inst3                           ; work         ;
+;       |lpm_counter:tmp_low_rtl_1| ; 5          ; 0    ; |clock|set_hour:inst3|lpm_counter:tmp_low_rtl_1 ; work         ;
+;    |set_min:inst2|                ; 16         ; 0    ; |clock|set_min:inst2                            ; work         ;
 +-----------------------------------+------------+------+-------------------------------------------------+--------------+
 
 
@@ -568,7 +568,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;  D  ; LC61       ; set_min:inst2|high_num[3]~26, set_min, alarm, minute:inst|tmp_high[3]                                                                                                                                                                                                                                                                                                                                                                                                                                                    ; out_high_min[3]                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
 ;  D  ; LC64       ; set_min:inst2|high_num[2]~22, set_min, alarm, minute:inst|tmp_high[2]                                                                                                                                                                                                                                                                                                                                                                                                                                                    ; out_high_min[2]                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
 ;  D  ; LC57       ; set_min:inst2|low_num[1]~30, set_min, alarm, minute:inst|tmp_low[1]                                                                                                                                                                                                                                                                                                                                                                                                                                                      ; out_low_min[1]                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  D  ; LC62       ; minute:inst|Equal3~16, minute:inst|min_ring, second:inst5|temp_cout, set_min, clr, alarm, minute:inst|min_ring~5sexpand0, minute:inst|Equal2~4sexp1, minute:inst|Equal2~4sexp2, minute:inst|Equal2~8sexp1, minute:inst|Equal2~8sexp2, minute:inst|Equal2~12sexp1, minute:inst|Equal2~12sexp2, minute:inst|Equal2~16sexp1, minute:inst|Equal2~16sexp2, minute:inst|Equal3~4sexp1, minute:inst|Equal3~4sexp2, minute:inst|Equal3~8sexp1, minute:inst|Equal3~8sexp2, minute:inst|Equal3~12sexp1, minute:inst|Equal3~12sexp2 ; minute:inst|min_ring, ring:inst7|qout, ring:inst7|qout~14                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  D  ; LC62       ; minute:inst|Equal3~16, minute:inst|min_ring, second:inst5|temp_cout, alarm, set_min, clr, minute:inst|min_ring~5sexpand0, minute:inst|Equal2~4sexp1, minute:inst|Equal2~4sexp2, minute:inst|Equal2~8sexp1, minute:inst|Equal2~8sexp2, minute:inst|Equal2~12sexp1, minute:inst|Equal2~12sexp2, minute:inst|Equal2~16sexp1, minute:inst|Equal2~16sexp2, minute:inst|Equal3~4sexp1, minute:inst|Equal3~4sexp2, minute:inst|Equal3~8sexp1, minute:inst|Equal3~8sexp2, minute:inst|Equal3~12sexp1, minute:inst|Equal3~12sexp2 ; minute:inst|min_ring, ring:inst7|qout, ring:inst7|qout~14                                                                                                                                                                                                                                                                                                                                                                                                ;
 ;  D  ; LC59       ; set_min:inst2|low_num[0]~18, set_min, alarm, minute:inst|tmp_low[0]                                                                                                                                                                                                                                                                                                                                                                                                                                                      ; out_low_min[0]                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
 ;  D  ; LC60       ; set_hour, set_min, clr, alarm, clk_1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ; second:inst5|tmp_digit0[1], second:inst5|tmp_digit0[2], second:inst5|tmp_digit0[3], light:inst4|Mux0~13, light:inst4|Mux2~3, light:inst4|Mux4~6, light:inst4|Mux5~9, light:inst4|Mux1~19, light:inst4|Mux3~8, light:inst4|Mux3~14, second:inst5|tmp_digit1[0], second:inst5|tmp_digit1[1], second:inst5|tmp_digit1[2], second:inst5|tmp_digit1[3], second:inst5|temp_cout~9                                                                              ;
 ;  E  ; LC72       ; second:inst5|tmp_digit0[0], second:inst5|tmp_digit0[2], second:inst5|tmp_digit0[1], second:inst5|tmp_digit0[3]                                                                                                                                                                                                                                                                                                                                                                                                           ; light[3]                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
@@ -613,7 +613,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;  G  ; LC102      ; set_hour, hour:inst1|lpm_counter:tmp_low_rtl_0|dffs[2], hour:inst1|lpm_counter:tmp_low_rtl_0|dffs[1], hour:inst1|lpm_counter:tmp_low_rtl_0|dffs[0], clr, hour:inst1|lpm_counter:tmp_low_rtl_0|dffs[3], alarm                                                                                                                                                                                                                                                                                                             ; hour:inst1|lpm_counter:tmp_low_rtl_0|dffs[3]                                                                                                                                                                                                                                                                                                                                                                                                             ;
 ;  H  ; LC113      ; second:inst5|tmp_digit1[3], second:inst5|tmp_digit1[2], second:inst5|tmp_digit1[1], second:inst5|tmp_digit1[0], second:inst5|tmp_digit0[2], second:inst5|tmp_digit0[1], second:inst5|tmp_digit0[3], second:inst5|tmp_digit0[0], set_hour, set_min, clr, alarm                                                                                                                                                                                                                                                            ; second:inst5|temp_cout                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
 ;  H  ; LC114      ; second:inst5|temp_cout~9, set_hour, second:inst5|temp_cout, set_min, clr, alarm, clk_1                                                                                                                                                                                                                                                                                                                                                                                                                                   ; second:inst5|temp_cout, minute:inst|tmp_low[0], minute:inst|tmp_low[1], minute:inst|tmp_low[2], minute:inst|tmp_low[3], minute:inst|tmp_high[0], minute:inst|tmp_high[1], minute:inst|tmp_high[2], minute:inst|tmp_high[3], minute:inst|min_ring, minute:inst|count                                                                                                                                                                                      ;
-;  H  ; LC117      ; hour:inst1|Equal4~16, hour:inst1|hour_ring, minute:inst|count, set_hour, clr, alarm, hour:inst1|hour_ring~5sexpand0, hour:inst1|Equal3~4sexp1, hour:inst1|Equal3~4sexp2, hour:inst1|Equal3~8sexp1, hour:inst1|Equal3~8sexp2, hour:inst1|Equal3~12sexp1, hour:inst1|Equal3~12sexp2, hour:inst1|Equal3~16sexp1, hour:inst1|Equal3~16sexp2, hour:inst1|Equal4~4sexp1, hour:inst1|Equal4~4sexp2, hour:inst1|Equal4~8sexp1, hour:inst1|Equal4~8sexp2, hour:inst1|Equal4~12sexp1, hour:inst1|Equal4~12sexp2                    ; hour:inst1|hour_ring, ring:inst7|qout, ring:inst7|qout~14                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  H  ; LC117      ; hour:inst1|Equal4~16, hour:inst1|hour_ring, minute:inst|count, alarm, set_hour, clr, hour:inst1|hour_ring~5sexpand0, hour:inst1|Equal3~4sexp1, hour:inst1|Equal3~4sexp2, hour:inst1|Equal3~8sexp1, hour:inst1|Equal3~8sexp2, hour:inst1|Equal3~12sexp1, hour:inst1|Equal3~12sexp2, hour:inst1|Equal3~16sexp1, hour:inst1|Equal3~16sexp2, hour:inst1|Equal4~4sexp1, hour:inst1|Equal4~4sexp2, hour:inst1|Equal4~8sexp1, hour:inst1|Equal4~8sexp2, hour:inst1|Equal4~12sexp1, hour:inst1|Equal4~12sexp2                    ; hour:inst1|hour_ring, ring:inst7|qout, ring:inst7|qout~14                                                                                                                                                                                                                                                                                                                                                                                                ;
 +-----+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -638,13 +638,13 @@ Note: User assignments will override these defaults. The user specified values a
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue May 23 16:05:22 2023
-Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Clock -c Clock
-Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+    Info: Processing started: Wed May 24 20:56:30 2023
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off clock -c Clock
+Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info: Selected device EPM7128SLC84-15 for design "Clock"
 Info: Quartus II Fitter was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 205 megabytes
-    Info: Processing ended: Tue May 23 16:05:22 2023
+    Info: Peak virtual memory: 235 megabytes
+    Info: Processing ended: Wed May 24 20:56:30 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

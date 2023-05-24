@@ -138,7 +138,7 @@ ON
 # case_insensitive
 # source_file
 vga_display.vhd
-bf610df8f9b46697fe2844abe368e8c
+ca88ef2ee5b23a4cec793bbaa73fd7
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

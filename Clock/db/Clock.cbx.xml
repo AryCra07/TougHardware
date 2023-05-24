@@ -1,23 +1,11 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Clock">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|light:inst4|lpm_mux:Mux6" CBX_FILE_NAME="mux_kdc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|minute:inst|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|hour:inst1|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|light:inst4|lpm_mux:Mux3" CBX_FILE_NAME="mux_kdc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|set_hour:inst3|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|light:inst4|lpm_mux:Mux0" CBX_FILE_NAME="mux_kdc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|light:inst4|lpm_mux:Mux4" CBX_FILE_NAME="mux_kdc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|second:inst5|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|set_hour:inst3|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|set_min:inst2|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|light:inst4|lpm_mux:Mux1" CBX_FILE_NAME="mux_kdc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|light:inst4|lpm_mux:Mux5" CBX_FILE_NAME="mux_kdc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|minute:inst|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|second:inst5|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|set_min:inst2|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|hour:inst1|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_nnh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|light:inst4|lpm_mux:Mux2" CBX_FILE_NAME="mux_kdc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Clock|ring:inst7|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_pnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|hour:inst1|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_3kh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_constant:scdw" CBX_FILE_NAME="lpm_constant_0h3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|ring:inst7|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_pnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|second:inst5|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_3kh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_add_sub:add_sub" CBX_FILE_NAME="add_sub_vue.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|set_hour:inst3|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_3kh.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

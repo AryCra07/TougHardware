@@ -45,20 +45,12 @@ set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name VHDL_FILE set_min.vhd
-set_global_assignment -name VHDL_FILE set_hour.vhd
-set_global_assignment -name VHDL_FILE hour.vhd
-set_global_assignment -name VHDL_FILE minute.vhd
-set_global_assignment -name BDF_FILE Clock.bdf
 set_location_assignment PIN_79 -to set_min
 set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
 set_location_assignment PIN_60 -to qd
 set_global_assignment -name MISC_FILE "C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/Clock/Clock.dpf"
 set_location_assignment PIN_57 -to clk_1
 set_location_assignment PIN_54 -to clr
-set_global_assignment -name VHDL_FILE second.vhd
-set_global_assignment -name VHDL_FILE ring.vhd
-set_global_assignment -name VHDL_FILE light.vhd
 set_location_assignment PIN_80 -to alarm
 set_location_assignment PIN_77 -to set_hour
 set_location_assignment PIN_37 -to digit1[0]
@@ -89,7 +81,15 @@ set_location_assignment PIN_35 -to out_low_min[0]
 set_location_assignment PIN_36 -to out_low_min[1]
 set_location_assignment PIN_17 -to out_low_min[2]
 set_location_assignment PIN_18 -to out_low_min[3]
-set_global_assignment -name VECTOR_WAVEFORM_FILE Clock.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Clock.vwf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name MISC_FILE "C:/Users/Administrator/Desktop/FuckDataLogic/clock/Clock.dpf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE clock.vwf
+set_global_assignment -name BDF_FILE clock.bdf
+set_global_assignment -name VHDL_FILE set_min.vhd
+set_global_assignment -name VHDL_FILE set_hour.vhd
+set_global_assignment -name VHDL_FILE hour.vhd
+set_global_assignment -name VHDL_FILE minute.vhd
+set_global_assignment -name VHDL_FILE second.vhd
+set_global_assignment -name VHDL_FILE ring.vhd
+set_global_assignment -name VHDL_FILE light.vhd

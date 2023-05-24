@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for vga_display
-Tue May 23 23:49:59 2023
+Wed May 24 00:03:12 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -163,8 +163,6 @@ applicable agreement for further details.
 ; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[5] ; vga_green ; clk        ;
 ; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[6] ; vga_green ; clk        ;
 ; N/A   ; None         ; 17.000 ns  ; lpm_counter:counter_rtl_0|dffs[7] ; vga_green ; clk        ;
-; N/A   ; None         ; 8.000 ns   ; vga_vsync~reg0                    ; vga_vsync ; clk        ;
-; N/A   ; None         ; 8.000 ns   ; vga_hsync~reg0                    ; vga_hsync ; clk        ;
 +-------+--------------+------------+-----------------------------------+-----------+------------+
 
 
@@ -174,7 +172,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue May 23 23:49:59 2023
+    Info: Processing started: Wed May 24 00:03:12 2023
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off vga_display -c vga_display
 Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info: Started post-fitting delay annotation
@@ -189,31 +187,31 @@ Info: Clock "clk" has Internal fmax of 76.92 MHz between source register "lpm_co
         Info: Total cell delay = 8.000 ns ( 100.00 % )
     Info: - Smallest clock skew is 0.000 ns
         Info: + Shortest clock path from clock "clk" to destination register is 3.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 10; CLK Node = 'clk'
+            Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 8; CLK Node = 'clk'
             Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC1; Fanout = 8; REG Node = 'lpm_counter:counter_rtl_0|dffs[0]'
             Info: Total cell delay = 3.000 ns ( 100.00 % )
         Info: - Longest clock path from clock "clk" to source register is 3.000 ns
-            Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 10; CLK Node = 'clk'
+            Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 8; CLK Node = 'clk'
             Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC1; Fanout = 8; REG Node = 'lpm_counter:counter_rtl_0|dffs[0]'
             Info: Total cell delay = 3.000 ns ( 100.00 % )
     Info: + Micro clock to output delay of source is 1.000 ns
     Info: + Micro setup delay of destination is 4.000 ns
 Info: tco from clock "clk" to destination pin "vga_blue" through register "lpm_counter:counter_rtl_0|dffs[4]" is 17.000 ns
     Info: + Longest clock path from clock "clk" to source register is 3.000 ns
-        Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 10; CLK Node = 'clk'
+        Info: 1: + IC(0.000 ns) + CELL(3.000 ns) = 3.000 ns; Loc. = PIN_83; Fanout = 8; CLK Node = 'clk'
         Info: 2: + IC(0.000 ns) + CELL(0.000 ns) = 3.000 ns; Loc. = LC9; Fanout = 6; REG Node = 'lpm_counter:counter_rtl_0|dffs[4]'
         Info: Total cell delay = 3.000 ns ( 100.00 % )
     Info: + Micro clock to output delay of source is 1.000 ns
     Info: + Longest register to pin delay is 13.000 ns
         Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC9; Fanout = 6; REG Node = 'lpm_counter:counter_rtl_0|dffs[4]'
-        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 9.000 ns; Loc. = LC8; Fanout = 1; COMB Node = 'vga_blue~6'
-        Info: 3: + IC(0.000 ns) + CELL(4.000 ns) = 13.000 ns; Loc. = PIN_9; Fanout = 0; PIN Node = 'vga_blue'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 9.000 ns; Loc. = LC5; Fanout = 1; COMB Node = 'vga_blue~6'
+        Info: 3: + IC(0.000 ns) + CELL(4.000 ns) = 13.000 ns; Loc. = PIN_11; Fanout = 0; PIN Node = 'vga_blue'
         Info: Total cell delay = 11.000 ns ( 84.62 % )
         Info: Total interconnect delay = 2.000 ns ( 15.38 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 182 megabytes
-    Info: Processing ended: Tue May 23 23:50:00 2023
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Wed May 24 00:03:12 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

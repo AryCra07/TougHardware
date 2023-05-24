@@ -73,10 +73,10 @@ RESERVED                     : 5         :        :                   :         
 RESERVED                     : 6         :        :                   :         :           :                
 GND                          : 7         : gnd    :                   :         :           :                
 vga_red                      : 8         : output : TTL               :         :           : N              
-vga_blue                     : 9         : output : TTL               :         :           : N              
-vga_green                    : 10        : output : TTL               :         :           : N              
-vga_hsync                    : 11        : output : TTL               :         :           : N              
-vga_vsync                    : 12        : output : TTL               :         :           : N              
+vga_vsync                    : 9         : output : TTL               :         :           : N              
+vga_hsync                    : 10        : output : TTL               :         :           : N              
+vga_blue                     : 11        : output : TTL               :         :           : N              
+vga_green                    : 12        : output : TTL               :         :           : N              
 VCCIO                        : 13        : power  :                   : 5.0V    :           :                
 TDI                          : 14        : input  : TTL               :         :           : N              
 RESERVED                     : 15        :        :                   :         :           :                

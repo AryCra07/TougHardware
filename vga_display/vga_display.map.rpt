@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_display
-Tue May 23 23:49:57 2023
+Wed May 24 00:03:10 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -13,9 +13,10 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Source assignments for lpm_counter:counter_rtl_0
-  9. Parameter Settings for Inferred Entity Instance: lpm_counter:counter_rtl_0
- 10. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Source assignments for lpm_counter:counter_rtl_0
+ 10. Parameter Settings for Inferred Entity Instance: lpm_counter:counter_rtl_0
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,7 +42,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                           ;
 +-----------------------------+------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue May 23 23:49:57 2023    ;
+; Analysis & Synthesis Status ; Successful - Wed May 24 00:03:10 2023    ;
 ; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name               ; vga_display                              ;
 ; Top-level Entity Name       ; vga_display                              ;
@@ -143,12 +144,12 @@ applicable agreement for further details.
 ; Resource             ; Usage                ;
 +----------------------+----------------------+
 ; Logic cells          ; 13                   ;
-; Total registers      ; 10                   ;
+; Total registers      ; 8                    ;
 ; I/O pins             ; 8                    ;
 ; Maximum fan-out node ; clk                  ;
-; Maximum fan-out      ; 10                   ;
-; Total fan-out        ; 60                   ;
-; Average fan-out      ; 2.86                 ;
+; Maximum fan-out      ; 8                    ;
+; Total fan-out        ; 56                   ;
+; Average fan-out      ; 2.67                 ;
 +----------------------+----------------------+
 
 
@@ -160,6 +161,17 @@ applicable agreement for further details.
 ; |vga_display                   ; 13         ; 8    ; |vga_display                           ; work         ;
 ;    |lpm_counter:counter_rtl_0| ; 8          ; 0    ; |vga_display|lpm_counter:counter_rtl_0 ; work         ;
 +--------------------------------+------------+------+----------------------------------------+--------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; vga_vsync~reg0                        ; Stuck at GND due to stuck port data_in ;
+; vga_hsync~reg0                        ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 2 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +--------------------------------------------------+
@@ -206,7 +218,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue May 23 23:49:56 2023
+    Info: Processing started: Wed May 24 00:03:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_display -c vga_display
 Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info: Found 2 design units, including 1 entities, in source file vga_display.vhd
@@ -226,6 +238,8 @@ Info: Instantiated megafunction "lpm_counter:counter_rtl_0" with the following p
     Info: Parameter "LPM_DIRECTION" = "UP"
     Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
 Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "vga_hsync" is stuck at GND
+    Warning (13410): Pin "vga_vsync" is stuck at GND
     Warning (13410): Pin "vga_red" is stuck at GND
 Info: Promoted pin-driven signal(s) to global signal
     Info: Promoted clock signal driven by pin "clk" to global clock signal
@@ -235,9 +249,9 @@ Info: Implemented 21 device resources after synthesis - the final resource count
     Info: Implemented 3 input pins
     Info: Implemented 5 output pins
     Info: Implemented 13 macrocells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 7 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 242 megabytes
-    Info: Processing ended: Tue May 23 23:49:57 2023
+    Info: Processing ended: Wed May 24 00:03:10 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

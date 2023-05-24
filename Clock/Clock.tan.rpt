@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for Clock
-Tue May 23 16:05:24 2023
+Wed May 24 20:56:32 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -104,15 +104,15 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;   0.0%      ;
+;     2-16 processors        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -786,9 +786,9 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue May 23 16:05:23 2023
-Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Clock -c Clock
-Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+    Info: Processing started: Wed May 24 20:56:32 2023
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off clock -c Clock
+Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
 Warning: Timing Analysis does not support the analysis of latches as synchronous elements for the currently selected device family
@@ -928,9 +928,9 @@ Info: th for register "hour:inst1|tmp_high[1]" (data pin = "alarm", clock pin = 
         Info: Total cell delay = 8.000 ns ( 80.00 % )
         Info: Total interconnect delay = 2.000 ns ( 20.00 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 168 megabytes
-    Info: Processing ended: Tue May 23 16:05:24 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 183 megabytes
+    Info: Processing ended: Wed May 24 20:56:32 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,7 +1,7 @@
-Fitter Status : Successful - Tue May 23 16:05:22 2023
+Fitter Status : Successful - Wed May 24 20:56:30 2023
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : Clock
-Top-level Entity Name : Clock
+Top-level Entity Name : clock
 Family : MAX7000S
 Device : EPM7128SLC84-15
 Timing Models : Final

@@ -46,3 +46,6 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name VHDL_FILE vga_display.vhd
+set_global_assignment -name VHDL_FILE vga_hsync_generator.vhd
+set_global_assignment -name VHDL_FILE vga_mode_selector.vhd
+set_global_assignment -name VHDL_FILE vga_vsync_generator.vhd

@@ -1,5 +1,5 @@
 Flow report for vga_display
-Tue May 23 23:49:59 2023
+Wed May 24 00:03:12 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------+
 ; Flow Summary                                                       ;
 +-------------------------+------------------------------------------+
-; Flow Status             ; Successful - Tue May 23 23:49:59 2023    ;
+; Flow Status             ; Successful - Wed May 24 00:03:12 2023    ;
 ; Quartus II Version      ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name           ; vga_display                              ;
 ; Top-level Entity Name   ; vga_display                              ;
@@ -56,7 +56,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/23/2023 23:49:56 ;
+; Start date & time ; 05/24/2023 00:03:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga_display         ;
 +-------------------+---------------------+
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 273270821169370.168485699622808 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 273270821169370.168485778901972 ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                              ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                               ; --            ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
@@ -81,9 +81,9 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 242 MB              ; 00:00:01                           ;
 ; Fitter                  ; 00:00:00     ; 1.0                     ; 208 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 197 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 197 MB              ; 00:00:00                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 168 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
+; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

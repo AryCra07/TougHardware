@@ -1,5 +1,5 @@
 Fitter report for vga_display
-Tue May 23 23:49:58 2023
+Wed May 24 00:03:11 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -53,7 +53,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------+
 ; Fitter Summary                                                   ;
 +-----------------------+------------------------------------------+
-; Fitter Status         ; Successful - Tue May 23 23:49:58 2023    ;
+; Fitter Status         ; Successful - Wed May 24 00:03:11 2023    ;
 ; Quartus II Version    ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name         ; vga_display                              ;
 ; Top-level Entity Name ; vga_display                              ;
@@ -116,8 +116,8 @@ The pin-out file can be found in C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/vga_displ
 ; Resource                          ; Usage             ;
 +-----------------------------------+-------------------+
 ; Logic cells                       ; 13 / 128 ( 10 % ) ;
-; Registers                         ; 10 / 128 ( 8 % )  ;
-; Number of pterms used             ; 23                ;
+; Registers                         ; 8 / 128 ( 6 % )   ;
+; Number of pterms used             ; 21                ;
 ; User inserted logic elements      ; 0                 ;
 ; I/O pins                          ; 12 / 68 ( 18 % )  ;
 ;     -- Clock pins                 ; 1 / 2 ( 50 % )    ;
@@ -127,11 +127,11 @@ The pin-out file can be found in C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/vga_displ
 ; Parallel expanders                ; 0 / 120 ( 0 % )   ;
 ; Cells using turbo bit             ; 13 / 128 ( 10 % ) ;
 ; Maximum fan-out node              ; clk               ;
-; Maximum fan-out                   ; 10                ;
+; Maximum fan-out                   ; 8                 ;
 ; Highest non-global fan-out signal ; rst               ;
-; Highest non-global fan-out        ; 10                ;
-; Total fan-out                     ; 60                ;
-; Average fan-out                   ; 2.40              ;
+; Highest non-global fan-out        ; 8                 ;
+; Total fan-out                     ; 56                ;
+; Average fan-out                   ; 2.24              ;
 +-----------------------------------+-------------------+
 
 
@@ -140,9 +140,9 @@ The pin-out file can be found in C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/vga_displ
 +------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
 +------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
-; clk  ; 83    ; --       ; --  ; 10                    ; 0                  ; yes    ; no             ; TTL          ; Fitter               ;
+; clk  ; 83    ; --       ; --  ; 8                     ; 0                  ; yes    ; no             ; TTL          ; Fitter               ;
 ; qd   ; 4     ; --       ; 1   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
-; rst  ; 33    ; --       ; 4   ; 10                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rst  ; 33    ; --       ; 4   ; 8                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
 +------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
 
 
@@ -151,11 +151,11 @@ The pin-out file can be found in C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/vga_displ
 +-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
 ; Name      ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
 +-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
-; vga_blue  ; 9     ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
-; vga_green ; 10    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
-; vga_hsync ; 11    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; vga_blue  ; 11    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; vga_green ; 12    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; vga_hsync ; 10    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
 ; vga_red   ; 8     ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
-; vga_vsync ; 12    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; vga_vsync ; 9     ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
 +-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
 
 
@@ -172,10 +172,10 @@ The pin-out file can be found in C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/vga_displ
 ; 6        ; 5          ; --       ; RESERVED       ;        ;              ;         ;                 ;
 ; 7        ; 6          ; --       ; GND            ; gnd    ;              ;         ;                 ;
 ; 8        ; 7          ; --       ; vga_red        ; output ; TTL          ;         ; N               ;
-; 9        ; 8          ; --       ; vga_blue       ; output ; TTL          ;         ; N               ;
-; 10       ; 9          ; --       ; vga_green      ; output ; TTL          ;         ; N               ;
-; 11       ; 10         ; --       ; vga_hsync      ; output ; TTL          ;         ; N               ;
-; 12       ; 11         ; --       ; vga_vsync      ; output ; TTL          ;         ; N               ;
+; 9        ; 8          ; --       ; vga_vsync      ; output ; TTL          ;         ; N               ;
+; 10       ; 9          ; --       ; vga_hsync      ; output ; TTL          ;         ; N               ;
+; 11       ; 10         ; --       ; vga_blue       ; output ; TTL          ;         ; N               ;
+; 12       ; 11         ; --       ; vga_green      ; output ; TTL          ;         ; N               ;
 ; 13       ; 12         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
 ; 14       ; 13         ; --       ; TDI            ; input  ; TTL          ;         ; N               ;
 ; 15       ; 14         ; --       ; RESERVED       ;        ;              ;         ;                 ;
@@ -297,8 +297,8 @@ Note: User assignments will override these defaults. The user specified values a
 +------+----------+---------+--------------+--------+----------------------+------------------+
 ; Name ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
 +------+----------+---------+--------------+--------+----------------------+------------------+
-; clk  ; PIN_83   ; 10      ; Clock        ; yes    ; On                   ; --               ;
-; rst  ; PIN_33   ; 10      ; Async. clear ; no     ; --                   ; --               ;
+; clk  ; PIN_83   ; 8       ; Clock        ; yes    ; On                   ; --               ;
+; rst  ; PIN_33   ; 8       ; Async. clear ; no     ; --                   ; --               ;
 +------+----------+---------+--------------+--------+----------------------+------------------+
 
 
@@ -307,7 +307,7 @@ Note: User assignments will override these defaults. The user specified values a
 +------+----------+---------+----------------------+------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +------+----------+---------+----------------------+------------------+
-; clk  ; PIN_83   ; 10      ; On                   ; --               ;
+; clk  ; PIN_83   ; 8       ; On                   ; --               ;
 +------+----------+---------+----------------------+------------------+
 
 
@@ -316,7 +316,7 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------------+---------+
 ; Name                              ; Fan-Out ;
 +-----------------------------------+---------+
-; rst                               ; 10      ;
+; rst                               ; 8       ;
 ; lpm_counter:counter_rtl_0|dffs[0] ; 7       ;
 ; lpm_counter:counter_rtl_0|dffs[1] ; 6       ;
 ; lpm_counter:counter_rtl_0|dffs[2] ; 5       ;
@@ -325,11 +325,11 @@ Note: User assignments will override these defaults. The user specified values a
 ; lpm_counter:counter_rtl_0|dffs[3] ; 4       ;
 ; lpm_counter:counter_rtl_0|dffs[6] ; 3       ;
 ; lpm_counter:counter_rtl_0|dffs[7] ; 2       ;
+; ~GND~2                            ; 1       ;
+; ~GND~1                            ; 1       ;
 ; ~GND~0                            ; 1       ;
 ; vga_blue~6                        ; 1       ;
 ; LessThan1~4                       ; 1       ;
-; vga_hsync~reg0                    ; 1       ;
-; vga_vsync~reg0                    ; 1       ;
 +-----------------------------------+---------+
 
 
@@ -389,8 +389,6 @@ Note: User assignments will override these defaults. The user specified values a
 +-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; LAB ; Logic Cell ; Input                                                                                                                                                                                                                                                         ; Output                                                                                                                                                                                                                                              ;
 +-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-;  A  ; LC3        ; clk, rst                                                                                                                                                                                                                                                      ; vga_vsync                                                                                                                                                                                                                                           ;
-;  A  ; LC5        ; clk, rst                                                                                                                                                                                                                                                      ; vga_hsync                                                                                                                                                                                                                                           ;
 ;  A  ; LC1        ; clk, rst                                                                                                                                                                                                                                                      ; lpm_counter:counter_rtl_0|dffs[1], lpm_counter:counter_rtl_0|dffs[2], lpm_counter:counter_rtl_0|dffs[3], lpm_counter:counter_rtl_0|dffs[4], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[7] ;
 ;  A  ; LC2        ; clk, lpm_counter:counter_rtl_0|dffs[0], rst                                                                                                                                                                                                                   ; lpm_counter:counter_rtl_0|dffs[2], lpm_counter:counter_rtl_0|dffs[3], lpm_counter:counter_rtl_0|dffs[4], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[7]                                    ;
 ;  A  ; LC4        ; clk, lpm_counter:counter_rtl_0|dffs[1], lpm_counter:counter_rtl_0|dffs[0], rst                                                                                                                                                                                ; lpm_counter:counter_rtl_0|dffs[3], lpm_counter:counter_rtl_0|dffs[4], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[7]                                                                       ;
@@ -399,8 +397,10 @@ Note: User assignments will override these defaults. The user specified values a
 ;  A  ; LC10       ; clk, lpm_counter:counter_rtl_0|dffs[1], lpm_counter:counter_rtl_0|dffs[0], lpm_counter:counter_rtl_0|dffs[2], lpm_counter:counter_rtl_0|dffs[3], lpm_counter:counter_rtl_0|dffs[4], rst                                                                       ; lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[7], LessThan1~4, vga_blue~6                                                                                                                                                       ;
 ;  A  ; LC12       ; clk, lpm_counter:counter_rtl_0|dffs[1], lpm_counter:counter_rtl_0|dffs[0], lpm_counter:counter_rtl_0|dffs[2], lpm_counter:counter_rtl_0|dffs[3], lpm_counter:counter_rtl_0|dffs[4], lpm_counter:counter_rtl_0|dffs[5], rst                                    ; lpm_counter:counter_rtl_0|dffs[7], LessThan1~4, vga_blue~6                                                                                                                                                                                          ;
 ;  A  ; LC13       ; clk, lpm_counter:counter_rtl_0|dffs[1], lpm_counter:counter_rtl_0|dffs[0], lpm_counter:counter_rtl_0|dffs[2], lpm_counter:counter_rtl_0|dffs[3], lpm_counter:counter_rtl_0|dffs[4], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[6], rst ; LessThan1~4, vga_blue~6                                                                                                                                                                                                                             ;
-;  A  ; LC6        ; lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[7]                                                                                                                                                       ; vga_green                                                                                                                                                                                                                                           ;
-;  A  ; LC8        ; lpm_counter:counter_rtl_0|dffs[7], lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[4]                                                                                                                    ; vga_blue                                                                                                                                                                                                                                            ;
+;  A  ; LC3        ; lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[7]                                                                                                                                                       ; vga_green                                                                                                                                                                                                                                           ;
+;  A  ; LC5        ; lpm_counter:counter_rtl_0|dffs[7], lpm_counter:counter_rtl_0|dffs[6], lpm_counter:counter_rtl_0|dffs[5], lpm_counter:counter_rtl_0|dffs[4]                                                                                                                    ; vga_blue                                                                                                                                                                                                                                            ;
+;  A  ; LC6        ;                                                                                                                                                                                                                                                               ; vga_hsync                                                                                                                                                                                                                                           ;
+;  A  ; LC8        ;                                                                                                                                                                                                                                                               ; vga_vsync                                                                                                                                                                                                                                           ;
 ;  A  ; LC11       ;                                                                                                                                                                                                                                                               ; vga_red                                                                                                                                                                                                                                             ;
 +-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -426,13 +426,13 @@ Note: User assignments will override these defaults. The user specified values a
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue May 23 23:49:58 2023
+    Info: Processing started: Wed May 24 00:03:11 2023
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off vga_display -c vga_display
 Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info: Selected device EPM7128SLC84-15 for design "vga_display"
 Info: Quartus II Fitter was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 234 megabytes
-    Info: Processing ended: Tue May 23 23:49:58 2023
+    Info: Processing ended: Wed May 24 00:03:11 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
