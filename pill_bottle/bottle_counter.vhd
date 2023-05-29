@@ -7,7 +7,7 @@ ENTITY bottle_counter IS
         clk : IN STD_LOGIC;
         clr : IN STD_LOGIC;
         co : IN STD_LOGIC;
-        bottle_h : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        bottle_h : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
         bottle_l : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
         led_h : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
         led_l : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -16,7 +16,7 @@ ENTITY bottle_counter IS
 END bottle_counter;
 
 ARCHITECTURE func OF bottle_counter IS
-    SIGNAL b_h : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL b_h : STD_LOGIC_VECTOR(2 DOWNTO 0);
     SIGNAL b_l : STD_LOGIC_VECTOR(3 DOWNTO 0);
     SIGNAL cur_h : STD_LOGIC_VECTOR(3 DOWNTO 0);
     SIGNAL cur_l : STD_LOGIC_VECTOR (3 DOWNTO 0);
@@ -24,11 +24,11 @@ ARCHITECTURE func OF bottle_counter IS
 BEGIN
     PROCESS (clk, clr)
     BEGIN
-        IF (bottle_h > "0001") THEN
-            b_h <= "0001";
+        IF (bottle_h > "001") THEN
+            b_h <= "001";
             b_l <= "1000";
             --s_full<='0';
-        ELSIF (bottle_h = "0001" AND bottle_l > "1000") THEN
+        ELSIF (bottle_h = "001" AND bottle_l > "1000") THEN
             b_h <= bottle_h;
             b_l <= "1000";
             --s_full<='0';
@@ -36,8 +36,8 @@ BEGIN
             b_h <= bottle_h;
             b_l <= "1001";
             --s_full<='0';
-        ELSIF (bottle_h = "0000" AND bottle_l = "0000") THEN
-            b_h <= "0000";
+        ELSIF (bottle_h = "000" AND bottle_l = "0000") THEN
+            b_h <= "000";
             b_l <= "0001";
             --s_full<='1';
         ELSE
@@ -50,7 +50,7 @@ BEGIN
             cur_h <= "0000";
             cur_l <= "0000";
             s_full <= '0';
-        ELSIF (clk'event AND clk = '1') THEN -- inc and carrya
+        ELSIF (clk'event AND clk = '1') THEN -- inc and carry
             IF (co = '1') THEN
                 IF (cur_l = "1001") THEN
                     cur_l <= "0000";
@@ -60,7 +60,7 @@ BEGIN
                 END IF;
 
                 -- full!
-                IF (b_h = "0001" AND b_l = "0000") THEN
+                IF (b_h = "001" AND b_l = "0000") THEN
                     IF (cur_h = "0000" AND cur_l = "1001") THEN
                         s_full <= '1';
                     ELSE

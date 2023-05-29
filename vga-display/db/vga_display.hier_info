@@ -1,0 +1,148 @@
+|vga_display
+VGAR <= display:inst.VGAR
+clk => display:inst.clk
+clk => line_controller:inst1.clk
+qd => mode_selector:inst2.qd
+clr => mode_selector:inst2.clr
+VGAG <= display:inst.VGAG
+VGAB <= display:inst.VGAB
+VGAH <= display:inst.VGAH
+VGAV <= display:inst.VGAV
+
+
+|vga_display|display:inst
+VGAR <= RGB[0].DB_MAX_OUTPUT_PORT_TYPE
+VGAG <= RGB[1].DB_MAX_OUTPUT_PORT_TYPE
+VGAB <= RGB[2].DB_MAX_OUTPUT_PORT_TYPE
+VGAH <= end_line.DB_MAX_OUTPUT_PORT_TYPE
+VGAV <= finish.DB_MAX_OUTPUT_PORT_TYPE
+clk => ~NO_FANOUT~
+mode[0] => Mux3.IN5
+mode[0] => Mux2.IN5
+mode[0] => Mux1.IN5
+mode[0] => Mux0.IN5
+mode[1] => Mux3.IN4
+mode[1] => Mux2.IN4
+mode[1] => Mux1.IN4
+mode[1] => Mux0.IN4
+cur_row_part[0] => Equal1.IN7
+cur_row_part[0] => Equal2.IN7
+cur_row_part[0] => Equal3.IN7
+cur_row_part[0] => Equal4.IN7
+cur_row_part[0] => Equal5.IN7
+cur_row_part[0] => Equal6.IN7
+cur_row_part[0] => Equal7.IN7
+cur_row_part[0] => Equal9.IN7
+cur_row_part[1] => Equal1.IN6
+cur_row_part[1] => Equal2.IN6
+cur_row_part[1] => Equal3.IN6
+cur_row_part[1] => Equal4.IN6
+cur_row_part[1] => Equal5.IN6
+cur_row_part[1] => Equal6.IN6
+cur_row_part[1] => Equal7.IN6
+cur_row_part[1] => Equal9.IN6
+cur_row_part[2] => Equal1.IN5
+cur_row_part[2] => Equal2.IN5
+cur_row_part[2] => Equal3.IN5
+cur_row_part[2] => Equal4.IN5
+cur_row_part[2] => Equal5.IN5
+cur_row_part[2] => Equal6.IN5
+cur_row_part[2] => Equal7.IN5
+cur_row_part[2] => Equal9.IN5
+cur_row_part[3] => Equal1.IN4
+cur_row_part[3] => Equal2.IN4
+cur_row_part[3] => Equal3.IN4
+cur_row_part[3] => Equal4.IN4
+cur_row_part[3] => Equal5.IN4
+cur_row_part[3] => Equal6.IN4
+cur_row_part[3] => Equal7.IN4
+cur_row_part[3] => Equal9.IN4
+cur_line_part[0] => Equal0.IN7
+cur_line_part[0] => Equal8.IN7
+cur_line_part[0] => Equal10.IN7
+cur_line_part[0] => Equal11.IN7
+cur_line_part[0] => Equal12.IN7
+cur_line_part[0] => Equal13.IN7
+cur_line_part[0] => Equal14.IN7
+cur_line_part[0] => Equal15.IN7
+cur_line_part[0] => Equal16.IN7
+cur_line_part[1] => Equal0.IN6
+cur_line_part[1] => Equal8.IN6
+cur_line_part[1] => Equal10.IN6
+cur_line_part[1] => Equal11.IN6
+cur_line_part[1] => Equal12.IN6
+cur_line_part[1] => Equal13.IN6
+cur_line_part[1] => Equal14.IN6
+cur_line_part[1] => Equal15.IN6
+cur_line_part[1] => Equal16.IN6
+cur_line_part[2] => Equal0.IN5
+cur_line_part[2] => Equal8.IN5
+cur_line_part[2] => Equal10.IN5
+cur_line_part[2] => Equal11.IN5
+cur_line_part[2] => Equal12.IN5
+cur_line_part[2] => Equal13.IN5
+cur_line_part[2] => Equal14.IN5
+cur_line_part[2] => Equal15.IN5
+cur_line_part[2] => Equal16.IN5
+cur_line_part[3] => Equal0.IN4
+cur_line_part[3] => Equal8.IN4
+cur_line_part[3] => Equal10.IN4
+cur_line_part[3] => Equal11.IN4
+cur_line_part[3] => Equal12.IN4
+cur_line_part[3] => Equal13.IN4
+cur_line_part[3] => Equal14.IN4
+cur_line_part[3] => Equal15.IN4
+cur_line_part[3] => Equal16.IN4
+end_line => VGAH.DATAIN
+finish => VGAV.DATAIN
+
+
+|vga_display|line_controller:inst1
+clk => part[0].CLK
+clk => part[1].CLK
+clk => part[2].CLK
+clk => part[3].CLK
+clk => flag.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+end_line <= flag.DB_MAX_OUTPUT_PORT_TYPE
+cur_line_part[0] <= part[0].DB_MAX_OUTPUT_PORT_TYPE
+cur_line_part[1] <= part[1].DB_MAX_OUTPUT_PORT_TYPE
+cur_line_part[2] <= part[2].DB_MAX_OUTPUT_PORT_TYPE
+cur_line_part[3] <= part[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vga_display|row_controller:inst3
+clk => part[0].CLK
+clk => part[1].CLK
+clk => part[2].CLK
+clk => part[3].CLK
+clk => finish~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+cur_row_part[0] <= part[0].DB_MAX_OUTPUT_PORT_TYPE
+cur_row_part[1] <= part[1].DB_MAX_OUTPUT_PORT_TYPE
+cur_row_part[2] <= part[2].DB_MAX_OUTPUT_PORT_TYPE
+cur_row_part[3] <= part[3].DB_MAX_OUTPUT_PORT_TYPE
+finish <= finish~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vga_display|mode_selector:inst2
+qd => tmp[0].CLK
+qd => tmp[1].CLK
+clr => process_0.IN0
+mode[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+mode[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

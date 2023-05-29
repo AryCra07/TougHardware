@@ -7,7 +7,7 @@ ENTITY bottle IS
         start : IN STD_LOGIC;
         clk : IN STD_LOGIC;
         clr : IN STD_LOGIC;
-        tablets_h : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        tablets_h : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
         tablets_l : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
         full : IN STD_LOGIC;
         led_h : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -19,7 +19,7 @@ ENTITY bottle IS
 END bottle;
 
 ARCHITECTURE func OF bottle IS
-    SIGNAL t_h : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
+    SIGNAL t_h : STD_LOGIC_VECTOR(2 DOWNTO 0) := "000";
     SIGNAL t_l : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
     SIGNAL temp_h : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
     SIGNAL temp_l : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000";
@@ -44,16 +44,16 @@ BEGIN
                     -- stop state -> work state
                     IF (signal_state = '0') THEN
                         --	yea the upper capacity of bottle is 50
-                        IF (tablets_h >= "0101") THEN
-                            t_h <= "0101";
+                        IF (tablets_h >= "101") THEN
+                            t_h <= "101";
                             t_l <= "0000";
                             light_red <= '1'; -- red light for warning
                         ELSIF (tablets_l > "1001") THEN
                             t_h <= tablets_h;
                             t_l <= "1001";
                             light_red <= '1'; -- red light for warning
-                        ELSIF (tablets_h = "0000" AND tablets_l = "0000") THEN
-                            t_h <= "0000";
+                        ELSIF (tablets_h = "000" AND tablets_l = "0000") THEN
+                            t_h <= "000";
                             t_l <= "0001";
                             light_red <= '1'; -- red light for warning
                         ELSE

@@ -40,9 +40,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "mode[1..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "mode[1..0]" (rect 21 59 74 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "qd" (rect 0 0 11 12)(font "Arial" ))
+		(text "qd" (rect 21 59 32 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 0 80)

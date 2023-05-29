@@ -93,3 +93,4 @@ set_global_assignment -name VHDL_FILE minute.vhd
 set_global_assignment -name VHDL_FILE second.vhd
 set_global_assignment -name VHDL_FILE ring.vhd
 set_global_assignment -name VHDL_FILE light.vhd
+set_global_assignment -name MISC_FILE "C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/clock/Clock.dpf"

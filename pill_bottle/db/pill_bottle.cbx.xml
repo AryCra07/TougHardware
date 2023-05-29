@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pill_bottle">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pill_bottle|multi_fre:inst2|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_8ph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pill_bottle|pill_counter:inst3|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_3kh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

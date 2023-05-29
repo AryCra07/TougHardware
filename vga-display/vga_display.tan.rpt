@@ -1,0 +1,432 @@
+Classic Timing Analyzer report for vga_display
+Mon May 29 20:59:37 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'qd'
+  7. Clock Setup: 'clk'
+  8. tco
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                ;
++------------------------------+-------+---------------+----------------------------------+--------------------------------------------------------+------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From                                                   ; To                           ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+--------------------------------------------------------+------------------------------+------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 52.000 ns                        ; row_controller:inst3|part[0]                           ; VGAB                         ; clk        ; --       ; 0            ;
+; Clock Setup: 'clk'           ; N/A   ; None          ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3] ; row_controller:inst3|part[0] ; clk        ; clk      ; 0            ;
+; Clock Setup: 'qd'            ; N/A   ; None          ; 76.92 MHz ( period = 13.000 ns ) ; mode_selector:inst2|tmp[1]                             ; mode_selector:inst2|tmp[1]   ; qd         ; qd       ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                                                        ;                              ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+--------------------------------------------------------+------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM7128SLC84-15    ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; qd              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'qd'                                                                                                                                                                                              ;
++-------+----------------------------------+----------------------------+----------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)             ; From                       ; To                         ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+----------------------------------+----------------------------+----------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; mode_selector:inst2|tmp[0] ; mode_selector:inst2|tmp[0] ; qd         ; qd       ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; mode_selector:inst2|tmp[0] ; mode_selector:inst2|tmp[1] ; qd         ; qd       ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; mode_selector:inst2|tmp[1] ; mode_selector:inst2|tmp[1] ; qd         ; qd       ; None                        ; None                      ; 8.000 ns                ;
++-------+----------------------------------+----------------------------+----------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk'                                                                                                                                                                                                                                                       ;
++-------+----------------------------------+---------------------------------------------------------+---------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)             ; From                                                    ; To                                                      ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+----------------------------------+---------------------------------------------------------+---------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|part[1]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|part[1]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|part[1]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; line_controller:inst1|part[1]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; line_controller:inst1|part[1]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|part[0]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|part[0]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|part[0]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; line_controller:inst1|part[0]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; line_controller:inst1|part[0]                           ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|part[1]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 71.43 MHz ( period = 14.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|part[0]                            ; clk        ; clk      ; None                        ; None                      ; 9.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|part[3]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|part[3]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|part[3]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; line_controller:inst1|part[3]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; line_controller:inst1|part[3]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|flag                              ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|flag                              ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|flag                              ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; line_controller:inst1|flag                              ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; line_controller:inst1|flag                              ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[0] ; line_controller:inst1|part[2]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[1] ; line_controller:inst1|part[2]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[2] ; line_controller:inst1|part[2]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[3] ; line_controller:inst1|part[2]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; line_controller:inst1|lpm_counter:counter_rtl_0|dffs[4] ; line_controller:inst1|part[2]                           ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|finish                             ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[9]  ; row_controller:inst3|part[2]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[8]  ; row_controller:inst3|part[2]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|part[2]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|part[2]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[7]  ; row_controller:inst3|part[2]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[5]  ; row_controller:inst3|part[2]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[3]  ; row_controller:inst3|part[2]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[6]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[4]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
+; N/A   ; 76.92 MHz ( period = 13.000 ns ) ; row_controller:inst3|lpm_counter:counter_rtl_1|dffs[2]  ; row_controller:inst3|part[3]                            ; clk        ; clk      ; None                        ; None                      ; 8.000 ns                ;
++-------+----------------------------------+---------------------------------------------------------+---------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; tco                                                                                   ;
++-------+--------------+------------+-------------------------------+------+------------+
+; Slack ; Required tco ; Actual tco ; From                          ; To   ; From Clock ;
++-------+--------------+------------+-------------------------------+------+------------+
+; N/A   ; None         ; 52.000 ns  ; row_controller:inst3|part[2]  ; VGAB ; clk        ;
+; N/A   ; None         ; 52.000 ns  ; row_controller:inst3|part[0]  ; VGAB ; clk        ;
+; N/A   ; None         ; 45.000 ns  ; row_controller:inst3|part[2]  ; VGAR ; clk        ;
+; N/A   ; None         ; 45.000 ns  ; row_controller:inst3|part[0]  ; VGAR ; clk        ;
+; N/A   ; None         ; 45.000 ns  ; row_controller:inst3|part[1]  ; VGAB ; clk        ;
+; N/A   ; None         ; 45.000 ns  ; row_controller:inst3|part[3]  ; VGAB ; clk        ;
+; N/A   ; None         ; 44.000 ns  ; row_controller:inst3|part[1]  ; VGAR ; clk        ;
+; N/A   ; None         ; 44.000 ns  ; row_controller:inst3|part[3]  ; VGAR ; clk        ;
+; N/A   ; None         ; 44.000 ns  ; row_controller:inst3|part[1]  ; VGAG ; clk        ;
+; N/A   ; None         ; 44.000 ns  ; row_controller:inst3|part[2]  ; VGAG ; clk        ;
+; N/A   ; None         ; 44.000 ns  ; row_controller:inst3|part[3]  ; VGAG ; clk        ;
+; N/A   ; None         ; 44.000 ns  ; row_controller:inst3|part[0]  ; VGAG ; clk        ;
+; N/A   ; None         ; 42.000 ns  ; mode_selector:inst2|tmp[1]    ; VGAB ; qd         ;
+; N/A   ; None         ; 42.000 ns  ; line_controller:inst1|part[2] ; VGAB ; clk        ;
+; N/A   ; None         ; 42.000 ns  ; line_controller:inst1|part[1] ; VGAB ; clk        ;
+; N/A   ; None         ; 42.000 ns  ; line_controller:inst1|part[0] ; VGAB ; clk        ;
+; N/A   ; None         ; 36.000 ns  ; mode_selector:inst2|tmp[0]    ; VGAR ; qd         ;
+; N/A   ; None         ; 36.000 ns  ; mode_selector:inst2|tmp[1]    ; VGAR ; qd         ;
+; N/A   ; None         ; 36.000 ns  ; line_controller:inst1|part[3] ; VGAR ; clk        ;
+; N/A   ; None         ; 36.000 ns  ; line_controller:inst1|part[1] ; VGAR ; clk        ;
+; N/A   ; None         ; 36.000 ns  ; line_controller:inst1|part[0] ; VGAR ; clk        ;
+; N/A   ; None         ; 36.000 ns  ; mode_selector:inst2|tmp[0]    ; VGAB ; qd         ;
+; N/A   ; None         ; 36.000 ns  ; line_controller:inst1|part[3] ; VGAB ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; mode_selector:inst2|tmp[0]    ; VGAG ; qd         ;
+; N/A   ; None         ; 35.000 ns  ; mode_selector:inst2|tmp[1]    ; VGAG ; qd         ;
+; N/A   ; None         ; 35.000 ns  ; line_controller:inst1|part[3] ; VGAG ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; line_controller:inst1|part[2] ; VGAG ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; line_controller:inst1|part[1] ; VGAG ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; line_controller:inst1|part[0] ; VGAG ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; line_controller:inst1|part[2] ; VGAR ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; row_controller:inst3|finish   ; VGAV ; clk        ;
+; N/A   ; None         ; 15.000 ns  ; line_controller:inst1|flag    ; VGAH ; clk        ;
++-------+--------------+------------+-------------------------------+------+------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Mon May 29 20:59:37 2023
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off vga_display -c vga_display
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing Analysis does not support the analysis of latches as synchronous elements for the currently selected device family
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "display:inst|RGB[0]~64"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "display:inst|RGB[2]~60"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "display:inst|RGB[1]~56"
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "qd" is an undefined clock
+    Info: Assuming node "clk" is an undefined clock
+Warning: Found 1 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "line_controller:inst1|flag" as buffer
+Info: Clock "qd" has Internal fmax of 76.92 MHz between source register "mode_selector:inst2|tmp[0]" and destination register "mode_selector:inst2|tmp[0]" (period= 13.0 ns)
+    Info: + Longest register to register delay is 8.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC29; Fanout = 51; REG Node = 'mode_selector:inst2|tmp[0]'
+        Info: 2: + IC(0.000 ns) + CELL(8.000 ns) = 8.000 ns; Loc. = LC29; Fanout = 51; REG Node = 'mode_selector:inst2|tmp[0]'
+        Info: Total cell delay = 8.000 ns ( 100.00 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "qd" to destination register is 10.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_60; Fanout = 2; CLK Node = 'qd'
+            Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC29; Fanout = 51; REG Node = 'mode_selector:inst2|tmp[0]'
+            Info: Total cell delay = 8.000 ns ( 80.00 % )
+            Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+        Info: - Longest clock path from clock "qd" to source register is 10.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_60; Fanout = 2; CLK Node = 'qd'
+            Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC29; Fanout = 51; REG Node = 'mode_selector:inst2|tmp[0]'
+            Info: Total cell delay = 8.000 ns ( 80.00 % )
+            Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+    Info: + Micro clock to output delay of source is 1.000 ns
+    Info: + Micro setup delay of destination is 4.000 ns
+Info: Clock "clk" has Internal fmax of 71.43 MHz between source register "row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]" and destination register "row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]" (period= 14.0 ns)
+    Info: + Longest register to register delay is 9.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC15; Fanout = 25; REG Node = 'row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 8.000 ns; Loc. = LC1; Fanout = 1; COMB Node = 'row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]~63'
+        Info: 3: + IC(0.000 ns) + CELL(1.000 ns) = 9.000 ns; Loc. = LC2; Fanout = 26; REG Node = 'row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]'
+        Info: Total cell delay = 7.000 ns ( 77.78 % )
+        Info: Total interconnect delay = 2.000 ns ( 22.22 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "clk" to destination register is 19.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_55; Fanout = 10; CLK Node = 'clk'
+            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC56; Fanout = 16; REG Node = 'line_controller:inst1|flag'
+            Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 19.000 ns; Loc. = LC2; Fanout = 26; REG Node = 'row_controller:inst3|lpm_counter:counter_rtl_1|dffs[1]'
+            Info: Total cell delay = 15.000 ns ( 78.95 % )
+            Info: Total interconnect delay = 4.000 ns ( 21.05 % )
+        Info: - Longest clock path from clock "clk" to source register is 19.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_55; Fanout = 10; CLK Node = 'clk'
+            Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC56; Fanout = 16; REG Node = 'line_controller:inst1|flag'
+            Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 19.000 ns; Loc. = LC15; Fanout = 25; REG Node = 'row_controller:inst3|lpm_counter:counter_rtl_1|dffs[0]'
+            Info: Total cell delay = 15.000 ns ( 78.95 % )
+            Info: Total interconnect delay = 4.000 ns ( 21.05 % )
+    Info: + Micro clock to output delay of source is 1.000 ns
+    Info: + Micro setup delay of destination is 4.000 ns
+Info: tco from clock "clk" to destination pin "VGAB" through register "row_controller:inst3|part[2]" is 52.000 ns
+    Info: + Longest clock path from clock "clk" to source register is 19.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_55; Fanout = 10; CLK Node = 'clk'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC56; Fanout = 16; REG Node = 'line_controller:inst1|flag'
+        Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 19.000 ns; Loc. = LC55; Fanout = 30; REG Node = 'row_controller:inst3|part[2]'
+        Info: Total cell delay = 15.000 ns ( 78.95 % )
+        Info: Total interconnect delay = 4.000 ns ( 21.05 % )
+    Info: + Micro clock to output delay of source is 1.000 ns
+    Info: + Longest register to pin delay is 32.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC55; Fanout = 30; REG Node = 'row_controller:inst3|part[2]'
+        Info: 2: + IC(2.000 ns) + CELL(8.000 ns) = 10.000 ns; Loc. = SEXP28; Fanout = 4; COMB Node = 'display:inst|Mux0~9'
+        Info: 3: + IC(0.000 ns) + CELL(6.000 ns) = 16.000 ns; Loc. = LC18; Fanout = 1; COMB Node = 'display:inst|Mux0~22'
+        Info: 4: + IC(0.000 ns) + CELL(1.000 ns) = 17.000 ns; Loc. = LC19; Fanout = 1; COMB Node = 'display:inst|Mux0~28'
+        Info: 5: + IC(0.000 ns) + CELL(2.000 ns) = 19.000 ns; Loc. = LC20; Fanout = 3; COMB Node = 'display:inst|Mux0~8'
+        Info: 6: + IC(0.000 ns) + CELL(9.000 ns) = 28.000 ns; Loc. = LC57; Fanout = 5; COMB LOOP Node = 'display:inst|RGB[2]~60'
+            Info: Loc. = LC57; Node "display:inst|RGB[2]~60"
+        Info: 7: + IC(0.000 ns) + CELL(4.000 ns) = 32.000 ns; Loc. = PIN_36; Fanout = 0; PIN Node = 'VGAB'
+        Info: Total cell delay = 30.000 ns ( 93.75 % )
+        Info: Total interconnect delay = 2.000 ns ( 6.25 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 170 megabytes
+    Info: Processing ended: Mon May 29 20:59:37 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

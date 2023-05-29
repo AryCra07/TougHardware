@@ -1,0 +1,561 @@
+Analysis & Synthesis report for pill_bottle
+Fri May 26 18:10:19 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Source assignments for bottle:inst8|lpm_counter:temp_l_rtl_0
+  9. Source assignments for bottle:inst8|lpm_counter:temp_h_rtl_1
+ 10. Source assignments for bottle_counter:inst1|lpm_counter:cur_h_rtl_2
+ 11. Source assignments for pill_counter:inst3|lpm_counter:temp_h_rtl_3
+ 12. Source assignments for pill_counter:inst3|lpm_add_sub:Add1|addcore:adder
+ 13. Source assignments for pill_counter:inst3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]
+ 14. Source assignments for multi_fre:inst2|lpm_add_sub:Add0|addcore:adder[1]
+ 15. Source assignments for multi_fre:inst2|lpm_add_sub:Add0|addcore:adder[0]
+ 16. Parameter Settings for Inferred Entity Instance: bottle:inst8|lpm_counter:temp_l_rtl_0
+ 17. Parameter Settings for Inferred Entity Instance: bottle:inst8|lpm_counter:temp_h_rtl_1
+ 18. Parameter Settings for Inferred Entity Instance: bottle_counter:inst1|lpm_counter:cur_h_rtl_2
+ 19. Parameter Settings for Inferred Entity Instance: pill_counter:inst3|lpm_counter:temp_h_rtl_3
+ 20. Parameter Settings for Inferred Entity Instance: pill_counter:inst3|lpm_add_sub:Add1
+ 21. Parameter Settings for Inferred Entity Instance: multi_fre:inst2|lpm_add_sub:Add0
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Fri May 26 18:10:19 2023    ;
+; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
+; Revision Name               ; pill_bottle                              ;
+; Top-level Entity Name       ; pill_bottle                              ;
+; Family                      ; MAX7000S                                 ;
+; Total macrocells            ; 111                                      ;
+; Total pins                  ; 35                                       ;
++-----------------------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM7128SLC84-15 ;               ;
+; Top-level entity name                                                      ; pill_bottle     ; pill_bottle   ;
+; Family name                                                                ; MAX7000S        ; Stratix II    ;
+; Use Generated Physical Constraints File                                    ; Off             ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off             ; Off           ;
+; Preserve fewer node names                                                  ; On              ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off             ; Off           ;
+; Verilog Version                                                            ; Verilog_2001    ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993       ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto            ; Auto          ;
+; Safe State Machine                                                         ; Off             ; Off           ;
+; Extract Verilog State Machines                                             ; On              ; On            ;
+; Extract VHDL State Machines                                                ; On              ; On            ;
+; Ignore Verilog initial constructs                                          ; Off             ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000            ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250             ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On              ; On            ;
+; Parallel Synthesis                                                         ; On              ; On            ;
+; NOT Gate Push-Back                                                         ; On              ; On            ;
+; Power-Up Don't Care                                                        ; On              ; On            ;
+; Remove Duplicate Registers                                                 ; On              ; On            ;
+; Ignore CARRY Buffers                                                       ; Off             ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off             ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off             ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off             ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto            ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off             ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off             ; Off           ;
+; Optimization Technique                                                     ; Speed           ; Speed         ;
+; Allow XOR Gate Usage                                                       ; On              ; On            ;
+; Auto Logic Cell Insertion                                                  ; On              ; On            ;
+; Parallel Expander Chain Length                                             ; 4               ; 4             ;
+; Auto Parallel Expanders                                                    ; On              ; On            ;
+; Auto Open-Drain Pins                                                       ; On              ; On            ;
+; Auto Resource Sharing                                                      ; Off             ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100             ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On              ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off             ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On              ; On            ;
+; HDL message level                                                          ; Level2          ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off             ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 100             ; 100           ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100             ; 100           ;
+; Block Design Naming                                                        ; Auto            ; Auto          ;
+; Synthesis Effort                                                           ; Auto            ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On              ; On            ;
+; Analysis & Synthesis Message Level                                         ; Medium          ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto            ; Auto          ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-16 processors        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+
+; led_7.vhd                        ; yes             ; User VHDL File                           ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/led_7.vhd          ;
+; bottle_control.vhd               ; yes             ; User VHDL File                           ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/bottle_control.vhd ;
+; bottle.vhd                       ; yes             ; User VHDL File                           ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/bottle.vhd         ;
+; pill_counter.vhd                 ; yes             ; User VHDL File                           ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/pill_counter.vhd   ;
+; bottle_counter.vhd               ; yes             ; User VHDL File                           ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/bottle_counter.vhd ;
+; switch.vhd                       ; yes             ; User VHDL File                           ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/switch.vhd         ;
+; multi_fre.vhd                    ; yes             ; User VHDL File                           ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/multi_fre.vhd      ;
+; pill_bottle.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/pill_bottle/pill_bottle.bdf    ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                             ; d:/quarii/quartus/libraries/megafunctions/lpm_counter.tdf            ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; d:/quarii/quartus/libraries/megafunctions/lpm_add_sub.tdf            ;
+; addcore.tdf                      ; yes             ; Megafunction                             ; d:/quarii/quartus/libraries/megafunctions/addcore.tdf                ;
+; a_csnbuffer.tdf                  ; yes             ; Megafunction                             ; d:/quarii/quartus/libraries/megafunctions/a_csnbuffer.tdf            ;
+; altshift.tdf                     ; yes             ; Megafunction                             ; d:/quarii/quartus/libraries/megafunctions/altshift.tdf               ;
+; look_add.tdf                     ; yes             ; Megafunction                             ; d:/quarii/quartus/libraries/megafunctions/look_add.tdf               ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 111                  ;
+; Total registers      ; 72                   ;
+; I/O pins             ; 35                   ;
+; Shareable expanders  ; 9                    ;
+; Parallel expanders   ; 24                   ;
+; Maximum fan-out node ; clr                  ;
+; Maximum fan-out      ; 58                   ;
+; Total fan-out        ; 991                  ;
+; Average fan-out      ; 6.39                 ;
++----------------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                             ;
++----------------------------------+------------+------+-----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; Macrocells ; Pins ; Full Hierarchy Name                                       ; Library Name ;
++----------------------------------+------------+------+-----------------------------------------------------------+--------------+
+; |pill_bottle                     ; 111        ; 35   ; |pill_bottle                                              ; work         ;
+;    |bottle:inst8|                ; 35         ; 0    ; |pill_bottle|bottle:inst8                                 ; work         ;
+;       |lpm_counter:temp_h_rtl_1| ; 4          ; 0    ; |pill_bottle|bottle:inst8|lpm_counter:temp_h_rtl_1        ; work         ;
+;       |lpm_counter:temp_l_rtl_0| ; 5          ; 0    ; |pill_bottle|bottle:inst8|lpm_counter:temp_l_rtl_0        ; work         ;
+;    |bottle_counter:inst1|        ; 13         ; 0    ; |pill_bottle|bottle_counter:inst1                         ; work         ;
+;       |lpm_counter:cur_h_rtl_2|  ; 4          ; 0    ; |pill_bottle|bottle_counter:inst1|lpm_counter:cur_h_rtl_2 ; work         ;
+;    |led_7:inst7|                 ; 7          ; 0    ; |pill_bottle|led_7:inst7                                  ; work         ;
+;    |multi_fre:inst2|             ; 22         ; 0    ; |pill_bottle|multi_fre:inst2                              ; work         ;
+;    |pill_counter:inst3|          ; 12         ; 0    ; |pill_bottle|pill_counter:inst3                           ; work         ;
+;       |lpm_counter:temp_h_rtl_3| ; 4          ; 0    ; |pill_bottle|pill_counter:inst3|lpm_counter:temp_h_rtl_3  ; work         ;
+;    |switch:inst4|                ; 22         ; 0    ; |pill_bottle|switch:inst4                                 ; work         ;
++----------------------------------+------------+------+-----------------------------------------------------------+--------------+
+
+
++--------------------------------------------------------------+
+; Source assignments for bottle:inst8|lpm_counter:temp_l_rtl_0 ;
++---------------------------+-------+------+-------------------+
+; Assignment                ; Value ; From ; To                ;
++---------------------------+-------+------+-------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                 ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                 ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                 ;
++---------------------------+-------+------+-------------------+
+
+
++--------------------------------------------------------------+
+; Source assignments for bottle:inst8|lpm_counter:temp_h_rtl_1 ;
++---------------------------+-------+------+-------------------+
+; Assignment                ; Value ; From ; To                ;
++---------------------------+-------+------+-------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                 ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                 ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                 ;
++---------------------------+-------+------+-------------------+
+
+
++---------------------------------------------------------------------+
+; Source assignments for bottle_counter:inst1|lpm_counter:cur_h_rtl_2 ;
++---------------------------+-------+------+--------------------------+
+; Assignment                ; Value ; From ; To                       ;
++---------------------------+-------+------+--------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                        ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                        ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                        ;
++---------------------------+-------+------+--------------------------+
+
+
++--------------------------------------------------------------------+
+; Source assignments for pill_counter:inst3|lpm_counter:temp_h_rtl_3 ;
++---------------------------+-------+------+-------------------------+
+; Assignment                ; Value ; From ; To                      ;
++---------------------------+-------+------+-------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                       ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                       ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                       ;
++---------------------------+-------+------+-------------------------+
+
+
++--------------------------------------------------------------------------+
+; Source assignments for pill_counter:inst3|lpm_add_sub:Add1|addcore:adder ;
++---------------------------+-------+------+-------------------------------+
+; Assignment                ; Value ; From ; To                            ;
++---------------------------+-------+------+-------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                             ;
++---------------------------+-------+------+-------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Source assignments for pill_counter:inst3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------------------------+
+; Assignment                ; Value ; From ; To                                             ;
++---------------------------+-------+------+------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                                              ;
++---------------------------+-------+------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Source assignments for multi_fre:inst2|lpm_add_sub:Add0|addcore:adder[1] ;
++---------------------------+-------+------+-------------------------------+
+; Assignment                ; Value ; From ; To                            ;
++---------------------------+-------+------+-------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                             ;
++---------------------------+-------+------+-------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Source assignments for multi_fre:inst2|lpm_add_sub:Add0|addcore:adder[0] ;
++---------------------------+-------+------+-------------------------------+
+; Assignment                ; Value ; From ; To                            ;
++---------------------------+-------+------+-------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                             ;
++---------------------------+-------+------+-------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: bottle:inst8|lpm_counter:temp_l_rtl_0 ;
++------------------------+-------------------+-------------------------------------------+
+; Parameter Name         ; Value             ; Type                                      ;
++------------------------+-------------------+-------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                            ;
+; LPM_WIDTH              ; 4                 ; Untyped                                   ;
+; LPM_DIRECTION          ; UP                ; Untyped                                   ;
+; LPM_MODULUS            ; 0                 ; Untyped                                   ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                   ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                   ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                   ;
+; DEVICE_FAMILY          ; MAX7000S          ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                        ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                        ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                   ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                   ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                   ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                                   ;
++------------------------+-------------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: bottle:inst8|lpm_counter:temp_h_rtl_1 ;
++------------------------+-------------------+-------------------------------------------+
+; Parameter Name         ; Value             ; Type                                      ;
++------------------------+-------------------+-------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                            ;
+; LPM_WIDTH              ; 4                 ; Untyped                                   ;
+; LPM_DIRECTION          ; UP                ; Untyped                                   ;
+; LPM_MODULUS            ; 0                 ; Untyped                                   ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                   ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                   ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                   ;
+; DEVICE_FAMILY          ; MAX7000S          ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                        ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                        ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                   ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                   ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                   ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                                   ;
++------------------------+-------------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: bottle_counter:inst1|lpm_counter:cur_h_rtl_2 ;
++------------------------+-------------------+--------------------------------------------------+
+; Parameter Name         ; Value             ; Type                                             ;
++------------------------+-------------------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                   ;
+; LPM_WIDTH              ; 4                 ; Untyped                                          ;
+; LPM_DIRECTION          ; UP                ; Untyped                                          ;
+; LPM_MODULUS            ; 0                 ; Untyped                                          ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                          ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                          ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                          ;
+; DEVICE_FAMILY          ; MAX7000S          ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                          ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                               ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                               ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                          ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                          ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                          ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                                          ;
++------------------------+-------------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: pill_counter:inst3|lpm_counter:temp_h_rtl_3 ;
++------------------------+-------------------+-------------------------------------------------+
+; Parameter Name         ; Value             ; Type                                            ;
++------------------------+-------------------+-------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                  ;
+; LPM_WIDTH              ; 4                 ; Untyped                                         ;
+; LPM_DIRECTION          ; UP                ; Untyped                                         ;
+; LPM_MODULUS            ; 0                 ; Untyped                                         ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                         ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                         ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                         ;
+; DEVICE_FAMILY          ; MAX7000S          ; Untyped                                         ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                         ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                              ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                              ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                         ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                         ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                         ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                                         ;
++------------------------+-------------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: pill_counter:inst3|lpm_add_sub:Add1 ;
++------------------------+-------------+-----------------------------------------------+
+; Parameter Name         ; Value       ; Type                                          ;
++------------------------+-------------+-----------------------------------------------+
+; LPM_WIDTH              ; 4           ; Untyped                                       ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                       ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                       ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                       ;
+; LPM_PIPELINE           ; 0           ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                       ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                       ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                       ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                            ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                       ;
+; USE_WYS                ; OFF         ; Untyped                                       ;
+; STYLE                  ; FAST        ; Untyped                                       ;
+; CBXI_PARAMETER         ; add_sub_3kh ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                ;
++------------------------+-------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: multi_fre:inst2|lpm_add_sub:Add0 ;
++------------------------+-------------+--------------------------------------------+
+; Parameter Name         ; Value       ; Type                                       ;
++------------------------+-------------+--------------------------------------------+
+; LPM_WIDTH              ; 14          ; Untyped                                    ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                    ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                    ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                    ;
+; LPM_PIPELINE           ; 0           ; Untyped                                    ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                    ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                    ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                    ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                    ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                    ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                         ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                    ;
+; USE_WYS                ; OFF         ; Untyped                                    ;
+; STYLE                  ; FAST        ; Untyped                                    ;
+; CBXI_PARAMETER         ; add_sub_8ph ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                             ;
++------------------------+-------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Fri May 26 18:10:17 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pill_bottle -c pill_bottle
+Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info: Found 2 design units, including 1 entities, in source file led_7.vhd
+    Info: Found design unit 1: led_7-func
+    Info: Found entity 1: led_7
+Info: Found 2 design units, including 1 entities, in source file bottle_control.vhd
+    Info: Found design unit 1: bottle_control-func
+    Info: Found entity 1: bottle_control
+Info: Found 2 design units, including 1 entities, in source file bottle.vhd
+    Info: Found design unit 1: bottle-func
+    Info: Found entity 1: bottle
+Info: Found 2 design units, including 1 entities, in source file pill_counter.vhd
+    Info: Found design unit 1: pill_counter-func
+    Info: Found entity 1: pill_counter
+Info: Found 2 design units, including 1 entities, in source file bottle_counter.vhd
+    Info: Found design unit 1: bottle_counter-func
+    Info: Found entity 1: bottle_counter
+Info: Found 2 design units, including 1 entities, in source file switch.vhd
+    Info: Found design unit 1: switch-func
+    Info: Found entity 1: switch
+Info: Found 2 design units, including 1 entities, in source file multi_fre.vhd
+    Info: Found design unit 1: multi_fre-func
+    Info: Found entity 1: multi_fre
+Warning: Using design file pill_bottle.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: pill_bottle
+Info: Elaborating entity "pill_bottle" for the top level hierarchy
+Info: Elaborating entity "bottle" for hierarchy "bottle:inst8"
+Warning (10492): VHDL Process Statement warning at bottle.vhd(106): signal "temp_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle.vhd(107): signal "temp_l" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "bottle_control" for hierarchy "bottle_control:inst"
+Info: Elaborating entity "multi_fre" for hierarchy "multi_fre:inst2"
+Warning (10492): VHDL Process Statement warning at multi_fre.vhd(56): signal "divide_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at multi_fre.vhd(57): signal "divide_125" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at multi_fre.vhd(58): signal "divide_250" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "bottle_counter" for hierarchy "bottle_counter:inst1"
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(27): signal "bottle_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(31): signal "bottle_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(31): signal "bottle_l" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(32): signal "bottle_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(35): signal "bottle_l" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(36): signal "bottle_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(39): signal "bottle_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(39): signal "bottle_l" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(44): signal "bottle_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(45): signal "bottle_l" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(79): signal "s_full" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(80): signal "cur_l" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bottle_counter.vhd(81): signal "cur_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "led_7" for hierarchy "led_7:inst7"
+Info: Elaborating entity "switch" for hierarchy "switch:inst4"
+Info: Elaborating entity "pill_counter" for hierarchy "pill_counter:inst3"
+Warning (10492): VHDL Process Statement warning at pill_counter.vhd(46): signal "temp_h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pill_counter.vhd(47): signal "temp_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pill_counter.vhd(48): signal "temp_l" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Inferred 4 megafunctions from design logic
+    Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "bottle:inst8|temp_l[0]~0"
+    Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "bottle:inst8|temp_h[0]~0"
+    Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "bottle_counter:inst1|cur_h[0]~0"
+    Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "pill_counter:inst3|temp_h[0]~0"
+Info: Inferred 2 megafunctions from design logic
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "pill_counter:inst3|Add1"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "multi_fre:inst2|Add0"
+Info: Elaborated megafunction instantiation "bottle:inst8|lpm_counter:temp_l_rtl_0"
+Info: Instantiated megafunction "bottle:inst8|lpm_counter:temp_l_rtl_0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_DIRECTION" = "UP"
+    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
+Info: Elaborated megafunction instantiation "bottle_counter:inst1|lpm_counter:cur_h_rtl_2"
+Info: Instantiated megafunction "bottle_counter:inst1|lpm_counter:cur_h_rtl_2" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_DIRECTION" = "UP"
+    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Instantiated megafunction "pill_counter:inst3|lpm_add_sub:Add1" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|addcore:adder", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:oflow_node", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|a_csnbuffer:oflow_node", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|a_csnbuffer:result_node", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "pill_counter:inst3|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0"
+Info: Instantiated megafunction "multi_fre:inst2|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "14"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0|addcore:adder[1]", which is child of megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0|addcore:adder[0]", which is child of megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0|look_add:look_ahead_unit", which is child of megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "multi_fre:inst2|lpm_add_sub:Add0"
+Info: Ignored 17 buffer(s)
+    Info: Ignored 17 SOFT buffer(s)
+Info: Registers with preset signals will power-up high
+Info: Implemented 155 device resources after synthesis - the final resource count might be different
+    Info: Implemented 18 input pins
+    Info: Implemented 17 output pins
+    Info: Implemented 111 macrocells
+    Info: Implemented 9 shareable expanders
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 245 megabytes
+    Info: Processing ended: Fri May 26 18:10:19 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -6,7 +6,7 @@ ENTITY switch IS
     PORT (
         clk : IN STD_LOGIC;
         clr : IN STD_LOGIC;
-        mode : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        qd : IN STD_LOGIC;
         bottle_h : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
         bottle_l : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
         pcnt_h : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -21,9 +21,17 @@ ENTITY switch IS
 END switch;
 
 ARCHITECTURE func OF switch IS
+SIGNAL mode : STD_LOGIC_VECTOR(1 DOWNTO 0);
 BEGIN
-    PROCESS (clk)
+    PROCESS (clk, qd, clr)
     BEGIN
+		IF (qd'event AND qd = '0') THEN
+			IF (mode < 3) THEN
+				mode <= mode + 1;
+			ELSE
+				mode <= "00";
+			END IF;
+		END IF;
         IF (clr = '1') THEN
             led3 <= "0000";
             led2 <= "0000";

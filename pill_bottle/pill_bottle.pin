@@ -1,0 +1,151 @@
+ -- Copyright (C) 1991-2009 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCC           : Dedicated power pin, which MUST be connected to VCC.
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks (Bank 13, 14, 15, 16 and 17),
+ --           	    connect each pin marked GND* either individually through a 10k Ohm resistor
+ --           	    to GND or tie all pins together and connect through a single 10k Ohm resistor
+ --           	    to GND.
+ --           	    For non-transceiver I/O banks, connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- NON_MIGRATABLE: This pin cannot be migrated.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+CHIP  "pill_bottle"  ASSIGNED TO AN: EPM7128SLC84-15
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+clr                          : 1         : input  : TTL               :         :           : Y              
+GND+                         : 2         :        :                   :         :           :                
+VCCINT                       : 3         : power  :                   : 5.0V    :           :                
+RESERVED                     : 4         :        :                   :         :           :                
+RESERVED                     : 5         :        :                   :         :           :                
+RESERVED                     : 6         :        :                   :         :           :                
+GND                          : 7         : gnd    :                   :         :           :                
+RESERVED                     : 8         :        :                   :         :           :                
+RESERVED                     : 9         :        :                   :         :           :                
+RESERVED                     : 10        :        :                   :         :           :                
+light_green                  : 11        : output : TTL               :         :           : N              
+RESERVED                     : 12        :        :                   :         :           :                
+VCCIO                        : 13        : power  :                   : 5.0V    :           :                
+TDI                          : 14        : input  : TTL               :         :           : N              
+RESERVED                     : 15        :        :                   :         :           :                
+RESERVED                     : 16        :        :                   :         :           :                
+led2[2]                      : 17        : output : TTL               :         :           : Y              
+led2[3]                      : 18        : output : TTL               :         :           : Y              
+GND                          : 19        : gnd    :                   :         :           :                
+RESERVED                     : 20        :        :                   :         :           :                
+RESERVED                     : 21        :        :                   :         :           :                
+RESERVED                     : 22        :        :                   :         :           :                
+TMS                          : 23        : input  : TTL               :         :           : N              
+RESERVED                     : 24        :        :                   :         :           :                
+RESERVED                     : 25        :        :                   :         :           :                
+VCCIO                        : 26        : power  :                   : 5.0V    :           :                
+RESERVED                     : 27        :        :                   :         :           :                
+RESERVED                     : 28        :        :                   :         :           :                
+RESERVED                     : 29        :        :                   :         :           :                
+led3[0]                      : 30        : output : TTL               :         :           : Y              
+led3[1]                      : 31        : output : TTL               :         :           : Y              
+GND                          : 32        : gnd    :                   :         :           :                
+led3[2]                      : 33        : output : TTL               :         :           : Y              
+led3[3]                      : 34        : output : TTL               :         :           : Y              
+led2[0]                      : 35        : output : TTL               :         :           : Y              
+led2[1]                      : 36        : output : TTL               :         :           : Y              
+RESERVED                     : 37        :        :                   :         :           :                
+VCCIO                        : 38        : power  :                   : 5.0V    :           :                
+RESERVED                     : 39        :        :                   :         :           :                
+RESERVED                     : 40        :        :                   :         :           :                
+RESERVED                     : 41        :        :                   :         :           :                
+GND                          : 42        : gnd    :                   :         :           :                
+VCCINT                       : 43        : power  :                   : 5.0V    :           :                
+led1[0]                      : 44        : output : TTL               :         :           : Y              
+led1[1]                      : 45        : output : TTL               :         :           : Y              
+led1[2]                      : 46        : output : TTL               :         :           : Y              
+GND                          : 47        : gnd    :                   :         :           :                
+led1[3]                      : 48        : output : TTL               :         :           : Y              
+led1[4]                      : 49        : output : TTL               :         :           : Y              
+led1[5]                      : 50        : output : TTL               :         :           : Y              
+led1[6]                      : 51        : output : TTL               :         :           : Y              
+light_red                    : 52        : output : TTL               :         :           : N              
+VCCIO                        : 53        : power  :                   : 5.0V    :           :                
+start                        : 54        : input  : TTL               :         :           : Y              
+RESERVED                     : 55        :        :                   :         :           :                
+clk                          : 56        : input  : TTL               :         :           : Y              
+RESERVED                     : 57        :        :                   :         :           :                
+RESERVED                     : 58        :        :                   :         :           :                
+GND                          : 59        : gnd    :                   :         :           :                
+qd                           : 60        : input  : TTL               :         :           : Y              
+RESERVED                     : 61        :        :                   :         :           :                
+TCK                          : 62        : input  : TTL               :         :           : N              
+RESERVED                     : 63        :        :                   :         :           :                
+tablets_h[2]                 : 64        : input  : TTL               :         :           : Y              
+tablets_h[1]                 : 65        : input  : TTL               :         :           : Y              
+VCCIO                        : 66        : power  :                   : 5.0V    :           :                
+tablets_h[0]                 : 67        : input  : TTL               :         :           : Y              
+tablets_l[3]                 : 68        : input  : TTL               :         :           : Y              
+tablets_l[2]                 : 69        : input  : TTL               :         :           : Y              
+tablets_l[1]                 : 70        : input  : TTL               :         :           : Y              
+TDO                          : 71        : output : TTL               :         :           : N              
+GND                          : 72        : gnd    :                   :         :           :                
+tablets_l[0]                 : 73        : input  : TTL               :         :           : Y              
+bottle_h[2]                  : 74        : input  : TTL               :         :           : Y              
+bottle_h[1]                  : 75        : input  : TTL               :         :           : Y              
+bottle_h[0]                  : 76        : input  : TTL               :         :           : Y              
+bottle_l[3]                  : 77        : input  : TTL               :         :           : Y              
+VCCIO                        : 78        : power  :                   : 5.0V    :           :                
+bottle_l[2]                  : 79        : input  : TTL               :         :           : Y              
+bottle_l[1]                  : 80        : input  : TTL               :         :           : Y              
+bottle_l[0]                  : 81        : input  : TTL               :         :           : Y              
+GND                          : 82        : gnd    :                   :         :           :                
+GND+                         : 83        :        :                   :         :           :                
+GND+                         : 84        :        :                   :         :           :                
