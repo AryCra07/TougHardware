@@ -10,6 +10,7 @@ ENTITY init_set IS
 		start : IN STD_LOGIC;
 		in_high : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		in_low : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		clk : IN STD_LOGIC;
 
 		store_single_high : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 		store_single_low : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -26,6 +27,7 @@ ARCHITECTURE rtl OF init_set IS
 	SIGNAL set_single_low : STD_LOGIC_VECTOR(3 DOWNTO 0);
 	SIGNAL set_nums_high : STD_LOGIC_VECTOR(3 DOWNTO 0);
 	SIGNAL set_nums_low : STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL blink : STD_LOGIC;
 
 BEGIN
 
@@ -80,11 +82,30 @@ BEGIN
 			END IF;
 		END IF;
 	END PROCESS;
+	
+	PROCESS (clk, reset, blink)
+	BEGIN
+		IF (clk'event AND clk = '1') THEN
+			blink <= NOT blink;
+		END IF;
+		
+		IF (reset = '1') THEN
+			IF (blink = '0') THEN
+				store_single_high <= set_single_high;
+				store_single_low <= set_single_low;
+				store_nums_high <= set_nums_high;
+				store_nums_low <= set_nums_low;
+			ELSE
+				store_single_high <= "0000";
+				store_single_low <= "0000";
+				store_nums_high <= "0000";
+				store_nums_low <= "0000";
+			END IF;
+		END IF;
+		
+	END PROCESS;
+	
 	-- output
 	is_start <= start;
-	store_single_high <= set_single_high;
-	store_single_low <= set_single_low;
-	store_nums_high <= set_nums_high;
-	store_nums_low <= set_nums_low;
 
 END rtl;

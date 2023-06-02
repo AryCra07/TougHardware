@@ -5,8 +5,8 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 40.000 ns
-From           : in_high[3]
+Actual Time    : 59.000 ns
+From           : in_high[2]
 To             : single_bottle:inst3|cout
 From Clock     : --
 To Clock       : clk
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 33.000 ns
+Actual Time    : 41.000 ns
 From           : bottle_nums:inst|full
 To             : signal_led[6]
 From Clock     : clk
@@ -25,8 +25,8 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 42.000 ns
-From           : in_high[2]
+Actual Time    : 58.000 ns
+From           : in_low[0]
 To             : out_led_1[0]
 From Clock     : --
 To Clock       : --
@@ -37,7 +37,7 @@ Slack          : N/A
 Required Time  : None
 Actual Time    : 13.000 ns
 From           : start
-To             : bottle_nums:inst|full
+To             : bottle_nums:inst|now_nums_high[3]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 40.00 MHz ( period = 25.000 ns )
-From           : bottle_nums:inst|now_nums_low[2]
-To             : bottle_nums:inst|now_nums_low[3]
+Actual Time    : 24.39 MHz ( period = 41.000 ns )
+From           : init_set:inst1|blink
+To             : single_bottle:inst3|cout
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
