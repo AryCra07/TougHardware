@@ -16,8 +16,8 @@ Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
 Actual Time    : 41.000 ns
-From           : bottle_nums:inst|full
-To             : signal_led[6]
+From           : init_set:inst1|blink
+To             : out_led_5[3]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 24.39 MHz ( period = 41.000 ns )
+Actual Time    : 21.28 MHz ( period = 47.000 ns )
 From           : init_set:inst1|blink
-To             : single_bottle:inst3|cout
+To             : bottle_nums:inst|now_nums_high[3]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0

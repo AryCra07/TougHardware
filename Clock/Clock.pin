@@ -121,31 +121,31 @@ VCCIO                        : 53        : power  :                   : 5.0V    
 clr                          : 54        : input  : TTL               :         :           : Y              
 RESERVED                     : 55        :        :                   :         :           :                
 RESERVED                     : 56        :        :                   :         :           :                
-clk_1                        : 57        : input  : TTL               :         :           : Y              
-RESERVED                     : 58        :        :                   :         :           :                
+clk_2                        : 57        : input  : TTL               :         :           : Y              
+clk_1                        : 58        : input  : TTL               :         :           : Y              
 GND                          : 59        : gnd    :                   :         :           :                
-qd                           : 60        : input  : TTL               :         :           : Y              
+RESERVED                     : 60        :        :                   :         :           :                
 RESERVED                     : 61        :        :                   :         :           :                
 TCK                          : 62        : input  : TTL               :         :           : N              
-RESERVED                     : 63        :        :                   :         :           :                
-RESERVED                     : 64        :        :                   :         :           :                
-RESERVED                     : 65        :        :                   :         :           :                
+high_in_num[3]               : 63        : input  : TTL               :         :           : Y              
+high_in_num[2]               : 64        : input  : TTL               :         :           : Y              
+high_in_num[1]               : 65        : input  : TTL               :         :           : Y              
 VCCIO                        : 66        : power  :                   : 5.0V    :           :                
-RESERVED                     : 67        :        :                   :         :           :                
-RESERVED                     : 68        :        :                   :         :           :                
-RESERVED                     : 69        :        :                   :         :           :                
-RESERVED                     : 70        :        :                   :         :           :                
+high_in_num[0]               : 67        : input  : TTL               :         :           : Y              
+low_in_num[3]                : 68        : input  : TTL               :         :           : Y              
+low_in_num[2]                : 69        : input  : TTL               :         :           : Y              
+low_in_num[1]                : 70        : input  : TTL               :         :           : Y              
 TDO                          : 71        : output : TTL               :         :           : N              
 GND                          : 72        : gnd    :                   :         :           :                
-RESERVED                     : 73        :        :                   :         :           :                
-RESERVED                     : 74        :        :                   :         :           :                
-RESERVED                     : 75        :        :                   :         :           :                
-RESERVED                     : 76        :        :                   :         :           :                
-set_hour                     : 77        : input  : TTL               :         :           : Y              
+low_in_num[0]                : 73        : input  : TTL               :         :           : Y              
+alarm_hour                   : 74        : input  : TTL               :         :           : Y              
+alarm_min                    : 75        : input  : TTL               :         :           : Y              
+set_hour                     : 76        : input  : TTL               :         :           : Y              
+set_min                      : 77        : input  : TTL               :         :           : Y              
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
-set_min                      : 79        : input  : TTL               :         :           : Y              
-alarm                        : 80        : input  : TTL               :         :           : Y              
-RESERVED                     : 81        :        :                   :         :           :                
+set                          : 79        : input  : TTL               :         :           : Y              
+pause                        : 80        : input  : TTL               :         :           : Y              
+flash_in                     : 81        : input  : TTL               :         :           : Y              
 GND                          : 82        : gnd    :                   :         :           :                
 GND+                         : 83        :        :                   :         :           :                
 GND+                         : 84        :        :                   :         :           :                

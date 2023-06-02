@@ -1,5 +1,5 @@
 Flow report for vga_display
-Tue May 30 21:16:50 2023
+Fri Jun 02 15:17:45 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------+
 ; Flow Summary                                                       ;
 +-------------------------+------------------------------------------+
-; Flow Status             ; Successful - Tue May 30 21:16:50 2023    ;
+; Flow Status             ; Successful - Fri Jun 02 15:17:45 2023    ;
 ; Quartus II Version      ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name           ; vga_display                              ;
 ; Top-level Entity Name   ; vga_display                              ;
@@ -56,7 +56,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/30/2023 21:16:45 ;
+; Start date & time ; 06/02/2023 15:17:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga_display         ;
 +-------------------+---------------------+
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 2200299517014.168545260503536         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 2200299517014.168569026103096         ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                     ; --            ; --          ; --             ;
 ; MISC_FILE                          ; E:/virus!!!!/vga-self/vga_display.dpf ; --            ; --          ; --             ;
@@ -80,11 +80,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 228 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:00     ; 1.0                     ; 182 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 182 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 155 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 230 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 185 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 185 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 158 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -93,10 +93,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; 722-40           ; Windows Vista ; 6.1        ; x86_64         ;
-; Fitter                  ; 722-40           ; Windows Vista ; 6.1        ; x86_64         ;
-; Assembler               ; 722-40           ; Windows Vista ; 6.1        ; x86_64         ;
-; Classic Timing Analyzer ; 722-40           ; Windows Vista ; 6.1        ; x86_64         ;
+; Analysis & Synthesis    ; 722-32           ; Windows Vista ; 6.1        ; x86_64         ;
+; Fitter                  ; 722-32           ; Windows Vista ; 6.1        ; x86_64         ;
+; Assembler               ; 722-32           ; Windows Vista ; 6.1        ; x86_64         ;
+; Classic Timing Analyzer ; 722-32           ; Windows Vista ; 6.1        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

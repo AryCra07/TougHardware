@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pill_bottle
-Fri Jun 02 11:43:00 2023
+Fri Jun 02 15:36:16 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                           ;
 +-----------------------------+------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Jun 02 11:43:00 2023    ;
+; Analysis & Synthesis Status ; Successful - Fri Jun 02 15:36:16 2023    ;
 ; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name               ; pill_bottle                              ;
 ; Top-level Entity Name       ; pill_bottle                              ;
@@ -116,32 +116,32 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-16 processors        ;   0.0%      ;
+;     2-4 processors         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
-; signals.vhd                      ; yes             ; User VHDL File                     ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/signals.vhd          ;
-; display_selector.vhd             ; yes             ; User VHDL File                     ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/display_selector.vhd ;
-; init_set.vhd                     ; yes             ; User VHDL File                     ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/init_set.vhd         ;
-; total_pills.vhd                  ; yes             ; User VHDL File                     ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/total_pills.vhd      ;
-; bottle_nums.vhd                  ; yes             ; User VHDL File                     ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/bottle_nums.vhd      ;
-; single_bottle.vhd                ; yes             ; User VHDL File                     ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/single_bottle.vhd    ;
-; pill_bottle.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/pill_bottle.bdf      ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; d:/quarii/quartus/libraries/megafunctions/lpm_counter.tdf              ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+
+; signals.vhd                      ; yes             ; User VHDL File                     ; C:/Users/Administrator/Desktop/bottle-6-2/pill_bottle/signals.vhd          ;
+; display_selector.vhd             ; yes             ; User VHDL File                     ; C:/Users/Administrator/Desktop/bottle-6-2/pill_bottle/display_selector.vhd ;
+; init_set.vhd                     ; yes             ; User VHDL File                     ; C:/Users/Administrator/Desktop/bottle-6-2/pill_bottle/init_set.vhd         ;
+; total_pills.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Administrator/Desktop/bottle-6-2/pill_bottle/total_pills.vhd      ;
+; bottle_nums.vhd                  ; yes             ; User VHDL File                     ; C:/Users/Administrator/Desktop/bottle-6-2/pill_bottle/bottle_nums.vhd      ;
+; single_bottle.vhd                ; yes             ; User VHDL File                     ; C:/Users/Administrator/Desktop/bottle-6-2/pill_bottle/single_bottle.vhd    ;
+; pill_bottle.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Administrator/Desktop/bottle-6-2/pill_bottle/pill_bottle.bdf      ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf               ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+
 
 
 +---------------------------------------------+
@@ -152,12 +152,12 @@ applicable agreement for further details.
 ; Logic cells          ; 125                  ;
 ; Total registers      ; 35                   ;
 ; I/O pins             ; 42                   ;
-; Shareable expanders  ; 23                   ;
+; Shareable expanders  ; 26                   ;
 ; Parallel expanders   ; 14                   ;
-; Maximum fan-out node ; start                ;
-; Maximum fan-out      ; 73                   ;
-; Total fan-out        ; 1056                 ;
-; Average fan-out      ; 5.56                 ;
+; Maximum fan-out node ; clr                  ;
+; Maximum fan-out      ; 80                   ;
+; Total fan-out        ; 1084                 ;
+; Average fan-out      ; 5.62                 ;
 +----------------------+----------------------+
 
 
@@ -177,73 +177,73 @@ applicable agreement for further details.
 +-----------------------------------------+------------+------+----------------------------------------------------------------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                             ;
-+-----------------------------------------------------+----------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal              ; Free of Timing Hazards ;
-+-----------------------------------------------------+----------------------------------+------------------------+
-; display_selector:inst6|out_led_1[3]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_1[2]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_1[1]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_1[0]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_2[3]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_2[2]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_2[1]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_2[0]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_3[3]                 ; display_selector:inst6|Equal0    ; yes                    ;
-; display_selector:inst6|out_led_3[2]                 ; display_selector:inst6|Equal0    ; yes                    ;
-; display_selector:inst6|out_led_3[1]                 ; display_selector:inst6|Equal0    ; yes                    ;
-; display_selector:inst6|out_led_3[0]                 ; display_selector:inst6|Equal0    ; yes                    ;
-; display_selector:inst6|out_led_4[3]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_4[2]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_4[1]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_4[0]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_5[3]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_5[2]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_5[1]                 ; VCC                              ; yes                    ;
-; display_selector:inst6|out_led_5[0]                 ; VCC                              ; yes                    ;
-; signals:inst5|s_out[6]                              ; GND                              ; yes                    ;
-; signals:inst5|s_out[5]                              ; GND                              ; yes                    ;
-; signals:inst5|s_out[4]                              ; GND                              ; yes                    ;
-; signals:inst5|s_out[3]                              ; GND                              ; yes                    ;
-; signals:inst5|s_out[2]                              ; GND                              ; yes                    ;
-; signals:inst5|s_out[1]                              ; GND                              ; yes                    ;
-; signals:inst5|s_out[0]                              ; GND                              ; yes                    ;
-; init_set:inst1|store_single_low[3]                  ; reset                            ; yes                    ;
-; init_set:inst1|store_single_low[2]                  ; reset                            ; yes                    ;
-; init_set:inst1|store_single_low[1]                  ; reset                            ; yes                    ;
-; init_set:inst1|store_single_low[0]                  ; reset                            ; yes                    ;
-; init_set:inst1|store_single_high[3]                 ; reset                            ; yes                    ;
-; init_set:inst1|store_single_high[2]                 ; reset                            ; yes                    ;
-; init_set:inst1|store_single_high[1]                 ; reset                            ; yes                    ;
-; init_set:inst1|store_single_high[0]                 ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_low[3]                    ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_low[2]                    ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_low[1]                    ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_low[0]                    ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_high[3]                   ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_high[2]                   ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_high[1]                   ; reset                            ; yes                    ;
-; init_set:inst1|store_nums_high[0]                   ; reset                            ; yes                    ;
-; init_set:inst1|warn                                 ; init_set:inst1|process_0         ; yes                    ;
-; init_set:inst1|set_single_low[3]                    ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_single_low[2]                    ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_single_low[1]                    ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_single_low[0]                    ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_single_high[3]                   ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_single_high[2]                   ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_single_high[1]                   ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_single_high[0]                   ; init_set:inst1|set_single_low[2] ; yes                    ;
-; init_set:inst1|set_nums_low[3]                      ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; init_set:inst1|set_nums_low[2]                      ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; init_set:inst1|set_nums_low[1]                      ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; init_set:inst1|set_nums_low[0]                      ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; init_set:inst1|set_nums_high[3]                     ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; init_set:inst1|set_nums_high[2]                     ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; init_set:inst1|set_nums_high[1]                     ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; init_set:inst1|set_nums_high[0]                     ; init_set:inst1|set_nums_low[2]   ; yes                    ;
-; Number of user-specified and inferred latches = 60  ;                                  ;                        ;
-+-----------------------------------------------------+----------------------------------+------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                 ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; display_selector:inst6|out_led_1[3]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_1[2]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_1[1]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_1[0]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_2[3]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_2[2]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_2[1]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_2[0]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_3[3]                 ; display_selector:inst6|Equal0       ; yes                    ;
+; display_selector:inst6|out_led_3[2]                 ; display_selector:inst6|Equal0       ; yes                    ;
+; display_selector:inst6|out_led_3[1]                 ; display_selector:inst6|Equal0       ; yes                    ;
+; display_selector:inst6|out_led_3[0]                 ; display_selector:inst6|Equal0       ; yes                    ;
+; display_selector:inst6|out_led_4[3]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_4[2]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_4[1]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_4[0]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_5[3]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_5[2]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_5[1]                 ; VCC                                 ; yes                    ;
+; display_selector:inst6|out_led_5[0]                 ; VCC                                 ; yes                    ;
+; signals:inst5|s_out[6]                              ; GND                                 ; yes                    ;
+; signals:inst5|s_out[5]                              ; GND                                 ; yes                    ;
+; signals:inst5|s_out[4]                              ; GND                                 ; yes                    ;
+; signals:inst5|s_out[3]                              ; GND                                 ; yes                    ;
+; signals:inst5|s_out[2]                              ; GND                                 ; yes                    ;
+; signals:inst5|s_out[1]                              ; GND                                 ; yes                    ;
+; signals:inst5|s_out[0]                              ; GND                                 ; yes                    ;
+; init_set:inst1|store_single_low[3]                  ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_single_low[2]                  ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_single_low[1]                  ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_single_low[0]                  ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_single_high[3]                 ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_single_high[2]                 ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_single_high[1]                 ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_single_high[0]                 ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_low[3]                    ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_low[2]                    ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_low[1]                    ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_low[0]                    ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_high[3]                   ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_high[2]                   ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_high[1]                   ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|store_nums_high[0]                   ; init_set:inst1|store_single_high[3] ; yes                    ;
+; init_set:inst1|warn                                 ; init_set:inst1|process_0            ; yes                    ;
+; init_set:inst1|set_single_low[3]                    ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_single_low[2]                    ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_single_low[1]                    ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_single_low[0]                    ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_single_high[3]                   ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_single_high[2]                   ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_single_high[1]                   ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_single_high[0]                   ; init_set:inst1|set_single_low[2]    ; yes                    ;
+; init_set:inst1|set_nums_low[3]                      ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; init_set:inst1|set_nums_low[2]                      ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; init_set:inst1|set_nums_low[1]                      ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; init_set:inst1|set_nums_low[0]                      ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; init_set:inst1|set_nums_high[3]                     ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; init_set:inst1|set_nums_high[2]                     ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; init_set:inst1|set_nums_high[1]                     ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; init_set:inst1|set_nums_high[0]                     ; init_set:inst1|set_nums_low[2]      ; yes                    ;
+; Number of user-specified and inferred latches = 60  ;                                     ;                        ;
++-----------------------------------------------------+-------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -291,9 +291,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Fri Jun 02 11:42:58 2023
+    Info: Processing started: Fri Jun 02 15:36:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pill_bottle -c pill_bottle
-Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 2 design units, including 1 entities, in source file signals.vhd
     Info: Found design unit 1: signals-rtl
     Info: Found entity 1: signals
@@ -377,6 +377,11 @@ Warning (10492): VHDL Process Statement warning at init_set.vhd(94): signal "set
 Warning (10492): VHDL Process Statement warning at init_set.vhd(95): signal "set_single_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at init_set.vhd(96): signal "set_nums_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at init_set.vhd(97): signal "set_nums_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at init_set.vhd(104): signal "clr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at init_set.vhd(105): signal "set_single_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at init_set.vhd(106): signal "set_single_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at init_set.vhd(107): signal "set_nums_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at init_set.vhd(108): signal "set_nums_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10631): VHDL Process Statement warning at init_set.vhd(86): inferring latch(es) for signal or variable "store_single_high", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at init_set.vhd(86): inferring latch(es) for signal or variable "store_single_low", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at init_set.vhd(86): inferring latch(es) for signal or variable "store_nums_high", which holds its previous value in one or more paths through the process
@@ -451,14 +456,14 @@ Info: Instantiated megafunction "total_pills:inst4|lpm_counter:now_total_max_rtl
     Info: Parameter "LPM_WIDTH" = "4"
     Info: Parameter "LPM_DIRECTION" = "UP"
     Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
-Info: Implemented 190 device resources after synthesis - the final resource count might be different
+Info: Implemented 193 device resources after synthesis - the final resource count might be different
     Info: Implemented 15 input pins
     Info: Implemented 27 output pins
     Info: Implemented 125 macrocells
-    Info: Implemented 23 shareable expanders
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 63 warnings
-    Info: Peak virtual memory: 245 megabytes
-    Info: Processing ended: Fri Jun 02 11:43:00 2023
+    Info: Implemented 26 shareable expanders
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 68 warnings
+    Info: Peak virtual memory: 233 megabytes
+    Info: Processing ended: Fri Jun 02 15:36:16 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Clock
-Wed May 24 20:56:29 2023
+Fri Jun 02 14:54:17 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -14,25 +14,18 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
-  9. Source assignments for hour:inst1|lpm_counter:tmp_low_rtl_0
- 10. Source assignments for hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_add_sub:add_sub|addcore:adder
- 11. Source assignments for hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_add_sub:add_sub|addcore:adder|addcore:adder[0]
- 12. Source assignments for set_hour:inst3|lpm_counter:tmp_low_rtl_1
+  9. Registers Removed During Synthesis
+ 10. Source assignments for hour:inst1|lpm_counter:tmp_low_rtl_0
+ 11. Source assignments for hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_add_sub:add_sub|addcore:adder
+ 12. Source assignments for hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_add_sub:add_sub|addcore:adder|addcore:adder[0]
  13. Source assignments for second:inst5|lpm_add_sub:Add0|addcore:adder
  14. Source assignments for second:inst5|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]
  15. Source assignments for hour:inst1|lpm_add_sub:Add0|addcore:adder
  16. Source assignments for hour:inst1|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]
- 17. Source assignments for set_hour:inst3|lpm_add_sub:Add0|addcore:adder
- 18. Source assignments for set_hour:inst3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]
- 19. Source assignments for ring:inst7|lpm_add_sub:Add0|addcore:adder
- 20. Source assignments for ring:inst7|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]
- 21. Parameter Settings for Inferred Entity Instance: hour:inst1|lpm_counter:tmp_low_rtl_0
- 22. Parameter Settings for Inferred Entity Instance: set_hour:inst3|lpm_counter:tmp_low_rtl_1
- 23. Parameter Settings for Inferred Entity Instance: second:inst5|lpm_add_sub:Add0
- 24. Parameter Settings for Inferred Entity Instance: hour:inst1|lpm_add_sub:Add0
- 25. Parameter Settings for Inferred Entity Instance: set_hour:inst3|lpm_add_sub:Add0
- 26. Parameter Settings for Inferred Entity Instance: ring:inst7|lpm_add_sub:Add0
- 27. Analysis & Synthesis Messages
+ 17. Parameter Settings for Inferred Entity Instance: hour:inst1|lpm_counter:tmp_low_rtl_0
+ 18. Parameter Settings for Inferred Entity Instance: second:inst5|lpm_add_sub:Add0
+ 19. Parameter Settings for Inferred Entity Instance: hour:inst1|lpm_add_sub:Add0
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -58,13 +51,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                           ;
 +-----------------------------+------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed May 24 20:56:29 2023    ;
+; Analysis & Synthesis Status ; Successful - Fri Jun 02 14:54:17 2023    ;
 ; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name               ; Clock                                    ;
 ; Top-level Entity Name       ; clock                                    ;
 ; Family                      ; MAX7000S                                 ;
-; Total macrocells            ; 103                                      ;
-; Total pins                  ; 34                                       ;
+; Total macrocells            ; 106                                      ;
+; Total pins                  ; 46                                       ;
 +-----------------------------+------------------------------------------+
 
 
@@ -132,38 +125,38 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-16 processors        ;   0.0%      ;
+;     2-4 processors         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
-; clock.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/clock.bdf      ;
-; set_min.vhd                      ; yes             ; User VHDL File                     ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/set_min.vhd    ;
-; set_hour.vhd                     ; yes             ; User VHDL File                     ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/set_hour.vhd   ;
-; hour.vhd                         ; yes             ; User VHDL File                     ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/hour.vhd       ;
-; minute.vhd                       ; yes             ; User VHDL File                     ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/minute.vhd     ;
-; second.vhd                       ; yes             ; User VHDL File                     ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/second.vhd     ;
-; ring.vhd                         ; yes             ; User VHDL File                     ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/ring.vhd       ;
-; light.vhd                        ; yes             ; User VHDL File                     ; C:/Users/ÉòÔ­å°/Desktop/FuckDataLogic/clock/light.vhd      ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; d:/quarii/quartus/libraries/megafunctions/lpm_counter.tdf  ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; d:/quarii/quartus/libraries/megafunctions/lpm_add_sub.tdf  ;
-; addcore.tdf                      ; yes             ; Megafunction                       ; d:/quarii/quartus/libraries/megafunctions/addcore.tdf      ;
-; a_csnbuffer.tdf                  ; yes             ; Megafunction                       ; d:/quarii/quartus/libraries/megafunctions/a_csnbuffer.tdf  ;
-; altshift.tdf                     ; yes             ; Megafunction                       ; d:/quarii/quartus/libraries/megafunctions/altshift.tdf     ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                       ; d:/quarii/quartus/libraries/megafunctions/lpm_constant.tdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
+; clock.bdf                        ; yes             ; User Block Diagram/Schematic File  ; G:/clock6.2.14.01/clock_blink/clock.bdf                       ;
+; set_min.vhd                      ; yes             ; User VHDL File                     ; G:/clock6.2.14.01/clock_blink/set_min.vhd                     ;
+; set_hour.vhd                     ; yes             ; User VHDL File                     ; G:/clock6.2.14.01/clock_blink/set_hour.vhd                    ;
+; hour.vhd                         ; yes             ; User VHDL File                     ; G:/clock6.2.14.01/clock_blink/hour.vhd                        ;
+; minute.vhd                       ; yes             ; User VHDL File                     ; G:/clock6.2.14.01/clock_blink/minute.vhd                      ;
+; second.vhd                       ; yes             ; User VHDL File                     ; G:/clock6.2.14.01/clock_blink/second.vhd                      ;
+; ring.vhd                         ; yes             ; User VHDL File                     ; G:/clock6.2.14.01/clock_blink/ring.vhd                        ;
+; light.vhd                        ; yes             ; User VHDL File                     ; G:/clock6.2.14.01/clock_blink/light.vhd                       ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf  ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_add_sub.tdf  ;
+; addcore.tdf                      ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/addcore.tdf      ;
+; a_csnbuffer.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/a_csnbuffer.tdf  ;
+; altshift.tdf                     ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/altshift.tdf     ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_constant.tdf ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
 
 
 +---------------------------------------------+
@@ -171,60 +164,83 @@ applicable agreement for further details.
 +----------------------+----------------------+
 ; Resource             ; Usage                ;
 +----------------------+----------------------+
-; Logic cells          ; 103                  ;
-; Total registers      ; 51                   ;
-; I/O pins             ; 34                   ;
-; Shareable expanders  ; 52                   ;
+; Logic cells          ; 106                  ;
+; Total registers      ; 27                   ;
+; I/O pins             ; 46                   ;
+; Shareable expanders  ; 39                   ;
 ; Parallel expanders   ; 11                   ;
-; Maximum fan-out node ; clr                  ;
-; Maximum fan-out      ; 91                   ;
-; Total fan-out        ; 886                  ;
-; Average fan-out      ; 4.69                 ;
+; Maximum fan-out node ; set                  ;
+; Maximum fan-out      ; 84                   ;
+; Total fan-out        ; 825                  ;
+; Average fan-out      ; 4.32                 ;
 +----------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                    ;
-+-----------------------------------+------------+------+-------------------------------------------------+--------------+
-; Compilation Hierarchy Node        ; Macrocells ; Pins ; Full Hierarchy Name                             ; Library Name ;
-+-----------------------------------+------------+------+-------------------------------------------------+--------------+
-; |clock                            ; 103        ; 34   ; |clock                                          ; work         ;
-;    |hour:inst1|                   ; 22         ; 0    ; |clock|hour:inst1                               ; work         ;
-;       |lpm_counter:tmp_low_rtl_0| ; 7          ; 0    ; |clock|hour:inst1|lpm_counter:tmp_low_rtl_0     ; work         ;
-;    |light:inst4|                  ; 7          ; 0    ; |clock|light:inst4                              ; work         ;
-;    |minute:inst|                  ; 23         ; 0    ; |clock|minute:inst                              ; work         ;
-;    |ring:inst7|                   ; 8          ; 0    ; |clock|ring:inst7                               ; work         ;
-;    |second:inst5|                 ; 10         ; 0    ; |clock|second:inst5                             ; work         ;
-;    |set_hour:inst3|               ; 17         ; 0    ; |clock|set_hour:inst3                           ; work         ;
-;       |lpm_counter:tmp_low_rtl_1| ; 5          ; 0    ; |clock|set_hour:inst3|lpm_counter:tmp_low_rtl_1 ; work         ;
-;    |set_min:inst2|                ; 16         ; 0    ; |clock|set_min:inst2                            ; work         ;
-+-----------------------------------+------------+------+-------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                ;
++-----------------------------------+------------+------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; Macrocells ; Pins ; Full Hierarchy Name                         ; Library Name ;
++-----------------------------------+------------+------+---------------------------------------------+--------------+
+; |clock                            ; 106        ; 46   ; |clock                                      ; work         ;
+;    |hour:inst1|                   ; 19         ; 0    ; |clock|hour:inst1                           ; work         ;
+;       |lpm_counter:tmp_low_rtl_0| ; 6          ; 0    ; |clock|hour:inst1|lpm_counter:tmp_low_rtl_0 ; work         ;
+;    |light:inst4|                  ; 7          ; 0    ; |clock|light:inst4                          ; work         ;
+;    |minute:inst|                  ; 26         ; 0    ; |clock|minute:inst                          ; work         ;
+;    |ring:inst7|                   ; 5          ; 0    ; |clock|ring:inst7                           ; work         ;
+;    |second:inst5|                 ; 9          ; 0    ; |clock|second:inst5                         ; work         ;
+;    |set_hour:inst3|               ; 17         ; 0    ; |clock|set_hour:inst3                       ; work         ;
+;    |set_min:inst2|                ; 23         ; 0    ; |clock|set_min:inst2                        ; work         ;
++-----------------------------------+------------+------+---------------------------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                  ;
-+-----------------------------------------------------+-----------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal   ; Free of Timing Hazards ;
-+-----------------------------------------------------+-----------------------+------------------------+
-; set_hour:inst3|high_num[3]                          ; hour:inst1|process_0  ; yes                    ;
-; set_hour:inst3|high_num[2]                          ; hour:inst1|process_0  ; yes                    ;
-; set_hour:inst3|high_num[1]                          ; hour:inst1|process_0  ; yes                    ;
-; set_hour:inst3|high_num[0]                          ; hour:inst1|process_0  ; yes                    ;
-; set_min:inst2|high_num[3]                           ; minute:inst|process_0 ; yes                    ;
-; set_min:inst2|high_num[2]                           ; minute:inst|process_0 ; yes                    ;
-; set_min:inst2|high_num[1]                           ; minute:inst|process_0 ; yes                    ;
-; set_min:inst2|high_num[0]                           ; minute:inst|process_0 ; yes                    ;
-; set_hour:inst3|low_num[3]                           ; hour:inst1|process_0  ; yes                    ;
-; set_hour:inst3|low_num[2]                           ; hour:inst1|process_0  ; yes                    ;
-; set_hour:inst3|low_num[1]                           ; hour:inst1|process_0  ; yes                    ;
-; set_hour:inst3|low_num[0]                           ; hour:inst1|process_0  ; yes                    ;
-; set_min:inst2|low_num[3]                            ; minute:inst|process_0 ; yes                    ;
-; set_min:inst2|low_num[2]                            ; minute:inst|process_0 ; yes                    ;
-; set_min:inst2|low_num[1]                            ; minute:inst|process_0 ; yes                    ;
-; set_min:inst2|low_num[0]                            ; minute:inst|process_0 ; yes                    ;
-; Number of user-specified and inferred latches = 16  ;                       ;                        ;
-+-----------------------------------------------------+-----------------------+------------------------+
++------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; ring:inst7|qout                                     ; ring:inst7|qout             ; yes                    ;
+; set_hour:inst3|tmp_low[0]                           ; set_hour:inst3|process_0    ; yes                    ;
+; set_hour:inst3|tmp_low[1]                           ; set_hour:inst3|process_0    ; yes                    ;
+; set_hour:inst3|tmp_low[2]                           ; set_hour:inst3|process_0    ; yes                    ;
+; set_hour:inst3|tmp_low[3]                           ; set_hour:inst3|process_0    ; yes                    ;
+; set_hour:inst3|tmp1_low[0]                          ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_hour:inst3|tmp1_low[1]                          ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_hour:inst3|tmp1_low[2]                          ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_hour:inst3|tmp1_low[3]                          ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_hour:inst3|tmp1_high[0]                         ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_hour:inst3|tmp1_high[1]                         ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_hour:inst3|tmp1_high[2]                         ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_hour:inst3|tmp1_high[3]                         ; set_hour:inst3|tmp1_high[3] ; yes                    ;
+; set_min:inst2|tmp1_low[0]                           ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_min:inst2|tmp1_low[1]                           ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_min:inst2|tmp1_low[2]                           ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_min:inst2|tmp1_low[3]                           ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_min:inst2|tmp1_high[0]                          ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_min:inst2|tmp1_high[1]                          ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_min:inst2|tmp1_high[2]                          ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_min:inst2|tmp1_high[3]                          ; set_min:inst2|tmp1_high[3]  ; yes                    ;
+; set_hour:inst3|tmp_high[1]                          ; set_hour:inst3|process_0    ; yes                    ;
+; set_hour:inst3|tmp_high[0]                          ; set_hour:inst3|process_0    ; yes                    ;
+; set_min:inst2|tmp_high[2]                           ; set_min:inst2|process_0     ; yes                    ;
+; set_min:inst2|tmp_high[1]                           ; set_min:inst2|process_0     ; yes                    ;
+; set_min:inst2|tmp_high[0]                           ; set_min:inst2|process_0     ; yes                    ;
+; set_min:inst2|tmp_low[3]                            ; set_min:inst2|process_0     ; yes                    ;
+; set_min:inst2|tmp_low[2]                            ; set_min:inst2|process_0     ; yes                    ;
+; set_min:inst2|tmp_low[1]                            ; set_min:inst2|process_0     ; yes                    ;
+; set_min:inst2|tmp_low[0]                            ; set_min:inst2|process_0     ; yes                    ;
+; Number of user-specified and inferred latches = 30  ;                             ;                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++----------------------------------------------------------------------+
+; Registers Removed During Synthesis                                   ;
++---------------------------------------+------------------------------+
+; Register name                         ; Reason for Removal           ;
++---------------------------------------+------------------------------+
+; minute:inst|flash                     ; Merged with hour:inst1|flash ;
+; Total Number of Removed Registers = 1 ;                              ;
++---------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -254,17 +270,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------+-------+------+---------------------------------------------------------------------+
 ; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                                                                   ;
 +---------------------------+-------+------+---------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Source assignments for set_hour:inst3|lpm_counter:tmp_low_rtl_1 ;
-+---------------------------+-------+------+----------------------+
-; Assignment                ; Value ; From ; To                   ;
-+---------------------------+-------+------+----------------------+
-; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                    ;
-; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                    ;
-; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                    ;
-+---------------------------+-------+------+----------------------+
 
 
 +--------------------------------------------------------------------+
@@ -303,42 +308,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------+-------+------+----------------------------------------+
 
 
-+----------------------------------------------------------------------+
-; Source assignments for set_hour:inst3|lpm_add_sub:Add0|addcore:adder ;
-+---------------------------+-------+------+---------------------------+
-; Assignment                ; Value ; From ; To                        ;
-+---------------------------+-------+------+---------------------------+
-; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                         ;
-+---------------------------+-------+------+---------------------------+
-
-
-+---------------------------------------------------------------------------------------+
-; Source assignments for set_hour:inst3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0] ;
-+---------------------------+-------+------+--------------------------------------------+
-; Assignment                ; Value ; From ; To                                         ;
-+---------------------------+-------+------+--------------------------------------------+
-; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                                          ;
-+---------------------------+-------+------+--------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Source assignments for ring:inst7|lpm_add_sub:Add0|addcore:adder ;
-+---------------------------+-------+------+-----------------------+
-; Assignment                ; Value ; From ; To                    ;
-+---------------------------+-------+------+-----------------------+
-; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                     ;
-+---------------------------+-------+------+-----------------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Source assignments for ring:inst7|lpm_add_sub:Add0|addcore:adder|addcore:adder[0] ;
-+---------------------------+-------+------+----------------------------------------+
-; Assignment                ; Value ; From ; To                                     ;
-+---------------------------+-------+------+----------------------------------------+
-; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                                      ;
-+---------------------------+-------+------+----------------------------------------+
-
-
 +---------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: hour:inst1|lpm_counter:tmp_low_rtl_0 ;
 +------------------------+-------------------+------------------------------------------+
@@ -363,33 +332,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; USE_NEW_VERSION        ; TRUE              ; Untyped                                  ;
 ; CBXI_PARAMETER         ; NOTHING           ; Untyped                                  ;
 +------------------------+-------------------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: set_hour:inst3|lpm_counter:tmp_low_rtl_1 ;
-+------------------------+-------------------+----------------------------------------------+
-; Parameter Name         ; Value             ; Type                                         ;
-+------------------------+-------------------+----------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                               ;
-; LPM_WIDTH              ; 4                 ; Untyped                                      ;
-; LPM_DIRECTION          ; UP                ; Untyped                                      ;
-; LPM_MODULUS            ; 0                 ; Untyped                                      ;
-; LPM_AVALUE             ; UNUSED            ; Untyped                                      ;
-; LPM_SVALUE             ; UNUSED            ; Untyped                                      ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                      ;
-; DEVICE_FAMILY          ; MAX7000S          ; Untyped                                      ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped                                      ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                           ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                           ;
-; CARRY_CNT_EN           ; SMART             ; Untyped                                      ;
-; LABWIDE_SCLR           ; ON                ; Untyped                                      ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped                                      ;
-; CBXI_PARAMETER         ; NOTHING           ; Untyped                                      ;
-+------------------------+-------------------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -449,71 +391,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: set_hour:inst3|lpm_add_sub:Add0 ;
-+------------------------+-------------+-------------------------------------------+
-; Parameter Name         ; Value       ; Type                                      ;
-+------------------------+-------------+-------------------------------------------+
-; LPM_WIDTH              ; 4           ; Untyped                                   ;
-; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
-; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
-; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                   ;
-; LPM_PIPELINE           ; 0           ; Untyped                                   ;
-; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
-; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
-; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
-; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
-; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
-; USE_WYS                ; OFF         ; Untyped                                   ;
-; STYLE                  ; FAST        ; Untyped                                   ;
-; CBXI_PARAMETER         ; add_sub_3kh ; Untyped                                   ;
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
-+------------------------+-------------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: ring:inst7|lpm_add_sub:Add0 ;
-+------------------------+-------------+---------------------------------------+
-; Parameter Name         ; Value       ; Type                                  ;
-+------------------------+-------------+---------------------------------------+
-; LPM_WIDTH              ; 6           ; Untyped                               ;
-; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                               ;
-; LPM_DIRECTION          ; ADD         ; Untyped                               ;
-; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                               ;
-; LPM_PIPELINE           ; 0           ; Untyped                               ;
-; MAXIMIZE_SPEED         ; 5           ; Untyped                               ;
-; REGISTERED_AT_END      ; 0           ; Untyped                               ;
-; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                               ;
-; USE_CS_BUFFERS         ; 1           ; Untyped                               ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                               ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                    ;
-; DEVICE_FAMILY          ; MAX7000S    ; Untyped                               ;
-; USE_WYS                ; OFF         ; Untyped                               ;
-; STYLE                  ; FAST        ; Untyped                               ;
-; CBXI_PARAMETER         ; add_sub_pnh ; Untyped                               ;
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                            ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                          ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                          ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                        ;
-+------------------------+-------------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Wed May 24 20:56:28 2023
+    Info: Processing started: Fri Jun 02 14:54:15 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off clock -c Clock
-Info: Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file clock.bdf
     Info: Found entity 1: clock
 Info: Found 2 design units, including 1 entities, in source file set_min.vhd
@@ -537,62 +423,119 @@ Info: Found 2 design units, including 1 entities, in source file ring.vhd
 Info: Found 2 design units, including 1 entities, in source file light.vhd
     Info: Found design unit 1: light-func
     Info: Found entity 1: light
+Info: Found 0 design units, including 0 entities, in source file test.vhd
 Info: Elaborating entity "Clock" for the top level hierarchy
 Info: Elaborating entity "ring" for hierarchy "ring:inst7"
+Warning (10492): VHDL Process Statement warning at ring.vhd(26): signal "alarm_min" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(26): signal "alarm_hour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(44): signal "flag" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(45): signal "out1_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(45): signal "out1_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(45): signal "out_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(45): signal "out_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(52): signal "flag1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(53): signal "out1_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ring.vhd(53): signal "out1_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at ring.vhd(42): inferring latch(es) for signal or variable "qout", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "qout" at ring.vhd(42)
 Info: Elaborating entity "minute" for hierarchy "minute:inst"
-Warning (10492): VHDL Process Statement warning at minute.vhd(33): signal "in_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at minute.vhd(34): signal "in_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at minute.vhd(60): signal "in_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at minute.vhd(61): signal "in_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at minute.vhd(63): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at minute.vhd(64): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at minute.vhd(66): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(38): signal "in_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(39): signal "in_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(58): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(58): signal "alarm_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(58): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(58): signal "alarm_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(68): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(69): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(75): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(76): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(80): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(81): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at minute.vhd(84): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at minute.vhd(32): inferring latch(es) for signal or variable "out_low", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at minute.vhd(32): inferring latch(es) for signal or variable "out_high", which holds its previous value in one or more paths through the process
 Info: Elaborating entity "second" for hierarchy "second:inst5"
-Warning (10492): VHDL Process Statement warning at second.vhd(38): signal "tmp_digit0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at second.vhd(39): signal "tmp_digit1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at second.vhd(40): signal "temp_cout" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at second.vhd(24): signal "pause" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at second.vhd(40): signal "tmp_digit0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at second.vhd(41): signal "tmp_digit1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at second.vhd(42): signal "temp_cout" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info: Elaborating entity "set_min" for hierarchy "set_min:inst2"
-Warning (10492): VHDL Process Statement warning at set_min.vhd(38): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at set_min.vhd(39): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at set_min.vhd(20): inferring latch(es) for signal or variable "low_num", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at set_min.vhd(20): inferring latch(es) for signal or variable "high_num", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "high_num[0]" at set_min.vhd(20)
-Info (10041): Inferred latch for "high_num[1]" at set_min.vhd(20)
-Info (10041): Inferred latch for "high_num[2]" at set_min.vhd(20)
-Info (10041): Inferred latch for "high_num[3]" at set_min.vhd(20)
-Info (10041): Inferred latch for "low_num[0]" at set_min.vhd(20)
-Info (10041): Inferred latch for "low_num[1]" at set_min.vhd(20)
-Info (10041): Inferred latch for "low_num[2]" at set_min.vhd(20)
-Info (10041): Inferred latch for "low_num[3]" at set_min.vhd(20)
+Warning (10492): VHDL Process Statement warning at set_min.vhd(36): signal "in_low_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_min.vhd(37): signal "in_high_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_min.vhd(38): signal "in_low_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_min.vhd(41): signal "in_high_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_min.vhd(45): signal "in_low_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_min.vhd(46): signal "in_high_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at set_min.vhd(29): inferring latch(es) for signal or variable "tmp_low", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at set_min.vhd(29): inferring latch(es) for signal or variable "tmp_high", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at set_min.vhd(29): inferring latch(es) for signal or variable "tmp1_low", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at set_min.vhd(29): inferring latch(es) for signal or variable "tmp1_high", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "tmp1_high[0]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp1_high[1]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp1_high[2]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp1_high[3]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp1_low[0]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp1_low[1]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp1_low[2]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp1_low[3]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_high[0]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_high[1]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_high[2]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_high[3]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_low[0]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_low[1]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_low[2]" at set_min.vhd(29)
+Info (10041): Inferred latch for "tmp_low[3]" at set_min.vhd(29)
 Info: Elaborating entity "hour" for hierarchy "hour:inst1"
-Warning (10492): VHDL Process Statement warning at hour.vhd(31): signal "in_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at hour.vhd(32): signal "in_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at hour.vhd(54): signal "in_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at hour.vhd(55): signal "in_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at hour.vhd(57): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at hour.vhd(58): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(36): signal "in_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(37): signal "in_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(52): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(52): signal "alarm_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(52): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(52): signal "alarm_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(62): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(63): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(69): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(70): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(74): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at hour.vhd(75): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at hour.vhd(30): inferring latch(es) for signal or variable "out_low", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at hour.vhd(30): inferring latch(es) for signal or variable "out_high", which holds its previous value in one or more paths through the process
 Info: Elaborating entity "set_hour" for hierarchy "set_hour:inst3"
-Warning (10492): VHDL Process Statement warning at set_hour.vhd(37): signal "tmp_low" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at set_hour.vhd(38): signal "tmp_high" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at set_hour.vhd(20): inferring latch(es) for signal or variable "low_num", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at set_hour.vhd(20): inferring latch(es) for signal or variable "high_num", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "high_num[0]" at set_hour.vhd(20)
-Info (10041): Inferred latch for "high_num[1]" at set_hour.vhd(20)
-Info (10041): Inferred latch for "high_num[2]" at set_hour.vhd(20)
-Info (10041): Inferred latch for "high_num[3]" at set_hour.vhd(20)
-Info (10041): Inferred latch for "low_num[0]" at set_hour.vhd(20)
-Info (10041): Inferred latch for "low_num[1]" at set_hour.vhd(20)
-Info (10041): Inferred latch for "low_num[2]" at set_hour.vhd(20)
-Info (10041): Inferred latch for "low_num[3]" at set_hour.vhd(20)
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(35): signal "in_low_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(36): signal "in_high_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(37): signal "in_high_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(40): signal "in_low_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(40): signal "in_high_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(43): signal "in_low_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(47): signal "in_low_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at set_hour.vhd(48): signal "in_high_num" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at set_hour.vhd(28): inferring latch(es) for signal or variable "tmp_low", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at set_hour.vhd(28): inferring latch(es) for signal or variable "tmp_high", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at set_hour.vhd(28): inferring latch(es) for signal or variable "tmp1_low", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at set_hour.vhd(28): inferring latch(es) for signal or variable "tmp1_high", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "tmp1_high[0]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp1_high[1]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp1_high[2]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp1_high[3]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp1_low[0]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp1_low[1]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp1_low[2]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp1_low[3]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_high[0]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_high[1]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_high[2]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_high[3]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_low[0]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_low[1]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_low[2]" at set_hour.vhd(28)
+Info (10041): Inferred latch for "tmp_low[3]" at set_hour.vhd(28)
 Info: Elaborating entity "light" for hierarchy "light:inst4"
-Info: Inferred 2 megafunctions from design logic
+Info: Inferred 1 megafunctions from design logic
     Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "hour:inst1|tmp_low[0]~0"
-    Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "set_hour:inst3|tmp_low[0]~0"
-Info: Inferred 4 megafunctions from design logic
+Info: Inferred 2 megafunctions from design logic
     Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "second:inst5|Add0"
     Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "hour:inst1|Add0"
-    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "set_hour:inst3|Add0"
-    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "ring:inst7|Add0"
 Info: Elaborated megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_0"
 Info: Instantiated megafunction "hour:inst1|lpm_counter:tmp_low_rtl_0" with the following parameter:
     Info: Parameter "LPM_WIDTH" = "4"
@@ -608,11 +551,6 @@ Info: Elaborated megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_
 Info: Elaborated megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_add_sub:add_sub|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_0"
 Info: Elaborated megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_add_sub:add_sub|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_0"
 Info: Elaborated megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_0|lpm_constant:scdw", which is child of megafunction instantiation "hour:inst1|lpm_counter:tmp_low_rtl_0"
-Info: Elaborated megafunction instantiation "set_hour:inst3|lpm_counter:tmp_low_rtl_1"
-Info: Instantiated megafunction "set_hour:inst3|lpm_counter:tmp_low_rtl_1" with the following parameter:
-    Info: Parameter "LPM_WIDTH" = "4"
-    Info: Parameter "LPM_DIRECTION" = "UP"
-    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
 Info: Elaborated megafunction instantiation "second:inst5|lpm_add_sub:Add0"
 Info: Instantiated megafunction "second:inst5|lpm_add_sub:Add0" with the following parameter:
     Info: Parameter "LPM_WIDTH" = "4"
@@ -621,28 +559,17 @@ Info: Instantiated megafunction "second:inst5|lpm_add_sub:Add0" with the followi
     Info: Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
 Info: Elaborated megafunction instantiation "second:inst5|lpm_add_sub:Add0|addcore:adder", which is child of megafunction instantiation "second:inst5|lpm_add_sub:Add0"
 Info: Elaborated megafunction instantiation "second:inst5|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]", which is child of megafunction instantiation "second:inst5|lpm_add_sub:Add0"
-Info: Elaborated megafunction instantiation "ring:inst7|lpm_add_sub:Add0"
-Info: Instantiated megafunction "ring:inst7|lpm_add_sub:Add0" with the following parameter:
-    Info: Parameter "LPM_WIDTH" = "6"
-    Info: Parameter "LPM_DIRECTION" = "ADD"
-    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
-Info: Elaborated megafunction instantiation "ring:inst7|lpm_add_sub:Add0|addcore:adder", which is child of megafunction instantiation "ring:inst7|lpm_add_sub:Add0"
-Info: Elaborated megafunction instantiation "ring:inst7|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:oflow_node", which is child of megafunction instantiation "ring:inst7|lpm_add_sub:Add0"
-Info: Elaborated megafunction instantiation "ring:inst7|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node", which is child of megafunction instantiation "ring:inst7|lpm_add_sub:Add0"
-Info: Elaborated megafunction instantiation "ring:inst7|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]", which is child of megafunction instantiation "ring:inst7|lpm_add_sub:Add0"
-Info: Elaborated megafunction instantiation "ring:inst7|lpm_add_sub:Add0|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "ring:inst7|lpm_add_sub:Add0"
-Info: Ignored 21 buffer(s)
-    Info: Ignored 21 SOFT buffer(s)
-Info: Implemented 189 device resources after synthesis - the final resource count might be different
-    Info: Implemented 6 input pins
+Info: Ignored 11 buffer(s)
+    Info: Ignored 11 SOFT buffer(s)
+Info: Implemented 191 device resources after synthesis - the final resource count might be different
+    Info: Implemented 18 input pins
     Info: Implemented 28 output pins
-    Info: Implemented 103 macrocells
-    Info: Implemented 52 shareable expanders
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 246 megabytes
-    Info: Processing ended: Wed May 24 20:56:29 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Implemented 106 macrocells
+    Info: Implemented 39 shareable expanders
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 66 warnings
+    Info: Peak virtual memory: 230 megabytes
+    Info: Processing ended: Fri Jun 02 14:54:17 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

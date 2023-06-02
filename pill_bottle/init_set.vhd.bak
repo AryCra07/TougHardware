@@ -4,13 +4,13 @@ USE ieee.std_logic_unsigned.ALL;
 
 ENTITY init_set IS
 	PORT (
-		clk : IN STD_LOGIC;
 		clr : IN STD_LOGIC;
 		reset : IN STD_LOGIC;
 		mode : IN STD_LOGIC;
 		start : IN STD_LOGIC;
 		in_high : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		in_low : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		clk : IN STD_LOGIC;
 
 		store_single_high : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 		store_single_low : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);

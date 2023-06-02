@@ -61,21 +61,21 @@ BEGIN
 				ELSIF (cur_row_part = "0011") THEN
 					
 					IF (cur_line_part = "0010") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSIF (cur_line_part = "0011") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSIF (cur_line_part = "0100") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSIF (cur_line_part = "0101") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSIF (cur_line_part = "0110") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSIF (cur_line_part = "0111") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSIF (cur_line_part = "1000") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSIF (cur_line_part = "1001") THEN
-						RGB <= red;
+						RGB <= green;
 					ELSE
 						RGB <= "000";
 					END IF;
@@ -103,19 +103,19 @@ BEGIN
 					IF (cur_line_part = "0010") THEN
 						RGB <= red;
 					ELSIF (cur_line_part = "0011") THEN
-						RGB <= green;
+						RGB <= red;
 					ELSIF (cur_line_part = "0100") THEN
-						RGB <= green;
+						RGB <= red;
 					ELSIF (cur_line_part = "0101") THEN
-						RGB <= green;
+						RGB <= red;
 					ELSIF (cur_line_part = "0110") THEN
-						RGB <= green;
+						RGB <= red;
 					ELSIF (cur_line_part = "0111") THEN
-						RGB <= green;
+						RGB <= red;
 					ELSIF (cur_line_part = "1000") THEN
-						RGB <= green;
+						RGB <= red;
 					ELSIF (cur_line_part = "1001") THEN
-						RGB <= green;
+						RGB <= red;
 					ELSE
 						RGB <= "000";
 					END IF;

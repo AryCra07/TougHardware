@@ -5,38 +5,55 @@ USE ieee.std_logic_unsigned.ALL;
 
 ENTITY ring IS
     PORT (
-        clk, min_ring, hour_ring, hour : IN STD_LOGIC;
+        clk, hour, clk_2 : IN STD_LOGIC;
+        out_high : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        out_low : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        out1_high : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        out1_low : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        alarm_min : IN STD_LOGIC;
+        alarm_hour : IN STD_LOGIC;
         qout : OUT STD_LOGIC);
 END ring;
 
 ARCHITECTURE func OF ring IS
-    SIGNAL mode : STD_LOGIC_VECTOR(2 DOWNTO 0);
-    SIGNAL temp : STD_LOGIC_VECTOR(5 DOWNTO 0);
+    SIGNAL temp : STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SIGNAL flag : STD_LOGIC;
+    SIGNAL flag1 : STD_LOGIC;
+    SIGNAL ala : STD_LOGIC;
 BEGIN
-    PROCESS (clk, min_ring, hour_ring, hour)
+    PROCESS (clk, hour, ala)
     BEGIN
-        mode <= min_ring & hour_ring & hour;
-        IF (clk'event AND clk = '1') THEN
-            IF (temp = 59) THEN
-                temp <= "000000";
+        ala <= alarm_min AND alarm_hour;
+        IF (hour = '1') THEN
+            flag <= '1';
+        ELSE
+            flag <= '0';
+        END IF;
+
+        IF (ala = '1') THEN
+            flag1 <= '1';
+        ELSE
+            flag1 <= '0';
+        END IF;
+
+    END PROCESS;
+    PROCESS (clk_2)
+    BEGIN
+        IF (flag = '1') THEN
+            IF (out1_low < 5 AND out1_high = 0 AND out_low = 0 AND out_high = 0) THEN
+                qout <= clk_2;
             ELSE
-                temp <= temp + 1;
+                qout <= '0';
             END IF;
-            IF (mode = "001" AND temp > 2) THEN -- hourly chime rings 2s 
-                qout <= '0';
-            ELSIF (mode = "001") THEN
-                qout <= '1';
-            ELSIF (mode = "110" AND temp > 4) THEN -- alarm we set rings 4s
-                qout <= '0';
-            ELSIF (mode = "110") THEN
-                qout <= '1';
-            ELSIF (mode = "111" AND temp > 6) THEN -- both occur, then ring 6s
-                qout <= '0';
-            ELSIF (mode = "111") THEN
-                qout <= '1';
+        END IF;
+
+        IF (flag1 = '1') THEN
+            IF (out1_low < 5 AND out1_high = 0) THEN
+                qout <= clk_2;
             ELSE
                 qout <= '0';
             END IF;
         END IF;
     END PROCESS;
+
 END func;

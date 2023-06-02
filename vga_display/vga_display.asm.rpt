@@ -1,5 +1,5 @@
 Assembler report for vga_display
-Tue May 30 21:16:49 2023
+Fri Jun 02 15:17:44 2023
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: G:/vga_final/vga-display/vga_display.pof
+  5. Assembler Device Options: C:/Users/Administrator/Desktop/vga_final/vga-display/vga_display.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 30 21:16:49 2023 ;
+; Assembler Status      ; Successful - Fri Jun 02 15:17:44 2023 ;
 ; Revision Name         ; vga_display                           ;
 ; Top-level Entity Name ; vga_display                           ;
 ; Family                ; MAX7000S                              ;
@@ -73,24 +73,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------+
-; Assembler Generated Files                ;
-+------------------------------------------+
-; File Name                                ;
-+------------------------------------------+
-; G:/vga_final/vga-display/vga_display.pof ;
-+------------------------------------------+
++----------------------------------------------------------------------+
+; Assembler Generated Files                                            ;
++----------------------------------------------------------------------+
+; File Name                                                            ;
++----------------------------------------------------------------------+
+; C:/Users/Administrator/Desktop/vga_final/vga-display/vga_display.pof ;
++----------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------+
-; Assembler Device Options: G:/vga_final/vga-display/vga_display.pof ;
-+----------------+---------------------------------------------------+
-; Option         ; Setting                                           ;
-+----------------+---------------------------------------------------+
-; Device         ; EPM7128SLC84-15                                   ;
-; JTAG usercode  ; 0x00000000                                        ;
-; Checksum       ; 0x001C4107                                        ;
-+----------------+---------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Administrator/Desktop/vga_final/vga-display/vga_display.pof ;
++----------------+-------------------------------------------------------------------------------+
+; Option         ; Setting                                                                       ;
++----------------+-------------------------------------------------------------------------------+
+; Device         ; EPM7128SLC84-15                                                               ;
+; JTAG usercode  ; 0x00000000                                                                    ;
+; Checksum       ; 0x001C4107                                                                    ;
++----------------+-------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -99,12 +99,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue May 30 21:16:49 2023
+    Info: Processing started: Fri Jun 02 15:17:44 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off vga_display -c vga_display
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 183 megabytes
-    Info: Processing ended: Tue May 30 21:16:49 2023
+    Info: Peak virtual memory: 185 megabytes
+    Info: Processing ended: Fri Jun 02 15:17:44 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

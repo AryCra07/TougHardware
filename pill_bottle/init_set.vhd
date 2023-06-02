@@ -101,6 +101,11 @@ BEGIN
 				store_nums_high <= "0000";
 				store_nums_low <= "0000";
 			END IF;
+		ELSIF (clr = '1') THEN
+			store_single_high <= set_single_high;
+			store_single_low <= set_single_low;
+			store_nums_high <= set_nums_high;
+			store_nums_low <= set_nums_low;
 		END IF;
 		
 	END PROCESS;

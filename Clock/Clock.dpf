@@ -2,9 +2,7 @@
 
 <pin_planner>
 	<pin_info>
-		<pin name="pin_name" source="Pin Planner" >
-		</pin>
-		<pin name="shine_out" source="Pin Planner" >
+		<pin name="inst5" source="Pin Planner" >
 		</pin>
 	</pin_info>
 	<buses>

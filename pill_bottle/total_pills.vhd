@@ -25,7 +25,7 @@ ARCHITECTURE rtl OF total_pills IS
 BEGIN
 	PROCESS (clk, clr, start)
 	BEGIN
-		IF (start = '0' AND clr = '1' AND(clk'event AND clk = '1')) THEN
+		IF (start = '0' AND clr = '1') THEN
 			now_total_max <= "0000";
 			now_total_high <= "0000";
 			now_total_medium <= "0000";
