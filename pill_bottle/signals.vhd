@@ -1,0 +1,27 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+
+ENTITY signals IS
+	PORT (
+		s1_in : IN STD_LOGIC;
+		s2_in : IN STD_LOGIC;
+		s3_in : IN STD_LOGIC;
+
+		s_out : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END signals;
+
+ARCHITECTURE rtl OF signals IS
+BEGIN
+	PROCESS (s1_in, s2_in, s3_in)
+	BEGIN
+		IF (s3_in = '1') THEN
+			s_out <= "1000000"; -- "warn:-"
+		ELSIF (s2_in = '1') THEN
+			s_out <= "1111111"; -- "full:8"
+		ELSIF (s1_in = '1' AND s2_in = '0' AND s3_in = '0') THEN
+			s_out <= "0000110"; -- "start:1"
+		END IF;
+	END PROCESS;
+END rtl;

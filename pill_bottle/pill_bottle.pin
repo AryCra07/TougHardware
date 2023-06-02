@@ -65,7 +65,7 @@ CHIP  "pill_bottle"  ASSIGNED TO AN: EPM7128SLC84-15
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-clr                          : 1         : input  : TTL               :         :           : Y              
+GND+                         : 1         :        :                   :         :           :                
 GND+                         : 2         :        :                   :         :           :                
 VCCINT                       : 3         : power  :                   : 5.0V    :           :                
 RESERVED                     : 4         :        :                   :         :           :                
@@ -75,77 +75,77 @@ GND                          : 7         : gnd    :                   :         
 RESERVED                     : 8         :        :                   :         :           :                
 RESERVED                     : 9         :        :                   :         :           :                
 RESERVED                     : 10        :        :                   :         :           :                
-light_green                  : 11        : output : TTL               :         :           : N              
+RESERVED                     : 11        :        :                   :         :           :                
 RESERVED                     : 12        :        :                   :         :           :                
 VCCIO                        : 13        : power  :                   : 5.0V    :           :                
 TDI                          : 14        : input  : TTL               :         :           : N              
 RESERVED                     : 15        :        :                   :         :           :                
 RESERVED                     : 16        :        :                   :         :           :                
-led2[2]                      : 17        : output : TTL               :         :           : Y              
-led2[3]                      : 18        : output : TTL               :         :           : Y              
+out_led_2[2]                 : 17        : output : TTL               :         :           : Y              
+out_led_2[3]                 : 18        : output : TTL               :         :           : Y              
 GND                          : 19        : gnd    :                   :         :           :                
-RESERVED                     : 20        :        :                   :         :           :                
-RESERVED                     : 21        :        :                   :         :           :                
-RESERVED                     : 22        :        :                   :         :           :                
+out_led_5[0]                 : 20        : output : TTL               :         :           : Y              
+out_led_5[1]                 : 21        : output : TTL               :         :           : Y              
+out_led_5[2]                 : 22        : output : TTL               :         :           : Y              
 TMS                          : 23        : input  : TTL               :         :           : N              
-RESERVED                     : 24        :        :                   :         :           :                
-RESERVED                     : 25        :        :                   :         :           :                
+out_led_5[3]                 : 24        : output : TTL               :         :           : Y              
+out_led_4[0]                 : 25        : output : TTL               :         :           : Y              
 VCCIO                        : 26        : power  :                   : 5.0V    :           :                
-RESERVED                     : 27        :        :                   :         :           :                
-RESERVED                     : 28        :        :                   :         :           :                
-RESERVED                     : 29        :        :                   :         :           :                
-led3[0]                      : 30        : output : TTL               :         :           : Y              
-led3[1]                      : 31        : output : TTL               :         :           : Y              
+out_led_4[1]                 : 27        : output : TTL               :         :           : Y              
+out_led_4[2]                 : 28        : output : TTL               :         :           : Y              
+out_led_4[3]                 : 29        : output : TTL               :         :           : Y              
+out_led_3[0]                 : 30        : output : TTL               :         :           : Y              
+out_led_3[1]                 : 31        : output : TTL               :         :           : Y              
 GND                          : 32        : gnd    :                   :         :           :                
-led3[2]                      : 33        : output : TTL               :         :           : Y              
-led3[3]                      : 34        : output : TTL               :         :           : Y              
-led2[0]                      : 35        : output : TTL               :         :           : Y              
-led2[1]                      : 36        : output : TTL               :         :           : Y              
-RESERVED                     : 37        :        :                   :         :           :                
+out_led_3[2]                 : 33        : output : TTL               :         :           : Y              
+out_led_3[3]                 : 34        : output : TTL               :         :           : Y              
+out_led_2[0]                 : 35        : output : TTL               :         :           : Y              
+out_led_2[1]                 : 36        : output : TTL               :         :           : Y              
+out_led_1[0]                 : 37        : output : TTL               :         :           : Y              
 VCCIO                        : 38        : power  :                   : 5.0V    :           :                
-RESERVED                     : 39        :        :                   :         :           :                
-RESERVED                     : 40        :        :                   :         :           :                
-RESERVED                     : 41        :        :                   :         :           :                
+out_led_1[1]                 : 39        : output : TTL               :         :           : Y              
+out_led_1[2]                 : 40        : output : TTL               :         :           : Y              
+out_led_1[3]                 : 41        : output : TTL               :         :           : Y              
 GND                          : 42        : gnd    :                   :         :           :                
 VCCINT                       : 43        : power  :                   : 5.0V    :           :                
-led1[0]                      : 44        : output : TTL               :         :           : Y              
-led1[1]                      : 45        : output : TTL               :         :           : Y              
-led1[2]                      : 46        : output : TTL               :         :           : Y              
+signal_led[0]                : 44        : output : TTL               :         :           : Y              
+signal_led[1]                : 45        : output : TTL               :         :           : Y              
+signal_led[2]                : 46        : output : TTL               :         :           : Y              
 GND                          : 47        : gnd    :                   :         :           :                
-led1[3]                      : 48        : output : TTL               :         :           : Y              
-led1[4]                      : 49        : output : TTL               :         :           : Y              
-led1[5]                      : 50        : output : TTL               :         :           : Y              
-led1[6]                      : 51        : output : TTL               :         :           : Y              
-light_red                    : 52        : output : TTL               :         :           : N              
+signal_led[3]                : 48        : output : TTL               :         :           : Y              
+signal_led[4]                : 49        : output : TTL               :         :           : Y              
+signal_led[5]                : 50        : output : TTL               :         :           : Y              
+signal_led[6]                : 51        : output : TTL               :         :           : Y              
+RESERVED                     : 52        :        :                   :         :           :                
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
-start                        : 54        : input  : TTL               :         :           : Y              
+in_low[0]                    : 54        : input  : TTL               :         :           : Y              
 RESERVED                     : 55        :        :                   :         :           :                
-clk                          : 56        : input  : TTL               :         :           : Y              
+RESERVED                     : 56        :        :                   :         :           :                
 RESERVED                     : 57        :        :                   :         :           :                
-RESERVED                     : 58        :        :                   :         :           :                
+clk                          : 58        : input  : TTL               :         :           : Y              
 GND                          : 59        : gnd    :                   :         :           :                
-qd                           : 60        : input  : TTL               :         :           : Y              
+RESERVED                     : 60        :        :                   :         :           :                
 RESERVED                     : 61        :        :                   :         :           :                
 TCK                          : 62        : input  : TTL               :         :           : N              
-RESERVED                     : 63        :        :                   :         :           :                
-tablets_h[2]                 : 64        : input  : TTL               :         :           : Y              
-tablets_h[1]                 : 65        : input  : TTL               :         :           : Y              
+clr                          : 63        : input  : TTL               :         :           : Y              
+RESERVED                     : 64        :        :                   :         :           :                
+RESERVED                     : 65        :        :                   :         :           :                
 VCCIO                        : 66        : power  :                   : 5.0V    :           :                
-tablets_h[0]                 : 67        : input  : TTL               :         :           : Y              
-tablets_l[3]                 : 68        : input  : TTL               :         :           : Y              
-tablets_l[2]                 : 69        : input  : TTL               :         :           : Y              
-tablets_l[1]                 : 70        : input  : TTL               :         :           : Y              
+display_mode[1]              : 67        : input  : TTL               :         :           : Y              
+display_mode[0]              : 68        : input  : TTL               :         :           : Y              
+start                        : 69        : input  : TTL               :         :           : Y              
+reset                        : 70        : input  : TTL               :         :           : Y              
 TDO                          : 71        : output : TTL               :         :           : N              
 GND                          : 72        : gnd    :                   :         :           :                
-tablets_l[0]                 : 73        : input  : TTL               :         :           : Y              
-bottle_h[2]                  : 74        : input  : TTL               :         :           : Y              
-bottle_h[1]                  : 75        : input  : TTL               :         :           : Y              
-bottle_h[0]                  : 76        : input  : TTL               :         :           : Y              
-bottle_l[3]                  : 77        : input  : TTL               :         :           : Y              
+mode                         : 73        : input  : TTL               :         :           : Y              
+in_high[3]                   : 74        : input  : TTL               :         :           : Y              
+in_high[2]                   : 75        : input  : TTL               :         :           : Y              
+in_high[1]                   : 76        : input  : TTL               :         :           : Y              
+in_high[0]                   : 77        : input  : TTL               :         :           : Y              
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
-bottle_l[2]                  : 79        : input  : TTL               :         :           : Y              
-bottle_l[1]                  : 80        : input  : TTL               :         :           : Y              
-bottle_l[0]                  : 81        : input  : TTL               :         :           : Y              
+in_low[3]                    : 79        : input  : TTL               :         :           : Y              
+in_low[2]                    : 80        : input  : TTL               :         :           : Y              
+in_low[1]                    : 81        : input  : TTL               :         :           : Y              
 GND                          : 82        : gnd    :                   :         :           :                
 GND+                         : 83        :        :                   :         :           :                
 GND+                         : 84        :        :                   :         :           :                

@@ -1,0 +1,68 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+
+ENTITY bottle_nums IS
+	PORT (
+		clk : IN STD_LOGIC;
+		clr : IN STD_LOGIC;
+		start : IN STD_LOGIC;
+
+		input_high : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		input_low : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+		out_nums_high : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		out_nums_low : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+		full : OUT STD_LOGIC
+
+	);
+END bottle_nums;
+
+ARCHITECTURE rtl OF bottle_nums IS
+	SIGNAL now_nums_high : STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL now_nums_low : STD_LOGIC_VECTOR(3 DOWNTO 0);
+BEGIN
+
+	PROCESS (clk, clr, start)
+	BEGIN
+		IF (start = '0' AND clr = '1') THEN
+			now_nums_high <= "0000";
+			now_nums_low <= "0000";
+		ELSIF ((now_nums_high < input_high) OR(now_nums_high = input_high AND now_nums_low < input_low)) THEN
+			IF (start = '1' AND (clk'event AND clk = '1')) THEN
+				IF (now_nums_low = "1001") THEN
+					now_nums_low <= "0000";
+					IF (now_nums_high = "1001") THEN
+						now_nums_high <= "0000";
+					ELSE
+						now_nums_high <= now_nums_high + 1;
+					END IF;
+				ELSE
+					now_nums_low <= now_nums_low + 1;
+				END IF;
+			END IF;
+		END IF;
+	END PROCESS;
+
+	PROCESS (clk, start, clr) -- process signal full
+	BEGIN
+		IF (start = '0' AND clr = '1') THEN
+			full <= '0';
+		ELSIF (start = '1' AND (clk'event AND clk = '1')) THEN
+			IF (input_low = "0000") THEN
+				IF (now_nums_high = input_high - 1 AND now_nums_low = "1001") THEN
+					full <= '1';
+				END IF;
+			ELSE
+				IF (now_nums_high = input_high AND now_nums_low = input_low - 1) THEN
+					full <= '1';
+				END IF;
+			END IF;
+		END IF;
+	END PROCESS;
+
+	out_nums_high <= now_nums_high;
+	out_nums_low <= now_nums_low;
+
+END rtl;

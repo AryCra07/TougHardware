@@ -2,6 +2,8 @@
 
 <pin_planner>
 	<pin_info>
+		<pin name="inst1" source="Pin Planner" >
+		</pin>
 	</pin_info>
 	<buses>
 	</buses>

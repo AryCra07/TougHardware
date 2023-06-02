@@ -18,7 +18,7 @@
 #
 # Quartus II
 # Version 9.1 Build 222 10/21/2009 SJ Full Version
-# Date created = 23:36:05  May 22, 2023
+# Date created = 00:17:55  May 30, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -40,50 +40,61 @@ set_global_assignment -name FAMILY MAX7000S
 set_global_assignment -name DEVICE "EPM7128SLC84-15"
 set_global_assignment -name TOP_LEVEL_ENTITY pill_bottle
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:36:05  MAY 22, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:17:55  MAY 30, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name VHDL_FILE led_7.vhd
-set_global_assignment -name VHDL_FILE bottle_control.vhd
-set_global_assignment -name VHDL_FILE bottle.vhd
-set_global_assignment -name VHDL_FILE pill_counter.vhd
-set_global_assignment -name VHDL_FILE bottle_counter.vhd
-set_global_assignment -name VHDL_FILE switch.vhd
-set_global_assignment -name VHDL_FILE multi_fre.vhd
+set_global_assignment -name VHDL_FILE signals.vhd
+set_global_assignment -name VHDL_FILE display_selector.vhd
+set_global_assignment -name VHDL_FILE init_set.vhd
+set_global_assignment -name VHDL_FILE total_pills.vhd
+set_global_assignment -name VHDL_FILE bottle_nums.vhd
+set_global_assignment -name VHDL_FILE single_bottle.vhd
+set_global_assignment -name BDF_FILE pill_bottle.bdf
 set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
-set_location_assignment PIN_1 -to clr
-set_global_assignment -name MISC_FILE "C:/Users/…Ú‘≠Â∞/Desktop/FuckDataLogic/pill_bottle/pill_bottle.dpf"
-set_location_assignment PIN_56 -to clk
-set_location_assignment PIN_54 -to start
-set_location_assignment PIN_76 -to bottle_h[0]
-set_location_assignment PIN_75 -to bottle_h[1]
-set_location_assignment PIN_74 -to bottle_h[2]
-set_location_assignment PIN_81 -to bottle_l[0]
-set_location_assignment PIN_80 -to bottle_l[1]
-set_location_assignment PIN_79 -to bottle_l[2]
-set_location_assignment PIN_77 -to bottle_l[3]
-set_location_assignment PIN_44 -to led1[0]
-set_location_assignment PIN_45 -to led1[1]
-set_location_assignment PIN_46 -to led1[2]
-set_location_assignment PIN_48 -to led1[3]
-set_location_assignment PIN_49 -to led1[4]
-set_location_assignment PIN_50 -to led1[5]
-set_location_assignment PIN_51 -to led1[6]
-set_location_assignment PIN_35 -to led2[0]
-set_location_assignment PIN_36 -to led2[1]
-set_location_assignment PIN_17 -to led2[2]
-set_location_assignment PIN_18 -to led2[3]
-set_location_assignment PIN_30 -to led3[0]
-set_location_assignment PIN_31 -to led3[1]
-set_location_assignment PIN_33 -to led3[2]
-set_location_assignment PIN_34 -to led3[3]
-set_location_assignment PIN_73 -to tablets_l[0]
-set_location_assignment PIN_70 -to tablets_l[1]
-set_location_assignment PIN_69 -to tablets_l[2]
-set_location_assignment PIN_68 -to tablets_l[3]
-set_location_assignment PIN_67 -to tablets_h[0]
-set_location_assignment PIN_65 -to tablets_h[1]
-set_location_assignment PIN_64 -to tablets_h[2]
-set_location_assignment PIN_60 -to qd
+set_location_assignment PIN_63 -to clr
+set_location_assignment PIN_74 -to in_high[3]
+set_location_assignment PIN_75 -to in_high[2]
+set_location_assignment PIN_76 -to in_high[1]
+set_location_assignment PIN_77 -to in_high[0]
+set_location_assignment PIN_79 -to in_low[3]
+set_location_assignment PIN_80 -to in_low[2]
+set_location_assignment PIN_81 -to in_low[1]
+set_location_assignment PIN_54 -to in_low[0]
+set_global_assignment -name MISC_FILE "C:/Users/…Ú‘≠Â∞/Desktop/pill_bottle/pill_bottle.dpf"
+set_location_assignment PIN_70 -to reset
+set_location_assignment PIN_73 -to mode
+set_location_assignment PIN_69 -to start
+set_location_assignment PIN_58 -to clk
+set_location_assignment PIN_68 -to display_mode[0]
+set_location_assignment PIN_67 -to display_mode[1]
+set_location_assignment PIN_44 -to signal_led[0]
+set_location_assignment PIN_45 -to signal_led[1]
+set_location_assignment PIN_46 -to signal_led[2]
+set_location_assignment PIN_48 -to signal_led[3]
+set_location_assignment PIN_49 -to signal_led[4]
+set_location_assignment PIN_50 -to signal_led[5]
+set_location_assignment PIN_51 -to signal_led[6]
+set_location_assignment PIN_37 -to out_led_1[0]
+set_location_assignment PIN_39 -to out_led_1[1]
+set_location_assignment PIN_40 -to out_led_1[2]
+set_location_assignment PIN_41 -to out_led_1[3]
+set_location_assignment PIN_35 -to out_led_2[0]
+set_location_assignment PIN_36 -to out_led_2[1]
+set_location_assignment PIN_17 -to out_led_2[2]
+set_location_assignment PIN_18 -to out_led_2[3]
+set_location_assignment PIN_30 -to out_led_3[0]
+set_location_assignment PIN_31 -to out_led_3[1]
+set_location_assignment PIN_33 -to out_led_3[2]
+set_location_assignment PIN_34 -to out_led_3[3]
+set_location_assignment PIN_25 -to out_led_4[0]
+set_location_assignment PIN_27 -to out_led_4[1]
+set_location_assignment PIN_28 -to out_led_4[2]
+set_location_assignment PIN_29 -to out_led_4[3]
+set_location_assignment PIN_20 -to out_led_5[0]
+set_location_assignment PIN_21 -to out_led_5[1]
+set_location_assignment PIN_22 -to out_led_5[2]
+set_location_assignment PIN_24 -to out_led_5[3]
+set_global_assignment -name MISC_FILE "C:/Users/Administrator/Desktop/pill_bottle/pill_bottle.dpf"
+set_global_assignment -name MISC_FILE "G:/pill_bottle_6-1/2/pill_bottle/pill_bottle.dpf"

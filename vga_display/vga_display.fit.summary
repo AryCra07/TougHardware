@@ -1,9 +1,0 @@
-Fitter Status : Successful - Mon May 29 20:59:36 2023
-Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
-Revision Name : vga_display
-Top-level Entity Name : vga_display
-Family : MAX7000S
-Device : EPM7128SLC84-15
-Timing Models : Final
-Total macrocells : 49 / 128 ( 38 % )
-Total pins : 12 / 68 ( 18 % )
